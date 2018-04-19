@@ -1,0 +1,28 @@
+{
+    "name": "mint/find-your-j-ob",
+    "authors": [
+        {
+            "name": "Elylou",
+            "email": "audrey.stammler@outlook.fr"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "require": {
+      "johnpbloch/wordpress": "^4.9",
+      "wpackagist-theme/twentyseventeen": "*",
+      "wpackagist-plugin/contact-form-7": "*"
+
+    },
+    "extra": {
+      "wordpress-install-dir": "wp",
+      "installer-paths": {
+          "content/plugins/{$name}/": ["type:wordpress-plugin"],
+          "content/themes/{$name}/": ["type:wordpress-theme"]
+      }
+    }
+}

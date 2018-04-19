@@ -1,3 +1,4 @@
+
 node_modules/
 public/
 .DS_Store
@@ -6,7 +7,8 @@ wp-config.php
 vendor/
 wp/
 content/themes/twentyseventeen
- content/plugins/contact-form-7/
+content/plugins/contact-form-7/
 content/uploads
 content/upgrade
 content/debug.log
+find-your-job/wp/wp-includes/*
