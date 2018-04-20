@@ -16,22 +16,28 @@ HEADER
   padding-left:1em;
   padding-right: 1em;
 }
+
 .dark{
   color: black !important;
 }
 .title_site{
-  font-weight: normal;
+  margin-top: 2em;
+  font-weight:500;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(73,128,191,0.32);
+  width: 8.5em;
+
+
 }
 .title_site_after{
-  margin-top: -3em;
+  margin-top: -0.6em;
+  word-spacing: 0.7em;
+  font-weight: 400;
 }
-
-.title_site_after {
-  margin-top: -3em;
-  font-weight: 100;
+.title_site_loupe{
+  margin-top:- 1em;
+  margin-left: 4.5em;
 }
-
 header ul li {
  display: inline;
  text-transform: uppercase;
@@ -39,13 +45,24 @@ header ul li {
 }
 header ul li a {
  justify-content:flex-end;
- align-items: center;
  text-decoration: none;
  color: $color_blue;
- margin-right: 1em;
+
 }
 
-
+.header_blue_bar{
+  position: relative;
+  margin-top:1em;
+  border-bottom:2em solid $color_blue;
+  z-index: 10
+}
+.test{
+  margin: auto;
+  width:18em;
+	border:1px solid $color_gray;
+	border-color: transparent transparent  $color_gray transparent  ;
+	border-width:2em;
+}
 /*********************
 NAVBAR
 *********************/

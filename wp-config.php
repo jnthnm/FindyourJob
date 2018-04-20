@@ -65,7 +65,7 @@ $table_prefix  = 'wp_';
 // Chemin local du repertoire WP_CONTENT déplacé
 define('WP_CONTENT_DIR', dirname(ABSPATH) . '/content');
 // URL complete du répertoire WP_CONTENT
-define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
+define('WP_CONTENT_URL', 'http://localhost/Find-your-jOb/content');
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
  *
@@ -80,7 +80,6 @@ define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-<<<<<<< HEAD
  define('WP_DEBUG', true);
  // Si je suis en DEV
  if (WP_DEBUG) {
@@ -89,7 +88,7 @@ define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
    // J'affiche mes erreurs
    define('WP_DEBUG_DISPLAY', true);
    // Je laisse activé l'installation de plugins ou thèmes
-   define('DISALLOW_FILE_MODS', false);
+   define('DISALLOW_FILE_MODS', true);
    // Force le téléchargement direct dans mon dossier sans FTP etc.
    define('FS_METHOD', 'direct');
    // Je vais limiter le nombre de version d'un contenu
@@ -99,7 +98,7 @@ define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
    // Je vais enregistrer mes erreurs dans un fichier
    define('WP_DEBUG_LOG', true);
    // Je n'affiche pas mes erreurs
-   define('WP_DEBUG_DISPLAY', false);
+   define('WP_DEBUG_DISPLAY', true);
    // Désactive l'installation de plugins ou thèmes
    define('DISALLOW_FILE_MODS', true);
  }
@@ -111,73 +110,3 @@ define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
  	define('ABSPATH', dirname(__FILE__) . '/');
  /** Réglage des variables de WordPress et de ses fichiers inclus. */
  require_once(ABSPATH . 'wp-settings.php');
-=======
-define('WP_DEBUG', true);
-<<<<<<< HEAD
-
-// Si je suis en DEV
-if (WP_DEBUG) {
-
-  // Je n'enregistre pas les erreurs dans un fichier de log
-  define('WP_DEBUG_LOG', false);
-
-  // J'affiche mes erreurs
-  define('WP_DEBUG_DISPLAY', true);
-
-  // Je laisse activé l'installation de plugins ou thèmes
-  define('DISALLOW_FILE_MODS', false);
-
-  // Force le téléchargement direct dans mon dossier sans FTP etc.
-  define('FS_METHOD', 'direct');
-
-  // Je vais limiter le nombre de version d'un contenu
-  define('WP_POST_REVISIONS', 3);
-
-// SI je suis en PROD
-} else {
-
-  // Je vais enregistrer mes erreurs dans un fichier
-  define('WP_DEBUG_LOG', true);
-
-  // Je n'affiche pas mes erreurs
-  define('WP_DEBUG_DISPLAY', false);
-
-  // Désactive l'installation de plugins ou thèmes
-  define('DISALLOW_FILE_MODS', true);
-}
-
-// Bloque l'éditeur embarqué
-define('DISALLOW_FILE_EDIT', true);
-
-=======
-// Si je suis en DEV
-if (WP_DEBUG) {
-  // Je n'enregistre pas les erreurs dans un fichier de log
-  define('WP_DEBUG_LOG', true);
-  // J'affiche mes erreurs
-  define('WP_DEBUG_DISPLAY', true);
-  // Je laisse activé l'installation de plugins ou thèmes
-  define('DISALLOW_FILE_MODS', true);
-  // Force le téléchargement direct dans mon dossier sans FTP etc.
-  define('FS_METHOD', 'direct');
-  // Je vais limiter le nombre de version d'un contenu
-  define('WP_POST_REVISIONS', 3);
-// SI je suis en PROD
-} else {
-  // Je vais enregistrer mes erreurs dans un fichier
-  define('WP_DEBUG_LOG', true);
-  // Je n'affiche pas mes erreurs
-  define('WP_DEBUG_DISPLAY', true);
-  // Désactive l'installation de plugins ou thèmes
-  define('DISALLOW_FILE_MODS', true);
-}
-// Bloque l'éditeur embarqué
-define('DISALLOW_FILE_EDIT', false);
->>>>>>> 24fefbb21a2964d4472b702892e127446ee4ed63
-/* C’est tout, ne touchez pas à ce qui suit ! */
-/** Chemin absolu vers le dossier de WordPress. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
-/** Réglage des variables de WordPress et de ses fichiers inclus. */
-require_once(ABSPATH . 'wp-settings.php');
->>>>>>> a43e4916ed7cb0c8bdab9604d2c397a3ae2684df
