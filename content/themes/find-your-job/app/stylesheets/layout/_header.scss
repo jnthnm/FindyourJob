@@ -22,6 +22,7 @@ HEADER
 }
 .title_site{
   margin-top: 2em;
+   font-size: 35px;
   font-weight:500;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(73,128,191,0.32);
@@ -31,12 +32,12 @@ HEADER
 }
 .title_site_after{
   margin-top: -0.6em;
-  word-spacing: 0.7em;
+ word-spacing: 0.7em;
   font-weight: 400;
 }
 .title_site_loupe{
-  margin-top:- 1em;
-  margin-left: 4.5em;
+  margin-top: -1em;
+  margin-left: 3.5em;
 }
 header ul li {
  display: inline;
@@ -60,7 +61,7 @@ header ul li a {
   margin: auto;
   width:18em;
 	border:1px solid $color_gray;
-	border-color: transparent transparent  $color_gray transparent  ;
+	border-bottom-color: $color_gray ;
 	border-width:2em;
 }
 /*********************

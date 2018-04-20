@@ -1,3 +1,24 @@
 /*********************
 FOOTER
 *********************/
+footer {
+  background-color: $color_blue;
+  color: white;
+}
+.list-inline-item{
+ color: $color_gray
+}
+/*********************
+COPY
+*********************/
+.footer_black{
+  background-color: $color_gray;
+  height: 3em;
+  ;
+  width: 100%;
+}
+.footer_black_copy{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
