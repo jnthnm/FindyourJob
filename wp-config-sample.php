@@ -91,7 +91,7 @@ if (WP_DEBUG) {
   // J'affiche mes erreurs
   define('WP_DEBUG_DISPLAY', true);
   // Je laisse activé l'installation de plugins ou thèmes
-  define('DISALLOW_FILE_MODS', false);
+  define('DISALLOW_FILE_MODS', true);
   // Force le téléchargement direct dans mon dossier sans FTP etc.
   define('FS_METHOD', 'direct');
   // Je vais limiter le nombre de version d'un contenu
@@ -101,7 +101,7 @@ if (WP_DEBUG) {
   // Je vais enregistrer mes erreurs dans un fichier
   define('WP_DEBUG_LOG', true);
   // Je n'affiche pas mes erreurs
-  define('WP_DEBUG_DISPLAY', false);
+  define('WP_DEBUG_DISPLAY', true);
   // Désactive l'installation de plugins ou thèmes
   define('DISALLOW_FILE_MODS', true);
 }
