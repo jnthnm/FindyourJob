@@ -9,6 +9,7 @@ padding: 0;
 .header_title{
 }
 .title_site{
+  font-weight: normal;
   text-transform: uppercase;
   border-bottom: 1px solid rgba(73,128,191,0.31);
   width: 12%;
@@ -17,6 +18,9 @@ padding: 0;
 }
 .title_site_after {
   margin-top: -3em;
+  font-weight: 100;
+  // font-style: italic;
+
 }
  .title_site_loupe {
    margin-left: 2em;

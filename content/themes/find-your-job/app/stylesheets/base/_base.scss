@@ -2,6 +2,8 @@
 BASE
 *********************/
 body{
+  font-family: 'Gotham';
+  font-weight: normal;
   font-size: 12px;
   color: $color_blue ;
 @include breakpoint(tablet) {
