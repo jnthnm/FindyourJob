@@ -1,15 +1,32 @@
 
 //@import 'font-awesome';
-
+/*********************
+Abstrats
+*********************/
 @import 'abstracts/variables',
          'abstracts/mixin';
+/*********************
+BASE
+*********************/
 
 @import 'base/base',
         'base/typo';
+/*********************
+Components
+*********************/
 
+@import 'components/buttons';
+/*********************
+Layout
+*********************/
 @import 'layout/banner',
         'layout/footer',
         'layout/header';
+
+        
+/*********************
+text-shadow:
+*********************/
 
 
 @import 'shame';
