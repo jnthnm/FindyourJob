@@ -34,10 +34,23 @@ exports.npm = {
   // Je déclare à npm un dossier à prendre en compte pour gérer les styles
   styles: {
     'font-awesome': ['css/font-awesome.css'],
+  },
+
+  // On déclare globalement jQuery
+  globals: {
+      'bootstrap': 'bootstrap'
   }
 };
 
 exports.plugins = {
+  // Parametrage de SASS
+  sass: {
+    options: {
+      includePaths: [
+        'node_modules/bootstrap/scss'
+      ]
+    }
+  },
 
   // Parametrage de copycat
   copycat: {
