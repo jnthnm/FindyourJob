@@ -38,6 +38,8 @@ exports.npm = {
 
   // On déclare globalement jQuery
   globals: {
+    '$': 'jquery',
+    'jQuery': 'jquery',
       'bootstrap': 'bootstrap'
   }
 };
