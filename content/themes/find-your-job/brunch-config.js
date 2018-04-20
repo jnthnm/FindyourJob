@@ -1,3 +1,4 @@
+
 // See http://brunch.io for documentation.
 exports.files = {
   javascripts: {
@@ -38,6 +39,8 @@ exports.npm = {
 
   // On déclare globalement jQuery
   globals: {
+    '$': 'jquery',
+    'jQuery': 'jquery',
       'bootstrap': 'bootstrap'
   }
 };
