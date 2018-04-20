@@ -106,7 +106,7 @@ if (WP_DEBUG) {
   define('DISALLOW_FILE_MODS', true);
 }
 // Bloque l'éditeur embarqué
-define('DISALLOW_FILE_EDIT', false);
+define('DISALLOW_FILE_EDIT', true);
 /* C’est tout, ne touchez pas à ce qui suit ! */
 /** Chemin absolu vers le dossier de WordPress. */
 if ( !defined('ABSPATH') )
