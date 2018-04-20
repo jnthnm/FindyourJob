@@ -1,26 +1,43 @@
 /*********************
 HEADER
 *********************/
-header {
-display: inline;
-margin: 0;
-padding: 0;
+.header-container {
+  display: row;
+  width: 100%;
 }
-.header_title{
+.header_blue{
+  background-color: $color_blue;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: bold;
+  padding-left:1em;
+  padding-right: 1em;
+}
+.dark{
+  color: black !important;
 }
 .title_site{
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(73,128,191,0.31);
-  width: 12%;
-
 
 }
-.title_site_after {
-  margin-top: -3em;
+header ul li {
+ display: inline;
+ font-size: 0.9em;
+ text-transform: uppercase;
+ margin-right: 1em;
 }
- .title_site_loupe {
-   margin-left: 2em;
- }
+header ul li a {
+ justify-content: flex-end;
+ align-items: center;
+ text-decoration: none;
+ color: $color_blue;
+ margin-right: 1em;
+
+}
+
 
 /*********************
 NAVBAR
@@ -28,7 +45,7 @@ NAVBAR
 .navbar {
   float: right;
   margin:0;
-   padding:0;
+  padding:0;
 }
 .navbar li {
    display:inline;
@@ -36,4 +53,22 @@ NAVBAR
 }
 li  {
    list-style-type: none;
+}
+
+.logo {
+ margin-left: 5%;
+}
+
+
+nav {
+  margin-left: 20em;
+}
+
+
+li a.active {
+ color: #000000;
+ font-weight: 300;
+}
+li a:hover {
+ color: $color_blue;
 }
