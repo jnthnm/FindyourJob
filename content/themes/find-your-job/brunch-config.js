@@ -34,13 +34,14 @@ exports.npm = {
   // Je déclare à npm un dossier à prendre en compte pour gérer les styles
   styles: {
     'font-awesome': ['css/font-awesome.css'],
+    'bootstrap': ['css/font-awesome.css']
   },
 
   // On déclare globalement jQuery
   globals: {
     '$': 'jquery',
     'jQuery': 'jquery',
-      'bootstrap': 'bootstrap'
+      bootstrap: 'bootstrap'
   }
 };
 

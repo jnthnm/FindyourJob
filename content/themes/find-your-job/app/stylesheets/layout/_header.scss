@@ -22,38 +22,32 @@ HEADER
 .title_site{
   font-weight: normal;
   text-transform: uppercase;
-
 }
-<<<<<<< HEAD
+.title_site_after{
+  margin-top: -3em;
+}
 .title_site_after {
   margin-top: -3em;
   font-weight: 100;
-  // font-style: italic;
-=======
+}
 header ul li {
  display: inline;
- font-size: 0.9em;
  text-transform: uppercase;
- margin-right: 1em;
+ margin-right: 2em;
 }
 header ul li a {
- justify-content: flex-end;
+ justify-content:flex-end;
  align-items: center;
  text-decoration: none;
  color: $color_blue;
  margin-right: 1em;
->>>>>>> 24fefbb21a2964d4472b702892e127446ee4ed63
-
 }
-
-
 /*********************
 NAVBAR
 *********************/
 .navbar {
   float: right;
-  margin:0;
-  padding:0;
+  margin-top: -6em;
 }
 .navbar li {
    display:inline;
@@ -62,17 +56,12 @@ NAVBAR
 li  {
    list-style-type: none;
 }
-
 .logo {
  margin-left: 5%;
 }
-
-
 nav {
   margin-left: 20em;
 }
-
-
 li a.active {
  color: #000000;
  font-weight: 300;
