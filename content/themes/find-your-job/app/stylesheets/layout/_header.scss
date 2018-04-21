@@ -1,34 +1,76 @@
 /*********************
 HEADER
 *********************/
-header {
-display: inline;
-margin: 0;
-padding: 0;
+.header-container {
+  display: row;
+  width: 100%;
 }
-.header_title{
+.header_blue{
+  background-color: $color_blue;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: bold;
+  padding-left:1em;
+  padding-right: 1em;
+}
+
+.dark{
+  color: black !important;
 }
 .title_site{
+  margin-top: 2em;
+   font-size: 35px;
+  font-weight:500;
   text-transform: uppercase;
-  border-bottom: 1px solid rgba(73,128,191,0.31);
-  width: 12%;
+  border-bottom: 1px solid rgba(73,128,191,0.32);
+  width: 8.5em;
 
 
 }
-.title_site_after {
-  margin-top: -3em;
+.title_site_after{
+  margin-top: -0.6em;
+ word-spacing: 0.7em;
+  font-weight: 400;
 }
- .title_site_loupe {
-   margin-left: 2em;
- }
+.title_site_loupe{
+  margin-top: -1em;
+  margin-left: 3.5em;
+}
+header ul li {
+ display: inline;
+ text-transform: uppercase;
+ margin-right: 2em;
+}
+header ul li a {
+ justify-content:flex-end;
+ text-decoration: none;
+ color: $color_blue;
 
+}
+
+.header_blue_bar{
+  position: relative;
+  margin-top:1em;
+  border-bottom:2em solid $color_blue;
+  z-index: 10
+}
+.test{
+  margin: auto;
+  width:18em;
+	border:1px solid $color_gray;
+	border-bottom-color: $color_gray ;
+	border-width:2em;
+}
 /*********************
 NAVBAR
 *********************/
 .navbar {
   float: right;
-  margin:0;
-   padding:0;
+  margin-top: -6em;
+
 }
 .navbar li {
    display:inline;
@@ -36,4 +78,17 @@ NAVBAR
 }
 li  {
    list-style-type: none;
+}
+.logo {
+ margin-left: 5%;
+}
+nav {
+  margin-left: 20em;
+}
+li a.active {
+ color: #000000;
+ font-weight: 300;
+}
+li a:hover {
+ color: $color_blue;
 }
