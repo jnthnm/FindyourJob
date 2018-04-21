@@ -5,8 +5,11 @@ footer {
   background-color: $color_blue;
   color: white;
 }
-.list-inline-item{
- color: $color_gray
+.btn-floating{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: $color_gray;
 }
 /*********************
 COPY
