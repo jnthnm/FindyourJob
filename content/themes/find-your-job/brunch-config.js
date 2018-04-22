@@ -41,14 +41,6 @@ exports.npm = {
     'font-awesome': ['css/font-awesome.css'],
   },
 
-  // On déclare globalement jQuery
-  globals: {
-    '$': 'jquery',
-    'jQuery': 'jquery',
-      bootstrap: 'bootstrap'
-
-
-  }
 };
 
 exports.plugins = {
