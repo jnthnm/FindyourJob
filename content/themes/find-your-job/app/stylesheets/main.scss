@@ -27,20 +27,14 @@ Layout
 
 
 @import 'layout/footer',
-'layout/header',
-'layout/profil',
-'layout/home';
+        'layout/header',
+        'layout/profil',
+        'layout/home';
 
 
 /*********************
 Pages
 *********************/
-
-@import 'pages/boutique',
-        'pages/tarifs',
-        'pages/actu_only';
-
-=======
 @import 'layout/footer',
         'layout/header',
         'layout/profil',
@@ -52,9 +46,11 @@ Pages
 Pages
 *********************/
 
-@import 'pages/boutique',
-        'pages/tarifs',
-        'pages/profil';
+@import 'pages/actu_only',
+        'pages/boutique',
+        'pages/profil',
+        'pages/tarifs';
+
 
 /*********************
 Shame
