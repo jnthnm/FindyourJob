@@ -32,12 +32,14 @@ Layout
         'layout/profil',
         'layout/home';
 
+
 /*********************
 Pages
 *********************/
 
 @import 'pages/boutique',
-@import 'pages/tarifs';
+        'pages/tarifs',
+        'layout/profil';
 
 /*********************
 text-shadow:
