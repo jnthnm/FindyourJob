@@ -1,9 +1,10 @@
 /*********************
 Button de la nav bar
 *********************/
+.navbar-toggler {
+  color:$color_blue !important;
+}
 .btn-primary{
   background-color: $color_blue !important;
   font-size:11px !important;
-
-
 }
