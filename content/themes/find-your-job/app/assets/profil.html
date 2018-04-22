@@ -1,50 +1,154 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Profil</title>
-        <link rel="stylesheet" href="css/vendor.css">
-        <link rel="stylesheet" href="css/app.css">
-    </head>
-  <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Find Your Job</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
     <div class="wrapper">
-<!--==========header==========-->
+        <!--==========header==========-->
     <header class="header-container">
         <div class="header_blue">
-            <p>Paiement 100% sécurisé</p>
-            <p>1 mois satisfait ou remboursé</p>
-            <p>A votre Service depuis 10 ans !</p>
-            <p class="dark">créer/ se connecter</p>
-        </div>
+            <div class="row">
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col">
+                    <p>Paiement 100% sécurisé</p>
+                </div> <!--col-->
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col">
+                    <p>1 mois satisfait ou remboursé</p>
+                </div><!--col-->
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col">
+                    <p>A votre Service depuis 10 ans !</p>
+                </div> <!--col-->
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col">
+                        <p class="dark">créer/ se connecter</p>
+                </div> <!--col-->
+            </div> <!--row-->
+        </div> <!--header_blue-->
+
+
         <div class="logo">
            <h1 class="title_site" >Find your job</h1>
            <p class="title_site_after">L'emploi près de chez vous<img src="images/loupefind.svg" alt="loupe" height="60px" class="title_site_loupe"> </p>
          </div>
-        <nav>
-            <div class="navbar">
-            <ul >
-             <li><a href="index.html">Acceuil</a></li>
-             <li><a>Actu</a></li>
-             <li><a>A Propos</a></li>
-             <li><a>Contact</a></li>
-              <li><a>Boutique</a></li>
-            </ul>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button> <!--navbar-toggle-->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav navbar_link">
+                        <a class="nav-item nav-link" href="homepage.html">Homepage</a>
+                        <a class="nav-item nav-link" href="page-actu.html">Actus</a>
+                        <a class="nav-item nav-link" href="a-propos.html">A propos</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                        <a class="nav-item nav-link" href="boutique.html">Boutique</a>
+
+                    </div><!-- navbar-nav-->
+                </div> <!--collapse-->
         </nav>
-        <div class="header_blue_bar">
-        <div class="test">
-        </div>
+<div class="wrap">
+
+<div class="barre"> </div>
+    <div class="color"></div>
+</div> <!--wrap-->
+    </header> <!--header container-->
+<!--==========main==========-->
+<main>
+
+        <h2 class="profil_identifiants">Identifiants</h2>
+            <div class="identifiants">
+              <div class="profil_mail">
+                <i class="fa fa-envelope mail"><span class="loggins">Adresse mail</span><span class="asterix">*</span></i>
+                <div class="input_profil">
+                  <input class="input_custom" type="text">
+                </div>
+              </div>
+              <div class="profil_pw">
+                <i class="fa fa-unlock-alt pw"><span class="loggins">Password</span><span class="asterix">*</span></i>
+                <div class="input_profil">
+                  <input class="input_custom" type="text">
+                </div>
+              </div>
             </div>
-    </header>
-      <main>
-        <div class="blabla">
-          <section>
-            <article class="">
-              <p> test </p>
-            </article>
-          </section>
+
+        <h2 class="profil_information_personnelles">Information personneles</h2>
+            <div class="information_personnelles">
+              <div class="button_info_personnele"><i class="fa fa-user user"></i><span class="loggins">Civilité</span><span class="asterix">*</span>
+                <input type="radio" name="civi2" value="Mme" /> M.
+                  <input type="radio" name="civi2" value="Mlle" /> Mme
+              </div>
+
+              <div class="button_info_personnele_bis">
+                <span class="loggins">Nom</span><span class="asterix">*</span>
+                    <input class="input_custom" type="text">
+                <span class="loggins">Prénom</span><span class="asterix">*</span>
+                    <input class="input_custom" type="text">
+
+              </div>
+                <div class="button_info_personnele_bis">
+                    <span class="loggins">Date de naissance</span><span class="asterix">*</span>
+                      <input class="input_custom" type="date">
+                    <span class="loggins">Téléphone</span><span class="asterix">*</span>
+                      <input class="input_custom" type="text">
+              </div>
+              </div>
+
+
+          <h2 class="profil_information_societe">Information sur la société</h2>
+            <div class="information_societe">
+
+                <span class="loggins">Raison social</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+                <span class="loggins">N°TVA</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+
+                <span class="loggins">Numéro Siret</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+          </div>
+
+
+          <h2 class="profil_coordonees">Coordonées</h2>
+            <div class="coordonees">
+              <div class="button_coordonees">
+                <span class="loggins">Adresse(n° et rue)</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+
+                <span class="loggins">Complément d'adresse</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+
+                <span class="loggins">Code Postal</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+                <span class="loggins">Ville</span><span class="asterix">*</span>
+                  <input class="input_custom" type="text">
+
+              <div class="checkbox_profil">
+                <input class="checkbox_profil" type="checkbox">Je souhaite m'inscrire à la newsletter et recevoir par e-mail les promotions et les réductions exclusives !
+              </div>
+
+              <div class="button_send_profil">
+                <input class="button_envoyer_profil" type="submit" value="Envoyer">
+              </div>
+
+              <div class="button_links_profil">
+                <input type="submit" value="Mon compte">
+                <input type="submit" value="Ma progression">
+                <input type="submit" value="Mon panier">
+              </div>
+          </div>
         </div>
-      </main>
+    </main>
 
       <!--Footer-->
       <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">

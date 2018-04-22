@@ -1,0 +1,219 @@
+// // PAGE PROFIL OUAIS OUAIS OUAIS !!
+//
+// // CSS CONCERNANT LA DIV IDENTIFIANTS (PC)
+//
+// .identifiants {
+//   padding-top: 2%;
+//   @include breakpoint(tablet){
+//     display: grid;
+//     grid-template-columns: 15% 15%;
+//     justify-content: flex-start;
+//
+//   }
+// }
+//
+// .input_custom {
+//   width: 80%;
+// }
+//
+// .input_profil {
+//   padding-top: 5%;
+// }
+//
+// .profil_pw {
+//   display: grid;
+// }
+//
+// .profil_mail {
+//   display: grid;
+// }
+//
+// .profil_identifiants {
+//   text-transform: uppercase;
+//   background-color: $color_gray;
+//   color: $color_title;
+//   padding-left: 2.5%;
+// }
+//
+// .loggins {
+//   padding-left: 10%;
+//   color: #000;
+// }
+//
+// .asterix {
+//   color: red;
+//   font-size: 15px;
+// }
+
+
+// CSS Identifiants
+
+.identifiants {
+
+    padding-bottom: 2%;
+     @include breakpoint(tablet){
+     display: grid;
+     grid-template-columns: 15% 15%;
+     justify-content: flex-start;
+   }
+ }
+
+.profil_identifiants {
+   text-transform: uppercase;
+   background-color: $color_gray;
+   color: $color_title;
+   padding-left: 3%;
+   padding-top: 2%;
+   font-size: 19px;
+     @include breakpoint(tablet){
+   }
+ }
+
+.profil_information_personnelles {
+    text-transform: uppercase;
+    background-color: $color_gray;
+    color: $color_title;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 19px;
+}
+
+.loggins {
+  @include breakpoint(desktop) {
+   padding-left: 10%;
+   color: #000;
+ }
+}
+
+.profil_pw {
+    padding-top: 4%;
+  @include breakpoint(desktop) {
+    display: grid;
+ }
+}
+
+.profil_mail {
+  @include breakpoint(desktop){
+  display: grid;
+ }
+}
+
+.input_profil {
+  @include breakpoint(desktop){
+     padding-top: 5%;
+  }
+}
+
+.asterix {
+  color: red;
+  font-size: 15px;
+}
+
+
+.input_custom {
+  width: 40%;
+    @include breakpoint(tablet){
+      width: 30%;
+    }
+    @include breakpoint(laptop){
+      width: 70%;
+    }
+}
+
+
+
+// CSS CONCERNANT LA DIV INFORMATION PERSOONNELLES
+
+.user {
+  font-size: 50px;
+}
+
+.button_info_personnele {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.button_info_personnele_bis {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2%;
+  padding: 2%;
+}
+
+// CSS CONCERNANT LA DIV INFORMATION SOCIETE
+
+.profil_information_societe {
+    text-transform: uppercase;
+    background-color: $color_gray;
+    color: $color_title;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 19px;
+}
+
+
+
+.information_societe {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    padding: 2%;
+}
+// CSS CONCERNANT LA DIV COORDONEES
+
+.profil_coordonees {
+    text-transform: uppercase;
+    background-color: $color_gray;
+    color: $color_title;
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: 19px;
+}
+
+.button_coordonees {
+    display: flex;
+    flex-direction: column;
+        padding: 2%;
+}
+
+.checkbox_profil {
+      padding-top: 5%;
+}
+
+.button_envoyer_profil {
+    padding: 4%;
+    margin-left: 60%;
+    background-color: $color_gray;
+    color: white;
+}
+
+.button_links_profil {
+    padding: 3%;
+    margin-top: 5%;
+}
+// .main_wrap{
+//   // position: relative;
+//   max-width:100%;
+//   background:radial-gradient(circle at center, rgba(209,234,255,1) -50%, rgba(72,156,234,1) 100%);
+//   background-repeat: no-repeat;
+//   border-bottom: 6px solid $color_gray;
+//     @include breakpoint(tablet){
+//       height: 300px;
+//   }
+// }
+//
+// .section{
+//
+//   @include breakpoint(tablet){
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     height: 100%;
+//
+//   }
+//     @include breakpoint(laptop){
+//       width: 1400px;
+//       margin: 0 auto;
+//
+//   }
+// }
