@@ -1,3 +1,26 @@
 /*********************
 FOOTER
 *********************/
+footer {
+  background-color: $color_blue;
+  color: white;
+}
+.btn-floating{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: $color_gray;
+}
+/*********************
+COPY
+*********************/
+.footer_black{
+  background-color: $color_gray;
+  height: 3em;
+  width: 100%;
+}
+.footer_black_copy{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}

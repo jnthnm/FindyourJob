@@ -18,11 +18,14 @@ BASE
 Components
 *********************/
 
-@import 'components/buttons';
+@import 'components/buttons',
+        'components/carousel';
+
 
 /*********************
 Layout
 *********************/
+
 
 @import 'layout/banner',
         'layout/footer',
@@ -33,6 +36,12 @@ Pages
 
 @import 'pages/boutique';
 @import 'pages/tarifs';
+
+@import 'layout/footer',
+        'layout/header',
+        'layout/profil',
+        'layout/home';
+
 
 
 /*********************

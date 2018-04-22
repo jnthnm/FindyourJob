@@ -1,3 +1,4 @@
+
 // See http://brunch.io for documentation.
 exports.files = {
   javascripts: {
@@ -29,12 +30,16 @@ exports.modules = {
   }
 };
 
-
 exports.npm = {
-  // Je déclare à npm un dossier à prendre en compte pour gérer les styles
+  enabled: true,
+  globals: {
+    $: 'jquery',
+    jQuery: 'jquery',
+    bootstrap: 'bootstrap'
+  },
   styles: {
+    'bootstrap': ['dist/css/bootstrap.css'],
     'font-awesome': ['css/font-awesome.css'],
-    'bootstrap': ['css/font-awesome.css']
   },
 
   // On déclare globalement jQuery
@@ -42,6 +47,8 @@ exports.npm = {
     '$': 'jquery',
     'jQuery': 'jquery',
       bootstrap: 'bootstrap'
+
+
   }
 };
 

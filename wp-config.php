@@ -65,7 +65,7 @@ $table_prefix  = 'wp_';
 // Chemin local du repertoire WP_CONTENT déplacé
 define('WP_CONTENT_DIR', dirname(ABSPATH) . '/content');
 // URL complete du répertoire WP_CONTENT
-define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
+define('WP_CONTENT_URL', 'http://localhost/Find-your-jOb/content');
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
  *
@@ -80,6 +80,7 @@ define('WP_CONTENT_URL', 'http://localhost/Projet_Pro/Find-your-jOb/content');
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
+
 define('WP_DEBUG', true);
 
 
@@ -125,3 +126,5 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
+
+ 

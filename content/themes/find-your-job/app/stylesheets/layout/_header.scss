@@ -13,15 +13,20 @@ HEADER
   color: white;
   text-transform: uppercase;
   font-size: bold;
+  padding: 0.3em;
   padding-left:1em;
   padding-right: 1em;
+  font-weight: 500;
 }
 .dark{
   color: black !important;
 }
 .title_site{
-  font-weight: normal;
+  margin-top: 2em;
+  font-size: 35px;
+  font-weight:500;
   text-transform: uppercase;
+
 }
 .title_site_after{
   margin-top: -3em;
@@ -30,6 +35,22 @@ HEADER
   margin-top: -3em;
   font-weight: 100;
 }
+
+  border-bottom: 1px solid rgba(73,128,191,0.32);
+  width: 8.5em;
+
+
+}
+.title_site_after{
+  margin-top: -0.6em;
+ word-spacing: 0.7em;
+  font-weight: 400;
+}
+.title_site_loupe{
+  margin-top: -1em;
+  margin-left: 2em;
+}
+
 header ul li {
  display: inline;
  text-transform: uppercase;
@@ -37,6 +58,7 @@ header ul li {
 }
 header ul li a {
  justify-content:flex-end;
+
  align-items: center;
  text-decoration: none;
  color: $color_blue;
@@ -69,3 +91,80 @@ li a.active {
 li a:hover {
  color: $color_blue;
 }
+
+ text-decoration: none;
+ color: $color_blue;
+
+}
+
+.header_blue_bar{
+  content:"";
+  position: relative;
+  margin-top:1em;
+  border-bottom:2em solid $color_blue;
+  z-index: 10;
+}
+.test{
+    @include breakpoint(mobileonly) {
+          margin: auto;
+          margin-bottom:-2em;
+          width:10em;
+        	border:1em solid $color_gray;
+          border-left: 1em solid transparent;
+          border-right: 1em solid transparent;
+          z-index: 20;
+
+    }
+        @include breakpoint(phablet) {
+              margin: auto;
+              margin-bottom:-2em;
+              width:15em;
+            	border:1em solid $color_gray;
+              border-left: 1em solid transparent;
+              border-right: 1em solid transparent;
+              z-index: 20;
+
+        }
+  @include breakpoint(tablet) {
+          margin: auto;
+          margin-bottom:-2em;
+          width:35em;
+        	border:1em solid $color_gray;
+          border-left: 2em solid transparent;
+          border-right: 2em solid transparent;
+          z-index: 20;
+    }
+}
+
+
+/*********************
+NAVBAR
+*********************/
+@include breakpoint(tablet) {
+        .navbar{
+          float: right;
+          margin-top: -6em;
+
+        }
+        .navbar li {
+           display:inline;
+           padding:1em;
+        }
+        li  {
+           list-style-type: none;
+        }
+        .logo {
+         margin-left: 5%;
+        }
+        nav {
+          margin-left: 20em;
+        }
+        li a.active {
+         color: #000000;
+         font-weight: 300;
+        }
+        li a:hover {
+         color: $color_blue;
+        }
+
+    }
