@@ -1,5 +1,7 @@
+//@import 'bootstrap';
+// @import 'font-awesome';
 
-//@import 'font-awesome';
+
 /*********************
 Abstrats
 *********************/
@@ -25,12 +27,17 @@ Components
 /*********************
 Layout
 *********************/
-
 @import 'layout/footer',
         'layout/header',
         'layout/profil',
         'layout/home';
 
+/*********************
+Pages
+*********************/
+
+@import 'pages/boutique',
+@import 'pages/tarifs';
 
 /*********************
 text-shadow:

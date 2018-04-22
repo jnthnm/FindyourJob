@@ -40,6 +40,15 @@ exports.npm = {
   styles: {
     'bootstrap': ['dist/css/bootstrap.css'],
     'font-awesome': ['css/font-awesome.css'],
+  },
+
+  // On déclare globalement jQuery
+  globals: {
+    '$': 'jquery',
+    'jQuery': 'jquery',
+      bootstrap: 'bootstrap'
+
+
   }
 };
 

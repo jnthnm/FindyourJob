@@ -22,6 +22,16 @@ HEADER
   font-size: 35px;
   font-weight:500;
   text-transform: uppercase;
+
+}
+.title_site_after{
+  margin-top: -3em;
+}
+.title_site_after {
+  margin-top: -3em;
+  font-weight: 100;
+}
+
   border-bottom: 1px solid rgba(73,128,191,0.32);
   width: 8.5em;
 }
@@ -40,6 +50,51 @@ HEADER
 .collapse a {
   color: $color_blue !important;
   text-transform: uppercase;
+
+header ul li {
+ display: inline;
+ text-transform: uppercase;
+ margin-right: 2em;
+}
+header ul li a {
+ justify-content:flex-end;
+
+ align-items: center;
+ text-decoration: none;
+ color: $color_blue;
+ margin-right: 1em;
+}
+/*********************
+NAVBAR
+*********************/
+.navbar {
+  float: right;
+  margin-top: -6em;
+}
+.navbar li {
+   display:inline;
+   padding:1em;
+}
+li  {
+   list-style-type: none;
+}
+.logo {
+ margin-left: 5%;
+}
+nav {
+  margin-left: 20em;
+}
+li a.active {
+ color: #000000;
+ font-weight: 300;
+}
+li a:hover {
+ color: $color_blue;
+}
+
+ text-decoration: none;
+ color: $color_blue;
+
 }
 .wrap{
   position: relative;
