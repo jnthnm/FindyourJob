@@ -1,5 +1,5 @@
 /*********************
-HEADER
+BAR de dessus
 *********************/
 .header_blue{
   background-color: $color_blue;
@@ -11,18 +11,18 @@ HEADER
   padding-right: 1em;
   font-weight: 500;
 }
-.space {
-  justify-content: space-between !important;
-}
 .dark{
   color: black !important;
 }
+
+/*********************
+logo
+*********************/
 .title_site{
   margin-top: 2em;
   font-size: 35px;
   font-weight:500;
   text-transform: uppercase;
-
 }
 .title_site_after{
   margin-top: -3em;
@@ -32,9 +32,6 @@ HEADER
   font-weight: 100;
 
 
-  border-bottom: 1px solid rgba(73,128,191,0.32);
-  width: 8.5em;
-}
 .title_site_after{
   margin-top: -0.6em;
  word-spacing: 0.7em;
@@ -44,12 +41,16 @@ HEADER
   margin-top: -1em;
   margin-left: 2em;
 }
+
 .navbar-toggler-icon {
   color: $color_blue;
 }
 .collapse a {
   color: $color_blue !important;
+  font-weight: 400;
   text-transform: uppercase;
+  margin-right:2em;
+}
 
 header ul li {
  display: inline;
@@ -58,7 +59,6 @@ header ul li {
 }
 header ul li a {
  justify-content:flex-end;
-
  align-items: center;
  text-decoration: none;
  color: $color_blue;
@@ -67,35 +67,8 @@ header ul li a {
 /*********************
 NAVBAR
 *********************/
-.navbar {
-  float: right;
-  margin-top: -6em;
-}
-.navbar li {
-   display:inline;
-   padding:1em;
-}
-li  {
-   list-style-type: none;
-}
-.logo {
- margin-left: 5%;
-}
-nav {
-  margin-left: 20em;
-}
-li a.active {
- color: #000000;
- font-weight: 300;
-}
-li a:hover {
- color: $color_blue;
-}
 
- text-decoration: none;
- color: $color_blue;
 
-}
 .wrap{
   position: relative;
 }
@@ -113,35 +86,3 @@ li a:hover {
   top: -50px;
   margin: 0 auto;
 }
-
-/*********************
-NAVBAR
-*********************/
-@include breakpoint(tablet) {
-        .navbar{
-          float: right;
-          margin-top: -6em;
-
-        }
-        .navbar li {
-           display:inline;
-           padding:1em;
-        }
-        li  {
-           list-style-type: none;
-        }
-        .logo {
-         margin-left: 5%;
-        }
-        nav {
-          margin-left: 20em;
-        }
-        li a.active {
-         color: #000000;
-         font-weight: 300;
-        }
-        li a:hover {
-         color: $color_blue;
-        }
-
-    }
