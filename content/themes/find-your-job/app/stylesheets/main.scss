@@ -1,4 +1,4 @@
-@import "bootstrap";
+// @import "bootstrap";
 //@import 'font-awesome';
 /*********************
 Abstrats
@@ -26,10 +26,12 @@ Components
 Layout
 *********************/
 
+@import 'layout/footer',
+'layout/header',
+'layout/profil',
+'layout/home';
 
-@import 'layout/banner',
-        'layout/footer',
-        'layout/header';
+
 /*********************
 Pages
 *********************/
@@ -37,10 +39,6 @@ Pages
 @import 'pages/boutique';
 @import 'pages/tarifs';
 
-@import 'layout/footer',
-        'layout/header',
-        'layout/profil',
-        'layout/home';
 
 
 

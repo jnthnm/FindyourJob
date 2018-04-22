@@ -1,37 +1,61 @@
 
 
-.price {
 
-  color: $color_gray;
-  max-width: 300px ;
+.main_tarifs{
+  font-size: 12px;
+  @include breakpoint(tablet){
+
+
+  }
+@include breakpoint(laptop){
   margin: 0 auto;
-  padding-top: 3em;
+  width: 1400px;
+
 }
-.price_wrap {
-  margin: 0;
-  width: 300px;
-  position: relative;
+}
+
+.main_tarif_wrap{
+  background:radial-gradient(circle at center, rgba(72,156,234,1) -50%, rgba(255,255,255,1) );
+
+  z-index: -1;
+  @include breakpoint(tablet){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3em;
+    border-top: 3px solid $color_typo;
+    border-bottom: 3px solid $color_typo;
+  }
+
+}
+
+///////////////////////////////////////////////
+// Price Gauche
+//////////////////////////////////////////////
+.tarif{
+  box-sizing: content-box;
   overflow: hidden;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px -3px 30px $color_gray;
   background-color: $color_typo;
+@include breakpoint(tablet){
+  max-width: 300px;
+  width: 250px;
+  // margin:0;
 }
 
-.title{
-  display: inline-block;
-  color: $color_typo;
 }
-
-
-.price_title {
-  height: 10em;
-  background-color: $color_gray;
+.tarif_wrap{
   position: relative;
-  margin: 0;
-  padding-top: 2em;
-  text-transform: uppercase;
-  text-align: center;
-  z-index: 10;
+  background-color: $color_gray;
+  height: 200px;
+  padding-top: 3em;
+  z-index: 20;
+
 }
-.price_title:after {
+.tarif_wrap:after{
   position: absolute;
   content: '';
   top: 100%;
@@ -41,15 +65,44 @@
   border-style: solid;
   border-width: 300px 0px 0px 500px;
   border-color: $color_gray transparent transparent;
+  z-index: 20;
+
 }
 
-.price_content{
-    height: 17em;
-    background-color: $color_blue;
-    position: relative;
-    z-index: 0;
+.circle{
+  border: 1px solid $color_typo;
+  width: 13em;
+  height: 13em;
+  text-align: center;
+  padding-top: 4.3em;
+  margin: 0 auto;
+  border-radius: 100%;
 }
-.price_content:after{
+.circle_text_top{
+  color:$color_typo;
+  font-size: 2.5em;
+  line-height: 30px;
+}
+.circle_text_top span{
+  font-size: 1.3em;
+}
+.circle_text_bottom{
+  font-size: 1.5em;
+  color: $color_typo;
+  text-transform: uppercase;
+}
+
+
+
+.tarif_wrap_2{
+    position: relative;
+    background-color: $color_blue;
+    height: 35px;
+    z-index: 10;
+
+}
+
+.tarif_wrap_2:after{
     position: absolute;
     content: '';
     top: 100%;
@@ -59,22 +112,304 @@
     border-style: solid;
     border-width: 300px 0px 0px 500px;
     border-color: $color_blue transparent transparent;
+    z-index: 10;
+}
+.tarif_wrap_content{
+  color: $color_typo;
+  text-align: center;
+  padding-top: 8em;
+  font-size: 1.5em;
 }
 
-.circle{
-  border: 1px solid $color_typo;
-  width: 8em;
-  height: 8em;
-  text-align: center;
-  margin-top: 2em;
-  padding-top: 2.6em;
+.tarif_title{
+  color: $color_blue;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding-bottom: 1.5em;
+}
+
+.tarif_content{
+  color: $color_gray;
+  font-size: 0.8em;
+  font-weight: 300;
+  padding-bottom: 8px;
+  @include breakpoint(tablet){
+    padding: 0 1em 0 1em;
+  }
+}
+.button_info{
+  margin: 1em 0 2em 0;
+  font-weight: 500;
+  font-size: 1em !important;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.3em 3em 0.1em 3em;
+  border: none;
+}
+
+
+///////////////////////////////////////////////
+// Price Milieu
+//////////////////////////////////////////////
+
+.tarif_m{
+    box-sizing: content-box;
+    overflow: hidden;
+    background-color: $color_blue;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    box-shadow: 0px -3px 30px $color_gray;
+    @include breakpoint(laptop){
+      margin:0;
+      width: 280px;
+      margin-top: 5em;
+      margin-bottom: 5em;
+    }
+
+}
+.tarif_wrap_m{
+    position: relative;
+    background-color: $color_gray;
+    height: 350px;
+    padding-top: 7em;
+    z-index: 20;
+}
+.tarif_wrap_content_m{
+  position: relative;
+    color: $color_typo;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 7em;
+    font-size: 1.5em;
+}
+.tarif_title_m{
+    color: $color_typo;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 1.5em;
+}
+.tarif_content_m{
+    color: $color_typo;
+    // font-weight: 700;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding-bottom: 8px;
+      @include breakpoint(tablet){
+        padding: 0 1em 0 1em;
+        margin: 0 1em 0 1em;
+      }
+}
+
+.button_info_m{
+    background-color: $color_typo !important;
+    color: $color_blue;
+    margin: 1em 0 2em 0;
+    font-weight: 500;
+    font-size: 1em !important;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 0.3em 3em 0.1em 3em;
+    border: none;
+}
+
+
+///////////////////////////////////////////////
+// Price Doite
+//////////////////////////////////////////////
+.tarif_wrap_r{
+  position: relative;
+  background-color: $color_gray;
+  height: 200px;
+  padding-top: 3em;
+  z-index: 20;
+
+}
+.tarif_wrap_r:after{
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid; //300  500
+  border-width: 150px 300px 0px 0px;
+  border-color: $color_gray transparent transparent;
+  z-index: 20;
+
+}
+
+.tarif_wrap_2_r{
+    position: relative;
+    background-color: $color_blue;
+    height: 33px;
+    z-index: 10;
+
+}
+
+.tarif_wrap_2_r:after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 300px 0px 0px;
+    border-color: $color_blue transparent transparent;
+    z-index: 10;
+}
+
+
+.build{
+    position: absolute;
+    text-transform: uppercase;
+    width: 230px;
+    height: 32px;
+    font-size: 1em;
+    text-align: center;
+    color: $color_blue;
+    font-weight: 500;
+    padding: 5px ;
+    box-shadow: 0px -3px 30px $color_gray;
+    background: $color_typo;
+    transform: rotate(45deg);
+    left: -50px;
+    bottom: 40px;
+}
+///////////////////////////////////////////////
+// Price article brown
+//////////////////////////////////////////////
+
+.section_brown{
+  background-color: $color_gray;
+  color: $color_typo;
+  padding-top: 2em;
+  margin-top: 5em;
+  // width: 100%;
+  @include breakpoint(tablet){
+    margin-top: 0;
+  }
+  @include breakpoint(laptop){
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+}
+.section_brown_wrap{
+  width: 80%;
   margin: 0 auto;
-  border-radius: 100%;
+    @include breakpoint(laptop){
+      width: 20%;
+    }
+
+}
+.section_brown_title{
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  border-top: 2px solid $color_typo;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-right: 0;
+
+}
+.section_brown_content{
+  padding-bottom: 2em;
 
 }
 
-.text{
+///////////////////////////////////////////////
+// Section footer
+//////////////////////////////////////////////
+
+.section_footer_price{
+  margin-bottom: 2em;
+  @include breakpoint(laptop){
+    display: flex;
+
+  }
+}
+
+.section_footer_img{
+  background-image: url("/images/page-formules/cochon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  margin: 2em 0 3em 0;
   text-align: center;
-  margin-top: 10em;
+  @include breakpoint(laptop){
+    margin: 0;
+    width: 33%;
+    height: 100px;
+    align-self: flex-end;
+    // align-items: flex-start;
+  }
+}
+
+.section_footer_wrap{
+  width: 80%;
+  margin: 0 auto;
+  @include breakpoint(laptop){
+    margin-top: 2em;
+    width: 50%;
+  }
+}
+
+.section_footer_title{
+  text-align: center;
+  margin-bottom: 2em;
+  @include breakpoint(laptop){
+    text-align: left;
+    margin-bottom: 1em;
+  }
+}
+.section_footer_letter{
+  text-align: center;
+  border-radius: 10px;
+  background-color: $color_blue;
+  padding: 3em;
+  @include breakpoint(laptop){
+    display: flex;
+    justify-content:  space-between;
+    padding: 2em;
+  }
+}
+
+.section_footer_input input{
+  width: 100%;
+  margin: 0 auto;
+  color: $color_gray;
+  box-sizing: border-box;
+  border: 2px solid $color_typo;
+  border-radius: 5px;
+  font-size: 1em;
+  background-position: 10px 10px;
+  padding: 5px 0px 5px 25px;
+  @include breakpoint(laptop){
+    width: 200%;
+    padding: 10px 0px 10px 25px;
+  }
+}
+.button_offre{
+  width: 100%;
+  color: $color_typo;
+  margin-top: 3em;
+  border-radius: 5px;
+  background-color: $color_gray;
+  border: none;
+  font-weight: 500;
+  text-align: center;
+  @include breakpoint(laptop){
+    margin: 0;
+    width: 40%;
+    padding: 10px 0px 10px 25px;
+
+  }
 
 }
