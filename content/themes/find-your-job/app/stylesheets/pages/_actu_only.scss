@@ -1,0 +1,144 @@
+
+.main_actu_only{
+@include breakpoint(laptop){
+  width: 1400px;
+  margin: 0 auto;
+}
+
+}
+.main_actu_only_flex{
+    @include breakpoint(laptop){
+      display: flex;
+      flex-direction: row-reverse;
+
+    }
+}
+
+.section_post_only{
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  color: #272424;
+  @include breakpoint(laptop){
+  width: 70%;
+  }
+}
+.section_post_only_title{
+  // font-size: 2em;
+}
+.section_post_only_infos div{
+  display: inline-block;
+  padding-right: 20px,
+
+}
+.section_post_only_infos i{
+  padding-right: 10px,
+}
+
+.section_post_only_article{
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.section_post_only_img{
+  width: 100%;
+  margin-bottom: 1em;
+}
+.section_post_only_title_content{
+  font-size: 1.5em;
+  padding: 2em 0 1em 0;
+}
+.section_post_only_list{
+  padding: 2em 0em 0em 3em;
+
+}
+
+
+/////////////////////////////
+// Pagination
+/////////////////////////////
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    padding: 4px 8px;
+    // padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #272424;
+    color: white;
+    border: 1px solid #272424;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/////////////////////////////
+// Aside
+/////////////////////////////
+
+.section_aside_post{
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    color: $color_gray;
+      @include breakpoint(laptop){
+      width: 30%;
+      font-size: 0.8em;
+      }
+}
+
+.section_aside_img{
+    width: 100%;
+}
+.section_aside_title_top{
+  padding-top: 1em;
+  font-size: 2em;
+  border-top: 3px solid $color_blue;
+  font-weight: 400;
+  @include breakpoint(laptop){
+    font-size: 2.5em;
+  }
+}
+.section_aside_title_bottom{
+  padding-top: 1em;
+  font-size: 1.5em;
+  @include breakpoint(laptop){
+    font-size: 2em;
+  }
+}
+.section_aside_content{
+  font-size: 1.3em
+}
+.section_aside_logo{
+  width: 100%;
+  height: 100px;
+  margin: 3em 0 3em 0;
+  @include breakpoint(laptop){
+    height: 15em;
+  }
+}
+
+.btn_aside{
+
+    width: 100%;
+    color: $color_typo;
+    border-radius: 5px;
+    background-color: $color_gray;
+    border: none;
+    font-weight: 500;
+    text-align: center;
+    margin: 0.3em 0 0.3em 0;
+    @include breakpoint(laptop){
+
+
+    }
+
+}
