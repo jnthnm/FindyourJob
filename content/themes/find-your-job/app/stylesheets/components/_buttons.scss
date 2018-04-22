@@ -5,6 +5,28 @@ Button de la nav bar
   color:$color_blue !important;
 }
 .btn-primary{
+  margin: 2em;
   background-color: $color_blue !important;
-  font-size:11px !important;
+  font-size:15px !important;
+}
+.btn-blue{
+  margin: 2em;
+  background-color: $color_title;
+  font-size: 15px !important;
+
+}
+/*********************
+Button listen
+*********************/
+.btn-click{
+  background-color: $color_typo;
+  border: none !important;
+  width: 10em;
+  border-radius:13%;
+  text-transform: uppercase;
+  color: $color_gray;
+  font-size: 11px;
+    @include breakpoint(tablet) {
+    font-size: 15px;
+  }
 }
