@@ -1,6 +1,3 @@
-//@import 'bootstrap';
-// @import 'font-awesome';
-
 
 /*********************
 Abstrats
@@ -27,10 +24,28 @@ Components
 /*********************
 Layout
 *********************/
+
+
+@import 'layout/footer',
+'layout/header',
+'layout/profil',
+'layout/home';
+
+
+/*********************
+Pages
+*********************/
+
+@import 'pages/boutique',
+        'pages/tarifs',
+        'pages/actu_only';
+
+=======
 @import 'layout/footer',
         'layout/header',
         'layout/profil',
         'layout/home';
+
 
 
 /*********************
@@ -41,9 +56,8 @@ Pages
         'pages/tarifs',
         'pages/profil';
 
-
 /*********************
-text-shadow:
+Shame
 *********************/
 
 @import 'shame';

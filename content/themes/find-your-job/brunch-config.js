@@ -34,7 +34,6 @@ exports.npm = {
   enabled: true,
   globals: {
     $: 'jquery',
-    jQuery: 'jquery',
     bootstrap: 'bootstrap'
   },
   styles: {
