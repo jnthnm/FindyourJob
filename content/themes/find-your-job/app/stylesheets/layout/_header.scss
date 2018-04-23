@@ -4,12 +4,14 @@ BAR de dessus
 *********************/
 .header_blue{
   background-color: $color_blue;
-  width: 100%;
+  max-width: 100%;
   color: white;
   text-transform: uppercase;
-  padding: 0.3em;
-  padding-left:1em;
-  padding-right: 1em;
+  // padding: 0.3em;
+  // padding-left:1em;
+  // padding-right: 3em;
+  padding: auto;
+  text-align: center;
   font-weight: 500;
 }
 .dark{
@@ -66,7 +68,9 @@ navbar toogle
 }
 .navbar-toggler-icon {
   color: $color_blue !important;
-
+}
+.navbar-light .navbar-toggler{
+  margin-top:-9em;
 }
 .collapse a {
   color: $color_blue !important;
@@ -92,6 +96,7 @@ header ul li a {
 Bar bleu et noir
 *******************/
   .wrap {
+  max-width: 100%;
   position: relative;
   }
   .barre{

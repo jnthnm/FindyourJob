@@ -1,0 +1,19 @@
+/*********************
+BG- formules
+*********************/
+.radial-gradient {
+  // position:fixed;
+  // top:0px;
+  // left:0px;
+  margin-top:-7.6em;
+  height:100%;
+  width:100%;
+
+  /*Fallback if gradeints don't work */
+  background:$color_blue;
+  /*Linear gradient... */
+  background:
+    radial-gradient(
+     at center, $color_blue, #4790BF
+    );
+}
