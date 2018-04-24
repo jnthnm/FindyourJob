@@ -1,0 +1,113 @@
+.wrap_paiement{
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightgrey;
+  @include breakpoint(tablet){
+    display: flex;
+
+    // margin: 0 auto;
+    // justify-content: center;
+    width: 768px;
+
+  }
+
+}
+
+.paiement_gauche_wrap{
+  width: 40%;
+
+}
+
+.paiement_gauche{
+  // display: flex;
+  // flex-direction: column;
+  margin-left: 1em;
+}
+
+.paiement_middle{
+    // flex-direction: column;
+    // display: flex;
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint(tablet){
+
+      width: 60%;
+    }
+}
+
+
+
+.loupe {
+text-align: center;
+
+}
+
+.logo_panier_gauche{
+    text-align: center;
+    font-size: 5em;
+}
+
+.loupe {
+  // display: flex;
+}
+
+.panier {
+
+  // padding-left: 40%;
+}
+.mode_paiment {
+  display: flex;
+  justify-content: center;
+  // flex-direction: column;
+  // padding-left: 2em;
+  // padding-top: 1em;
+    @include breakpoint(laptop){
+      // flex-wrap: wrap;
+    // flex-direction: row;
+    }
+}
+.mode_paiment input{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.mode_de_paiement{
+    // display: flex;
+    // flex-direction: column;
+    padding: 1em;
+    margin-left: 1em;
+}
+
+
+
+.paiement_button_confirm{
+  margin: auto;
+}
+
+.checkbox_paiement {
+  padding-top: 2em;
+
+}
+.checkbox_paiement input{
+  width: 20px;
+  margin: 0;
+}
+
+.input_custom_paiement{
+  border: solid;
+    // width: 70%;
+}
+
+.input_custom_paiement_crypto{
+  width: 40%;
+  border: solid;
+}
+
+.button_paiement {
+      padding: 1em;
+      background-color: $color_blue;
+      color: $color_title;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 8em;
+}
