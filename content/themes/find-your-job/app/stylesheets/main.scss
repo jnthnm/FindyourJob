@@ -31,18 +31,13 @@ Layout
 /*********************
 Pages
 *********************/
-@import 'layout/footer',
-        'layout/header',
-        'layout/profil',
-        'layout/home';
-/*********************
-Pages
-*********************/
 
 @import 'pages/actu_only',
         'pages/boutique',
+        'pages/page_actu',
         'pages/profil',
-        'pages/tarifs';
+        'pages/tarifs',
+        'pages/test';
 
 
 /*********************

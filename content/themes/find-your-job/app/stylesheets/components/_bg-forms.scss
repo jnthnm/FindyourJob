@@ -2,18 +2,23 @@
 BG- formules
 *********************/
 .radial-gradient {
-  // position:fixed;
-  // top:0px;
-  // left:0px;
-  margin-top:-7.6em;
+  z-index:1;
+  position:fixed;
+  top:0px;
+  left:0px;
   height:100%;
   width:100%;
-
   /*Fallback if gradeints don't work */
-  background:$color_blue;
+  background: $color_blue;
+  background-attachment: scroll;
   /*Linear gradient... */
   background:
     radial-gradient(
-     at center, $color_blue, #4790BF
+     at center, $color_blue, #2c2c54
     );
+}
+section .radial-gradient {
+  -webkit-filter : grayscale(100%);
+  filter : grayscale(100%);
+
 }

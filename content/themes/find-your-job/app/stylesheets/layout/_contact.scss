@@ -1,10 +1,73 @@
 /*********************
 Contact
 *********************/
-.contact-form {
-  margin: 3em 6em;
-//  border: 1px solid $color-gray;
+.croix{
+ font-size: 20px;
+ color:$color_title;
+ float: right;
 }
-.book-icon {
-  font-size: 20px !important;
+.book-icon{
+ color: $color_title;
+ font-size:50px;
+
 }
+.form_all{
+  margin-top:2em;
+  background-color: rgba(117, 190, 218, 0.0); /* 0.0 - transparent */
+  align-content: center !important;
+}
+.form_all_content{
+  margin-bottom: 3em;
+  display: block;
+
+}
+.md-form {
+ font-size: 30px;
+ color: grey;
+ @include breakpoint(phablet) {
+      width: 600px;
+      margin:0 auto;
+
+      border-radius: 10px;
+    }
+
+}
+.prefix{
+ background-color: $color_title;
+ border: 1px solid grey;
+ height:37px;
+ width:37px;
+}
+.cadre{
+    @include breakpoint(tablet) {
+    justify-content: center;
+    border: 1px solid $color_title;
+    border-radius: 10px;
+    width: 700px;
+    margin:0 auto;
+}
+}
+.btn_me{
+  background-color: $color_blue !important;
+  color: $color_title !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 60% !important;
+
+}
+
+
+
+.form-elegant .font-small {
+  color: $color_title;
+
+  font-size: 0.8rem; }
+
+.form-elegant .z-depth-1a {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25); }
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }

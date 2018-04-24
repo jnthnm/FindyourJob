@@ -1,4 +1,5 @@
 
+
 /*********************
 BAR de dessus
 *********************/
@@ -95,9 +96,10 @@ header ul li a {
 /*********************
 Bar bleu et noir
 *******************/
-  .wrap {
+  .color_bar {
   max-width: 100%;
   position: relative;
+  height: 60px;
   }
   .barre{
     content: '';

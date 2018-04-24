@@ -52,7 +52,7 @@
                     </div><!-- navbar-nav-->
                 </div> <!--collapse-->
         </nav>
-<div class="wrap">
+<div class="color_bar">
 
 <div class="barre"> </div>
     <div class="color"></div>
@@ -60,104 +60,56 @@
     </header> <!--header container-->
 <!--==========main==========-->
 <main>
-    <section>
-<div class="radial-gradient">
-<form class="contact-form">
+    <section class="container-fluid radial-gradient align-items-center">
+<a class="btn-toggle croix" href="#"> &#10060;</a>
+<div class="card form_all ">
 
-    <p class="h4 text-center mb-4 book-icon"><i class="fa fa-book"></i></p> 
+    <!-- Card body -->
+    <div class="card-body form_all_content">
+
+        <!-- Material form register -->
+        <form class="cadre">
+            <p class="h4 text-center py-4"><i class="fa fa-book book-icon"></i></p>
+
+            <!-- Material input text -->
+                <div class=" md-form ">
+                    <label for="materialFormCardEmailEx" class=""><i class="fa fa-user prefix"></i></label>
+                    <input type="text" id="materialFormCardNameEx" class="form-control" placeholder="Nom">
+                </div>
     <!-- Material input text -->
-    <div class="md-form">
-        <i class="fa fa-user prefix grey-text"></i>
-        <input type="text" id="materialFormContactNameEx" class="form-control">
-        <label for="materialFormContactNameEx">Your name</label>
-    </div>
+                <div class=" md-form ">
+                    <label for="materialFormCardEmailEx"><i class="fa fa-user prefix"></i></label>
+                    <input type="text" id="materialFormCardFirstNameEx" class="form-control" placeholder="Prénom">
+                </div>
+            <!-- Material input email -->
+                <div class="md-form ">
+                    <label for="materialFormCardEmailEx" class="font-weight-light"><i class="fa fa-envelope prefix"></i></label>
+                    <input type="email" id="materialFormCardEmailEx" class="form-control" placeholder="Adresse Mail">
+                </div>
+                <div class="form-group md-form ">
+                    <label for="exampleFormControlSelect1"><i class="fa fa-arrow-down prefix"></i></label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Particulier</option>
+                      <option>Professionnel</option>
+                      <option>Centre de formation</option>
+                      <option>Membre</option>
+                    </select>
+                </div>
+                <div class="md-form">
+                    <label for="materialFormContactMessageEx"><i class="fa fa-pencil prefix"></i></label>
+                    <textarea type="text" placeholder="Message" id="materialFormContactMessageEx" class="form-control md-textarea" rows="6"></textarea>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
+                </div> <br><br>
 
-    <!-- Material input email -->
-    <div class="md-form">
-        <i class="fa fa-envelope prefix grey-text"></i>
-        <input type="email" id="materialFormContactEmailEx" class="form-control">
-        <label for="materialFormContactEmailEx">Your email</label>
-    </div>
-
-    <!-- Material input subject -->
-    <div class="md-form">
-        <i class="fa fa-tag prefix grey-text"></i>
-        <input type="text" id="materialFormContactSubjectEx" class="form-control">
-        <label for="materialFormContactSubjectEx">Subject</label>
-    </div>
-
-    <!-- Material textarea message -->
-    <div class="md-form">
-        <i class="fa fa-pencil prefix grey-text"></i>
-        <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
-        <label for="materialFormContactMessageEx">Your message</label>
-    </div>
-
-    <div class="text-center mt-4">
-        <button class="btn btn-outline-secondary" type="submit">Send<i class="fa fa-paper-plane-o ml-2"></i></button>
-    </div>
-</form>
-<!-- Material form contact -->
-
-</div>
+            </form>    <!-- Material form register -->
+        </div><!-- Card body -->
+    </div><!-- Card -->
 </section> <!--contact-form-->
 </main>
 
 
-
-
-
-<!--Footer-->
-     <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
-         <!--Footer Links-->
-         <div class="container text-center text-md-left">
-             <!-- Footer links -->
-             <div class="row text-center text-md-left mt-4 pb-4">
-                 <!--First column-->
-                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                     <h6 class="text-uppercase mb-4 font-weight-bold">Texte  </h6>
-                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                 </div>
-                 <!--/.First column-->
-                 <hr class="w-100 clearfix d-md-none">
-                 <!--Second column-->
-                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                     <h6 class="text-uppercase mb-4 font-weight-bold">Coordonées</h6>
-                         <!--Info-->
-               <p>
-                   <i class="fa fa-home mr-3"></i> 10 rue de la paie,<br> 75000 Paris </p>
-               <p>
-                   <i class="fa fa-envelope mr-3"></i> findjob@sitename.com</p>
-               <p>
-                   <i class="fa fa-phone mr-3"></i> +33 234 567 88 - Office</p>
-               <p>
-                   <i class="fa fa-print mr-3"></i> + 33 234 567 89 - Fax</p>
-                 </div>
-                 <!--/.Second column-->
-                 <hr class="w-100 clearfix d-md-none">
-                 <!--Third column-->
-                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                     <h6 class="text-uppercase mb-4 font-weight-bold">Réseau Sociaux</h6>
-                             <!--Social buttons-->
-                             <div class="social_text">
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
-                                 <ul class="list-unstyled list-inline">
-                                     <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
-                                     <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
-                                     <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
-                                     <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
-                                 </ul>
-                             </div>
-                             <!--/.Social buttons-->
-                         </div><!--.Third column-->
-             </div> <!-- Footer links -->
-                   </div> <!-- container-footer-->
-               </footer>
-               <!--/.Footer-->
-       <div class="footer_black text-align-center">
-                 <!--Copyright-->
-                     <p class="footer_black_copy"> © Copyright 2018</p>
-                 </div><!--/.Copyright-->
    </div> <!--wrapper-->
 </body>
 </html>

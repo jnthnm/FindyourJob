@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 3em;
+    margin: -3px;
     border-top: 3px solid $color_typo;
     border-bottom: 3px solid $color_typo;
   }
@@ -389,7 +389,7 @@
   background-position: 10px 10px;
   padding: 5px 0px 5px 25px;
   @include breakpoint(laptop){
-    width: 150%;
+    width: 100%;
     padding: 10px 0px 10px 25px;
   }
 }
