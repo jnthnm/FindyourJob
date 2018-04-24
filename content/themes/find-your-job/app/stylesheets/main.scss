@@ -37,21 +37,14 @@ Pages
 *********************/
 
 
-@import 'pages/boutique',
+@import 'pages/a_propos',
+				'pages/boutique',
         'pages/tarifs',
         'pages/actu_only',
         'pages/page_actu',
+				'pages/progression',
         'pages/test',
         'pages/profil';
-
-
-
-
-@import 'layout/footer',
-        'layout/header',
-        'layout/profil',
-        'layout/home';
-
 
 
 

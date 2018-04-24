@@ -1,0 +1,83 @@
+.main_progress{
+
+	@include breakpoint(laptop){
+		width:1400px;
+		margin: 0 auto;
+
+	}
+}
+
+.progress-div{
+
+	background-color: $color_blue;
+	height: 60px;
+}
+
+.progress_form {
+	font-size:19px;
+text-align: center;
+color: $color_title;
+text-transform: uppercase;
+font-weight: 600;
+@include breakpoint(laptop){
+	width: 75%;
+	text-align: center;
+}
+
+}
+//.border{
+	//color:$color_title !important;
+	//text-transform: uppercase;
+	//border: 1px solid $color_gray;
+	//background-color: $color_gray;
+
+.form_h3 {
+	font-size: 19px;
+	text-transform: uppercase;
+	color: $color_profil_title;
+	text-align: center;
+	margin: 1em;
+}
+
+.vid {
+	text-align: center;
+}
+
+.progress_shema {
+	margin: 35px;
+	padding: 35px;
+}
+
+.ip_progress{
+	text-transform: uppercase;
+	color: $color_title;
+	background-color: $color_gray;
+	border: 5px solid $color_gray;
+	display: none;
+	@include breakpoint(tablet) {
+		display: inherit;
+
+
+
+	}
+}
+.ip_progress_number{
+	display: none;
+	@include breakpoint(tablet) {
+  display: inherit;
+	color: $color_title;
+	background-color: $color_gray;
+	border-radius: 50%;
+}
+}
+
+
+.return{
+	margin: 30px;
+	text-align: center;
+
+}
+
+.loupe_img {
+	margin: 15px;
+}
