@@ -21,6 +21,8 @@ $(".right").click(function(){
 $(app.init);
 
 
+
+
 // if (window.matchMedia("(min-width: 767px)").matches) {
 //
 // $('test').removeClass('section_img');
