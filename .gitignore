@@ -6,7 +6,7 @@ wp-config.php
 vendor/
 wp/
 content/themes/twentyseventeen
- content/plugins/contact-form-7/
+content/plugins/contact-form-7/
 content/uploads
 content/upgrade
 content/debug.log

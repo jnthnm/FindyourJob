@@ -1,0 +1,45 @@
+/*********************
+BG- formules
+*********************/
+.radial-gradient {
+  z-index:1;
+  position:fixed;
+  overflow-y: scroll;
+margin-top:0;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  /*Fallback if gradeints don't work */
+  background: $color_blue;
+  background-attachment: scroll;
+  /*Linear gradient... */
+  background:
+    radial-gradient(
+     at center, $color_blue, #2c2c54
+    );
+}
+section .radial-gradient {
+  -webkit-filter : grayscale(100%);
+  filter : grayscale(100%);
+
+}
+
+.test{
+  margin: 0;
+
+}
+.tests{
+  display: flex;
+  background-color: $color_typo;
+
+}
+.tests i{
+  background-color: $color_typo;
+  color: $color_blue;
+  padding: 0 1em 0 1em;
+
+}
+.testss{
+  border: none;
+}
