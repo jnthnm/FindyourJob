@@ -1,10 +1,9 @@
 
 
-
 ////////////////////////////////////////////////////////////////////////////////
 // Page concours
 ////////////////////////////////////////////////////////////////////////////////
-body{
+.mega_wrap{
   position: relative;
   background-image: url("/images/choix.jpeg");
   background-repeat: no-repeat;
@@ -12,30 +11,36 @@ body{
   background-size:cover;
 
 
+
 }
-.test{
+.background_blur{
   background-color: transparentize($color_blue, 0.3);
   height: 100vh;
   filter: blur(50px);
 }
 
-
+.wrap_size{
+  width: 80%;
+  margin: 0 auto;
+}
 .wrap{
   // visibility: hidden;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   position: fixed;
   top:0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: auto;
+  // height: auto;
   z-index: 10;
   overflow-y: scroll;
 
-  @include breakpoint(laptop){
-    width: 1400px;
-  }
+
+  // @include breakpoint(laptop){
+  //   // padding: 3em 20em 3em 20em;
+  //   // width: 1400px;
+  // }
 }
 
 .ico{
