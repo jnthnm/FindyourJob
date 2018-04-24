@@ -19,9 +19,6 @@ body{
   filter: blur(50px);
 }
 
-.wrap::before{
-
-}
 
 .wrap{
   // visibility: hidden;
@@ -39,7 +36,12 @@ body{
   @include breakpoint(laptop){
     width: 1400px;
   }
+}
 
+.ico{
+  color: $color_typo;
+  float: right;
+  margin: 1em 1em 0 0;
 }
 
 .form_wrap{
