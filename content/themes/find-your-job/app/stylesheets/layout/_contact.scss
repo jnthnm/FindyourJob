@@ -33,10 +33,11 @@ Contact
 
 }
 .prefix{
- background-color: $color_title;
- border: 1px solid grey;
- height:37px;
- width:37px;
+  color: white;
+ // background-color: $color_title;
+ // border: 1px solid grey;
+ // height:37px;
+ // width:37px;
 }
 .cadre{
     @include breakpoint(tablet) {
