@@ -44,8 +44,9 @@ font-weight: 600;
 }
 
 .progress_shema {
-	margin: 35px;
-	padding: 35px;
+
+	padding: 25px;
+	margin: 25px;
 }
 
 .ip_progress{
@@ -61,16 +62,57 @@ font-weight: 600;
 
 	}
 }
+
+.progress {
+	margin: 25px;
+}
+
+
+.trait{
+	background-color: $color_gray;
+	width: 3px;
+	height: 70px;
+
+}
+// .wrap_trait{
+// 	display: flex;
+// 	justify-content: space-around;
+// }
 .ip_progress_number{
+
 	display: none;
 	@include breakpoint(tablet) {
+		width: 40px;
+		height: 40px;
   display: inherit;
 	color: $color_title;
 	background-color: $color_gray;
 	border-radius: 50%;
 }
 }
+.ip_progress_number span{
+	display: none;
+	@include breakpoint(tablet) {
+	display: inherit;
+	transform: translateX(140%);
 
+}
+}
+.span_number{
+	display: none;
+	@include breakpoint(tablet) {
+	transform: translateX(270%)!important;
+	display: inherit;
+}
+}
+.form_numbers{
+	display: none;
+	@include breakpoint(tablet) {
+display: inherit;
+	display: flex;
+	justify-content: space-around;
+}
+}
 
 .return{
 	margin: 30px;

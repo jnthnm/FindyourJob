@@ -13,6 +13,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1.5em;
+	padding: 1em 1em 1em 0;
+	@include breakpoint(laptop){
+	padding: 1em 1em 1em 0;
+	}
+
 
 }
 .cont_img {
@@ -67,10 +72,11 @@ width: 60%;
 .reflex_two {
 	background-color: $color_gray;
 padding: 1em 1em 1em 0;
-margin-bottom: 1em;
+margin: 0;
 @include breakpoint(laptop){
 width: 60%;
 height: 255px;
+
 //position: absolute;
 //bottom: 770px;
 }
@@ -106,7 +112,8 @@ height: 255px;
 	}
 }
 .section_propos_post{
-	margin-top: 17px;
+	margin-top:0;
+	margin-bottom:52px;
 }
 .reflex_text_right_two{
 	width: 90%;
@@ -177,7 +184,7 @@ width:100px;
 
 .pres_two {
 	position: absolute;
-	top: 150px;
+	top: 140px;
 	left: 220px;
 	width: 100px;
 	@include breakpoint(tablet){
@@ -197,7 +204,7 @@ width:100px;
 .pres_three {
 	position: absolute;
 	bottom: 50px;
-	right: 90px;
+	right: 85px;
 
 	width: 100px;
 	@include breakpoint(tablet){

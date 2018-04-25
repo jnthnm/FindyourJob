@@ -1,4 +1,3 @@
-
 /*********************
 Abstrats
 *********************/
@@ -17,25 +16,23 @@ BASE
 Components
 *********************/
 
-@import 'components/buttons',
+@import 'components/bg-forms',
+        'components/buttons',
         'components/carousel';
-
 
 /*********************
 Layout
 *********************/
 
-
-@import 'layout/footer',
+@import 'layout/contact',
+        'layout/footer',
         'layout/header',
-        'layout/profil',
-        'layout/home';
-
+        'layout/home',
+        'layout/profil';
 
 /*********************
 Pages
 *********************/
-
 
 @import 'pages/a_propos',
 				'pages/boutique',
@@ -44,8 +41,8 @@ Pages
         'pages/page_actu',
 				'pages/progression',
         'pages/test',
+				'pages/page_paiement',
         'pages/profil';
-
 
 
 /*********************

@@ -14,6 +14,7 @@ MEDIA
     margin: none;
     .media_box{
       display: flex;
+      margin:auto;
       margin-top: 1em;
       color: $color_gray;
       border:none !important;
@@ -104,6 +105,13 @@ LISTEN
                 border-bottom: 15em solid $color_blue ;
               border-right:7em solid transparent;
           }
+            @include breakpoint(laptop) {
+              margin :2em 0 2em 0;
+                width: 60em;
+                height: 7em;
+                border-bottom: 15em solid $color_blue ;
+              border-right:7em solid transparent;
+          }
   }
 }
   .listen_concour{
@@ -122,7 +130,6 @@ LISTEN
       }
     }
     .listen-equip{
-      order: 1;
       position: absolute;
     }
     .listen_equip_title {
@@ -131,10 +138,18 @@ LISTEN
       font-weight: none !important;
         font-weight: none !important;
             @include breakpoint(tablet) {
-            font-size: 15px;
+            font-size: 15px !important;
+          }
+            @include breakpoint(laptop) {
+            font-size: 18px !important;
           }
     }
+  .listen_equip_content{
+      @include breakpoint(laptop) {
+      font-size: 18px !important;
+    }
 
+  }
     .listen_equip{
       margin-top:2.5em;
     }
@@ -144,6 +159,10 @@ LISTEN
 /*********************
 FORMULES
 *********************/
+.formules{
+  align-content: center;
+}
+
 .formules_title{
   margin-top: 1em;
   font-size:9px;
@@ -154,65 +173,82 @@ FORMULES
   text-align: center;
   height: 4em;
 }
-.formules-content-all {
+
+.formules_prop{
+width: 100%;
+margin: 0 auto;
+position: relative;
+  @include breakpoint(laptop){
+    width: 1400px;
+    display: grid;
+    // align-items: center;
+  }
+}
+.one{
+  @include breakpoint(laptop){
+    grid-column: 1;
+  }
+}
+.two{
+  @include breakpoint(laptop){
+    grid-column: 2;
+  }
+}
+.three{
+  @include breakpoint(laptop){
+    grid-column: 3;
+  }
+}
+.formules_all{
+  padding: 0;
   margin-top: 3em;
+  margin-bottom: 5em;
+  max-width: 250px;;
   text-align: center;
-}
-.panel{
-  margin-top:3em;
-}
-.impair{
-}
-.panel-body li{
-  list-style: none;
   text-decoration: underline;
-  color:$color_gray;
-  text-align: center;
+  box-shadow: 0px 10px 10px #aaa;
+  border-radius: 15px 15px 0 0;
 }
-.impair_title{
+.formule_title{
+  border-radius: 15px 15px 0 0;
+  padding: 1em 0 0.5em 0;
   color: $color_typo;
   background-color: $color_blue;
-  text-transform:uppercase;
   text-decoration: underline;
-  font-weight: none;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height:2em;
-  font-size: 18px;
- @include breakpoint(tablet) {
-   font-size: 21px;
- }
+
+}
+.formule_title h3{
+  font-weight: 400;
+  font-size: 1.5em;
+
+}
+.formules_content{
+  padding-top: 2em;
+}
+.button{
+  border-radius: 20px;
+  padding: 0.5em 2em 0.5em 2em;
+  text-transform: uppercase;
+  border: none;
 }
 
-.global{
-  height: 15em;
--webkit-box-shadow: 2px 3px 45px 9px rgba(39,36,36,0.13);
-box-shadow: 2px 3px 45px 9px rgba(39,36,36,0.13);
-}
-.blue_global{
+.color_back{
   background-color: $color_blue;
-}
-.panel-footer{
-  align-content: center;
-  margin: 1em auto 3em
-}
-.pair_title{
   color: $color_typo;
+}
+
+.color_h{
   background-color: $color_gray;
-  text-transform:uppercase;
-  text-decoration: underline;
-  font-weight: none;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height:2em;
-  font-size: 18px;
- @include breakpoint(tablet) {
-   font-size: 21px;
- }
 }
-
-
-
+.but_white{
+  margin: 2em 0 2em 0;
+  color: $color_blue;
+  background-color: $color_typo;
+    border-radius: 20px;
+    padding: 0.5em 2em 0.5em 2em;
+    text-transform: uppercase;
+    border: none;
+}
 
 /*********************
 POPULAR

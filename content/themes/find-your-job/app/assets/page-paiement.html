@@ -2,48 +2,111 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Paiement</title>
         <link rel="stylesheet" href="css/vendor.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
     <body>
-      <main>
-        <aside>
-          <img src="images/cochon.svg" alt="logopanier">
-            <h4>Votre panier</h4>
-              <p>Commande</p>
+
+      <main class="wrap_paiement">
+
+      <div class="paiement_gauche_wrap">
+        <div class="logo_panier_gauche">
+        <i class="fa fa-cart-arrow-down panier"></i>
+      </div>
+        <div class="paiement_gauche">
+          <h4>Votre panier</h4>
+        </div>
+        <div class="paiement_gauche">
+              <p>Commande :</p>
+          </div>
+          <div class="paiement_gauche">
                 <p>Article :</p>
+            </div>
+            <div class="paiement_gauche">
                   <p>Montant :</p>
-        </aside>
-        <div class="">
-          <img src="images/loupefind.png" alt="loupe">
+            </div>
+      </div>
+
+
+
+        <div class="paiement_middle">
+          <div class="loupe">
+          <img class="logo_loupe" src="images/loupefind.png" alt="loupe">
         </div>
-        <div class="">
-          <h5>Selectionner un mode de paiement</h5>
-            <input type="radio" id="visa"
-               name="mme" value="visa">
-              <img src="images/loupefind.png" alt="visa">
-            <input type="radio" id="mastercard"
-               name="mme" value="mastercard">
-              <img src="images/loupefind.png" alt="mastercard">
-            <input type="radio" id="cb"
-               name="mme" value="CB">
-              <img src="images/loupefind.png" alt="cb">
-            <input type="radio" id="paypal"
-               name="" value="paypal">
-              <img src="images/loupefind.png" alt="paypal">
-          <h5>Numéro de la carte</h5>
-              <input type="text" name="name" value="" />
-          <h5>Titulaire de la carte</h5>
-              <input type="text" name="name" value="" />
-          <h5>Date d'expiration</h5>
-              <input type="date" name="name" value="" />
-          <h5>Cryptogramme</h5>
-              <input type="text" name="name" value="" />
-          <input type="submit" name="envoyer" value="Confirmer">
-          <input type="checkbox" id="infos" name="save" value="saveinfos">
-            <label>Se souvenir de mes informations bancaires?</label>
+
+        <h5>Selectionner un mode de paiement</h5>
+        <div class="mode_paiment">
+
+
+
+              <div class="form-inline">
+
+              <i class="fa fa-cc-visa"></i>
+              <input type="radio" id="visa"
+                 name="visacard" value="visa">
+              </div>
+
+                <div class="form-inline">
+
+                <i class="fa fa-cc-mastercard"></i>
+                <input type="radio" id="mastercard"
+                   name="mastercard" value="mastercard">
+                </div>
+
+                  <div class="form-inline">
+
+                  <i class="fa fa-cc-amex"></i>
+                  <input type="radio" id="cb"
+                     name="creditcard" value="creditcard">
+                  </div>
+
+                    <div class="form-inline">
+
+                    <i class="fa fa-cc-paypal"></i>
+                    <input type="radio" id="paypal"
+                       name="paypal" value="paypal">
+                    </div>
+
+
+          </div>
+
+          <div class="mode_de_paiement">
+          <label for="">Numéro de la carte</label>
+              <div class="">
+                <input class="input_custom_paiement" type="text">
+              </div>
+
+          <label for="" class="loggins">Titulaire de la carte</label>
+              <div class="">
+                <input class="input_custom_paiement" type="text">
+              </div>
+
+          <label for="" class="loggins">Date d'expiration</label>
+              <div class="">
+                <input class="input_custom_paiement_crypto" type="date">
+              </div>
+
+          <label for="" class="loggins">Cryptogramme</label>
+              <div class="">
+                <input class="input_custom_paiement_crypto" type="text">
+              </div>
+          </div>
+
+          <div class="paiement_button_confirm">
+          <input class="button_paiement" type="submit" name="envoyer" value="Confirmer">
         </div>
+
+          <div class="checkbox_paiement">
+          <input type="checkbox" id="infos" name="save" value="saveinfos">Se souvenir de mes informations bancaires?
+        </div>
+        </div>
+
       </main>
+
+      <script src="js/vendor.js"></script>
+      <script src="js/app.js"></script>
+
     </body>
 </html>
