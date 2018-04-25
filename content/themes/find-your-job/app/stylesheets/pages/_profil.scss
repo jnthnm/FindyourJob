@@ -3,6 +3,7 @@
   max-width: 100%;
   height: 25px;
   background-color: $color_gray;
+
   margin-bottom: 2em;
 }
 
@@ -16,8 +17,9 @@
 
 .main_profil{
    margin: 0 auto;
-   // background-color: $color_profil;
-   background-color: lightgrey;
+   background-color: rgba(73, 128, 191, 0.5); 
+
+   color: $color_gray;
    @include breakpoint(laptop){
      width: 1400px;
 
@@ -26,7 +28,6 @@
 
 .wrap_content{
   @include breakpoint(laptop){
-
     display: flex;
   }
 }
