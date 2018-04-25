@@ -81,10 +81,10 @@ MEDIA
 LISTEN
 *********************/
  .listen_wrap{
-
   display: inline-block;
   flex-direction: column;
   width: 100%;
+
   }
   .listen {
     color: white;
@@ -94,10 +94,11 @@ LISTEN
     background-color: $color_gray !important;
     .blue{
       height: 15em;
-      width: 20em;
+      width: 25em;
       margin :3em 0 3em 2em;
       border-bottom: 17em solid $color_blue ;
-        font-weight: none !important;
+      font-weight: none !important;
+
             @include breakpoint(tablet) {
               margin :2em 0 2em 0;
                 width: 50em;
@@ -121,33 +122,40 @@ LISTEN
   }
   .listen_concour_title {
     margin-top: 1em;
-    text-align: center;
-    font-size: 11px;
     text-transform: uppercase;
-    font-weight: none !important;
         @include breakpoint(tablet) {
         font-size: 20px;
       }
     }
     .listen-equip{
       position: absolute;
+      @media screen and (min-width: 906px) {
+        font-size: 13px;
+      }
+      @media screen and (min-width: 1170px) {
+        font-size: 13px;
+      }
     }
     .listen_equip_title {
-      font-size: 11px !important;
-      text-transform: uppercase;
-      font-weight: none !important;
-        font-weight: none !important;
+        text-transform: uppercase;
+        font-size:18px;
             @include breakpoint(tablet) {
-            font-size: 15px !important;
+            font-size: 17px !important;
           }
             @include breakpoint(laptop) {
             font-size: 18px !important;
           }
     }
   .listen_equip_content{
-      @include breakpoint(laptop) {
-      font-size: 18px !important;
+      width: 600px;
+      text-align: center;
+      @include breakpoint(tablet) {
+        display: block;
+        width: 300px;
     }
+      @media screen and (min-width: 1170px) {
+        width: 400PX
+      }
 
   }
     .listen_equip{
@@ -181,7 +189,7 @@ position: relative;
   @include breakpoint(laptop){
     width: 1400px;
     display: grid;
-    // align-items: center;
+    align-items: center;
   }
 }
 .one{
