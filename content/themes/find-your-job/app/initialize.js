@@ -3,11 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   console.log('Initialized app');
 });
+
 /*********************
 Carousel
 *********************/
-Caroussel change de page au click et le temps de changement de page plus court
-Activate Carousel
+// Caroussel change de page au click et le temps de changement de page plus court
+// Activate Carousel
 $(".carousel").carousel();
 
 // Enable Carousel Indicators
@@ -60,7 +61,7 @@ $(document).mousemove(function(event) {
 // scrool sur les pages
 
 //Ajout des action js dans la fontion init!
-$(app.init);
+// $(app.init);
 
 
 
