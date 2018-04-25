@@ -2,8 +2,9 @@
 Abstrats
 *********************/
 
-@import 'abstracts/variables',
-         'abstracts/mixin';
+@import 'abstracts/mixin',
+        'abstracts/variables';
+
 
 /*********************
 BASE
@@ -16,7 +17,8 @@ BASE
 Components
 *********************/
 
-@import 'components/buttons',
+@import 'components/bg-forms',
+        'components/buttons',
         'components/carousel';
 
 /*********************
@@ -24,7 +26,8 @@ Layout
 *********************/
 
 
-@import 'layout/contact',
+@import 'layout/concours',
+        'layout/contact',
         'layout/footer',
         'layout/header',
         'layout/home',
@@ -37,14 +40,15 @@ Pages
 *********************/
 
 @import 'pages/a_propos',
-				'pages/boutique',
-        'pages/tarifs',
         'pages/actu_only',
+				'pages/boutique',
         'pages/page_actu',
+        'pages/page_paiement',
+        'pages/profil',
 				'pages/progression',
-        'pages/test',
-				'pages/page_paiement',
-        'pages/profil';
+        'pages/tarifs',
+        'pages/test';
+
 
 
 /*********************
