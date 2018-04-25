@@ -24,22 +24,3 @@ section .radial-gradient {
   filter : grayscale(100%);
 
 }
-
-.test{
-  margin: 0;
-
-}
-.tests{
-  display: flex;
-  background-color: $color_typo;
-
-}
-.tests i{
-  background-color: $color_typo;
-  color: $color_blue;
-  padding: 0 1em 0 1em;
-
-}
-.testss{
-  border: none;
-}

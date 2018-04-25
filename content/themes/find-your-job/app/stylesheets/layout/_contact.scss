@@ -6,38 +6,62 @@ Contact
  color:$color_title;
  float: right;
 }
+
 .book-icon{
  color: $color_title;
  font-size:50px;
-
 }
+
 .form_all{
   margin-top:2em;
   background-color: rgba(117, 190, 218, 0.0); /* 0.0 - transparent */
   align-content: center !important;
 }
+
 .form_all_content{
   margin-bottom: 3em;
   display: block;
 
 }
+
 .md-form {
  font-size: 30px;
- color: grey;
+ color: $color_form;
+ @include breakpoint(phablet) {
+   height: 50px;
+      width: 600px;
+      margin:0 auto;
+      border-radius: 10px;
+    }
+}
+
+.md-form-mess {
+ font-size: 30px;
+ color: $color_form;
  @include breakpoint(phablet) {
       width: 600px;
       margin:0 auto;
-
       border-radius: 10px;
     }
+}
 
+.form_b{
+  border: none;
+  border-radius: 10px;
 }
 .prefix{
-  color: white;
- // background-color: $color_title;
- // border: 1px solid grey;
- // height:37px;
- // width:37px;
+ margin: auto;
+}
+.place_prefix{
+ display: flex;
+ background-color: $color_typo;
+
+}
+.place_prefix i{
+ background-color: $color_typo;
+ color: $color_form;
+ padding: 0 1em 0 1em;
+ margin-top: 0.3em;
 }
 .cadre{
     @include breakpoint(tablet) {
@@ -47,6 +71,7 @@ Contact
     width: 700px;
     margin:0 auto;
 }
+
 }
 .btn_me{
   background-color: $color_blue !important;
@@ -56,13 +81,12 @@ Contact
   width: 60% !important;
 
 }
-
-
-
+.font-small p{
+  font-weight: 500 !important;
+}
 .form-elegant .font-small {
-  color: $color_title;
-
-  font-size: 0.8rem; }
+  color: $color_form;
+}
 
 .form-elegant .z-depth-1a {
   -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
