@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // do your setup here
-
-  console.log('Initialized app');
-});
 
 /*********************
 Carousel
@@ -56,6 +51,7 @@ $(document).mousemove(function(event) {
 
   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
 });
+
 
 
 // scrool sur les pages

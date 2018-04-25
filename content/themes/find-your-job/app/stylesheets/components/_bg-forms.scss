@@ -16,7 +16,7 @@ margin-top:0;
   /*Linear gradient... */
   background:
     radial-gradient(
-     at center, $color_blue, #2c2c54
+     at center, $color_blue, $color_dark_blue
     );
 }
 section .radial-gradient {

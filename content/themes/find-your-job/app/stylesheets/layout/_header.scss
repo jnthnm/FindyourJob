@@ -41,12 +41,14 @@
 .header_flex{
   // width: 50%;
 }
+
 .header_title{
   margin: 0;
   font-size: 1.64em;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: underline;
+
 
 }
 
@@ -91,8 +93,5 @@
   -webkit-transform:perspective(100) rotateX(-40deg);
   top: -26px;
   margin: 0 auto;
-  @include breakpoint(tablet){
-    // width: 200px;
 
-  }
 }

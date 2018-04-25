@@ -70,6 +70,7 @@ text-align: center;
 .mode_paiment input{
     width: 20px;
     margin-left: 5px;
+
 }
 
 .mode_de_paiement{
@@ -77,12 +78,16 @@ text-align: center;
     // flex-direction: column;
     padding: 1em;
     margin-left: 1em;
+    text-align: center;
 }
 
-
+h5 {
+  text-align: center;
+}
 
 .paiement_button_confirm{
-  margin: auto;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .checkbox_paiement {
@@ -110,5 +115,5 @@ text-align: center;
       color: $color_title;
       text-transform: uppercase;
       font-weight: bold;
-      margin-left: 8em;
+      
 }
