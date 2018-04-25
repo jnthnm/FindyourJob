@@ -45,7 +45,7 @@
                     <div class="navbar-nav navbar_link">
                         <a class="nav-item nav-link" href="homepage.html">Homepage</a>
                         <a class="nav-item nav-link" href="page-actu.html">Actus</a>
-                        <a class="nav-item nav-link" href="a-propos.html">A propos</a>
+                        <a class="nav-item nav-link" href="a_propos.html">A propos</a>
                         <a class="nav-item nav-link" href="contact.html">Contact</a>
                         <a class="nav-item nav-link" href="boutique.html">Boutique</a>
 
@@ -61,122 +61,71 @@
 <!--==========main==========-->
 <main>
     <section class="container-fluid radial-gradient blur align-items-center">
-<a class="btn-toggle croix" href="#"> &#10060;</a>
+        <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a>
 
-<section class="form-elegant">
+        <section class="form-elegant">
 
-    <!--Form without header-->
-    <div class="card form_all">
+            <!--Form without header-->
+            <div class="card form_all">
 
-        <div class="card-body mx-4 ">
+                <div class="card-body mx-4 ">
 
-<div class="cadre justify-content-center">
-            <!--Header-->
-            <div class="text-center mt-4">
-                <h3 class="mb-5"><i class="fa fa-graduation-cap book-icon"></i></h3>
-            </div>
+                    <div class="cadre justify-content-center">
+                        <!--Header-->
+                        <div class="text-center mt-4">
+                            <h3 class="mb-5"><i class="fa fa-graduation-cap book-icon"></i></h3>
+                        </div>
 
-            <!--Body-->
-            <div class="md-form text-center mt-4">
-                <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
-                <input type="text" id="Form-email1" class="form-control" placeholder="Email">
-            </div>
-
-            <div class="md-form text-center mt-4">
-                    <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                <input type="password" id="Form-pass1" class="form-control" placeholder="*********">
-                <p class="font-small d-flex justify-content-end">Mot de passe<a href="#" class="font-small ml-1"> oublié?</a></p>
-            </div>
-    <div class="text-center mt-4">
-        <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
-            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> ou avec :</p>
-
-                <div class="row my-3 d-flex justify-content-center">
-                    <!--Facebook-->
-                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-facebook blue-text text-center"></i></button>
-                    <!--Twitter-->
-                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button>
-                    <!--Google +-->
-                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
-                </div>
-                <h5 class="font-small">Nouveau Membres ?</h5>
-                <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
-
-
-                        <div class="md-form">
+                        <!--Body-->
+                        <div class="md-form text-center mt-4 place_prefix">
                             <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
-                            <input type="text" class="form-control" placeholder="Email" >
+                            <input type="text" id="Form-email1" class="form-control form_b" placeholder="Email">
                         </div>
 
-                        <div class="md-form pb-3">
+                        <div class="md-form text-center mt-4 place_prefix">
                                 <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                            <input type="password" class="form-control" placeholder="*********" >
+                            <input type="password" id="Form-pass1" class="form-control form_b" placeholder="*********">
                         </div>
-                            <div class="md-form pb-3">
-                            <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                                <input type="password" class="form-control" placeholder="*********">
-                            </div>
+                        <p class="font-small text-center"><a href="#" class="font-small ml-1"> Mot de passe oublié? </a></p>
+                        <div class="text-center mt-4 ">
+                            <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> ou avec :</p>
 
-            </div> <!--text-center-->
-        </div> <!--cadre-->
-    </div>
-</div><!--/Form without header-->
-</section> <!--form-elegant-->
+                                <div class="row my-3 d-flex justify-content-center">
+                                    <!--Facebook-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-facebook blue-text text-center"></i></button>
+                                    <!--Twitter-->
+                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button>
+                                    <!--Google +-->
+                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
+                                </div>
+                                <h5 class="font-small">Nouveau Membres ?</h5>
+                                <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
+
+
+                                <div class="md-form text-center mt-4 place_prefix">
+                                    <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
+                                    <input type="text"  class="form-control form_b" placeholder="Email">
+                                </div>
+                                <div class="md-form mt-4 place_prefix">
+                                        <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
+                                    <input type="password" class="form-control form_b" placeholder="*********" >
+                                </div>
+                                <div class="md-form mt-4 place_prefix">
+                                        <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
+                                    <input type="password" class="form-control form_b" placeholder="*********" >
+                                </div>  <br>
+                                <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
+                                <br> <br>
+
+                        </div> <!--text-center-->
+                </div> <!--cadre-->
+            </div>
+        </div><!--/Form without header-->
+    </section> <!--form-elegant-->
 </section> <!--contact-form-->
 </main>
 
-
- <!--===========Footer===========-->
-      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
-          <!--Footer Links-->
-          <div class="container text-center text-md-left">
-              <!-- Footer links -->
-              <div class="row text-center text-md-left mt-4 pb-4">
-                  <!--First column-->
-                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Texte  </h6>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                  </div>
-                  <!--/.First column-->
-                  <hr class="w-100 clearfix d-md-none">
-                  <!--Second column-->
-                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Coordonées</h6>
-                          <!--Info-->
-                <p>
-                    <i class="fa fa-home mr-3"></i> 10 rue de la paie,<br> 75000 Paris </p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> findjob@sitename.com</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> +33 234 567 88 - Office</p>
-                <p>
-                    <i class="fa fa-print mr-3"></i> + 33 234 567 89 - Fax</p>
-                  </div>
-                  <!--/.Second column-->
-                  <hr class="w-100 clearfix d-md-none">
-                  <!--Third column-->
-                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Réseau Sociaux</h6>
-                              <!--Social buttons-->
-                              <div class="social_text">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
-                                  <ul class="list-unstyled list-inline">
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
-                                  </ul>
-                              </div>
-                              <!--/.Social buttons-->
-                          </div><!--.Third column-->
-              </div> <!-- Footer links -->
-                    </div> <!-- container-footer-->
-                </footer>
-                <!--/.Footer-->
-        <div class="footer_black text-align-center">
-                  <!--Copyright-->
-                      <p class="footer_black_copy"> © Copyright 2018</p>
-                  </div><!--/.Copyright-->
     </div> <!--wrapper-->
 
 

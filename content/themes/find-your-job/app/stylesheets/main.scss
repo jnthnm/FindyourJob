@@ -36,16 +36,15 @@ Layout
 Pages
 *********************/
 
-@import 'pages/actu_only',
-        'pages/boutique',
-        'pages/page_actu',
-        'pages/profil',
+@import 'pages/a_propos',
+				'pages/boutique',
         'pages/tarifs',
-        'pages/profil',
+        'pages/actu_only',
+        'pages/page_actu',
+				'pages/progression',
         'pages/test',
-        'pages/page_paiement';
-
-
+				'pages/page_paiement',
+        'pages/profil';
 
 
 /*********************
