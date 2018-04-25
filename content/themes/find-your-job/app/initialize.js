@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
   // do your setup here
+
   console.log('Initialized app');
 });
 /*********************
 Carousel
 *********************/
-//Caroussel change de page au click et le temps de changement de page plus court
-// Activate Carousel
+Caroussel change de page au click et le temps de changement de page plus court
+Activate Carousel
 $(".carousel").carousel();
 
 // Enable Carousel Indicators
@@ -46,16 +47,22 @@ $(document).mousemove(function(event) {
   windowWidth = $(window).width();
   windowHeight = $(window).height();
 
+
   mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
   mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
 
   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
 });
 
+
+
+
 // scrool sur les pages
 
 //Ajout des action js dans la fontion init!
 $(app.init);
+
+
 
 
 // if (window.matchMedia("(min-width: 767px)").matches) {

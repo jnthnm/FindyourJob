@@ -16,19 +16,21 @@ BASE
 Components
 *********************/
 
-@import 'components/bg-forms',
-        'components/buttons',
+@import 'components/buttons',
         'components/carousel';
 
 /*********************
 Layout
 *********************/
 
+
 @import 'layout/contact',
         'layout/footer',
         'layout/header',
         'layout/home',
         'layout/profil';
+
+
 
 /*********************
 Pages

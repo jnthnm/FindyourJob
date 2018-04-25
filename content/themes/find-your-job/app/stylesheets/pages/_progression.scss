@@ -8,20 +8,32 @@
 }
 
 .progress-div{
+height: 60px;
+background-color: $color_blue;
+@include breakpoint(laptop){
+	background-color: white;
 
-	background-color: $color_blue;
-	height: 60px;
+}
+
 }
 
 .progress_form {
 	font-size:19px;
 text-align: center;
-color: $color_title;
+color: $color_typo;
 text-transform: uppercase;
 font-weight: 600;
+padding: 10px;
+margin: -20px;
+@include breakpoint(tablet){
+	margin: 0;
+}
 @include breakpoint(laptop){
-	width: 75%;
+	padding: 1em;
+	color: $color_blue;
 	text-align: center;
+	font-weight: 700;
+	font-size: 28px;
 }
 
 }
@@ -37,8 +49,15 @@ font-weight: 600;
 	color: $color_profil_title;
 	text-align: center;
 	margin: 1em;
+	text-decoration: underline;
 }
 
+.form_hh {
+	color: $color_profil_title;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin: 1em;
+}
 .vid {
 	text-align: center;
 }
@@ -94,14 +113,17 @@ font-weight: 600;
 	display: none;
 	@include breakpoint(tablet) {
 	display: inherit;
-	transform: translateX(140%);
+	transform: translateX(130%)!important;
+	transform: translateY(50%);
+
 
 }
 }
 .span_number{
 	display: none;
 	@include breakpoint(tablet) {
-	transform: translateX(270%)!important;
+	transform: translateX(50%)!important;
+
 	display: inherit;
 }
 }
