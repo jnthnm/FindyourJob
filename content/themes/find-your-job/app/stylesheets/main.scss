@@ -22,12 +22,15 @@ Components
 /*********************
 Layout
 *********************/
-@import
+
+
+@import 'layout/contact',
         'layout/footer',
         'layout/header',
         'layout/home',
-        'layout/profil',
         'layout/profil';
+
+
 
 /*********************
 Pages
@@ -38,7 +41,11 @@ Pages
         'pages/page_actu',
         'pages/profil',
         'pages/tarifs',
-        'pages/test';
+        'pages/profil',
+        'pages/test',
+        'pages/page_paiement';
+
+
 
 
 /*********************

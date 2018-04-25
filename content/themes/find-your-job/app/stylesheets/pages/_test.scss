@@ -1,5 +1,14 @@
 
 
+
+
+.lol{
+
+}
+
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // Page concours
 ////////////////////////////////////////////////////////////////////////////////
@@ -34,7 +43,7 @@
   right: 0;
   // height: auto;
   z-index: 10;
-  overflow-y: scroll;
+
 
 
   // @include breakpoint(laptop){
@@ -121,7 +130,9 @@
   margin: 4em 0 2em 0;
 }
 
-
+.form_abo{
+  width: 30px;
+}
 
 .form_abo_wrap {
   text-align: left;

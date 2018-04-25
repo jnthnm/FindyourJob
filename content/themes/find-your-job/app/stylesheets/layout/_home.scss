@@ -147,6 +147,7 @@ LISTEN
   .listen_equip_content{
       @include breakpoint(laptop) {
       font-size: 18px !important;
+
     }
 
   }
@@ -155,7 +156,9 @@ LISTEN
     }
 
 
+.row{
 
+}
 /*********************
 FORMULES
 *********************/

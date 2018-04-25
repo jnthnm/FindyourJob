@@ -43,18 +43,25 @@
 @include breakpoint(tablet){
   max-width: 300px;
   width: 250px;
-  // margin:0;
-}
+  // transition-duration: 0.3s;
 
 }
+}
+.tarif:hover{
+  // transform: scale(1.05);
+  // transition-duration: 0.3s;
+}
+
 .tarif_wrap{
   position: relative;
   background-color: $color_gray;
   height: 200px;
   padding-top: 3em;
   z-index: 20;
-
+  border: 1px solid $color_gray;
 }
+
+
 .tarif_wrap:after{
   position: absolute;
   content: '';
@@ -97,6 +104,7 @@
 .tarif_wrap_2{
     position: relative;
     background-color: $color_blue;
+    border: 1px solid $color_blue;
     height: 35px;
     z-index: 10;
 
@@ -167,9 +175,16 @@
       width: 280px;
       margin-top: 5em;
       margin-bottom: 5em;
+      // transition-duration: 0.3s;
     }
+  }
 
+.tarif_m:hover{
+  // transform: scale(1.05);
+  // transition-duration: 0.3s;
+  // animation-duration: 2s;
 }
+
 .tarif_wrap_m{
     position: relative;
     background-color: $color_gray;
@@ -215,6 +230,9 @@
     padding: 0.3em 3em 0.1em 3em;
     border: none;
 }
+.button_info_m:hover{
+  color: $color_blue;
+}
 
 
 ///////////////////////////////////////////////
@@ -226,8 +244,9 @@
   height: 200px;
   padding-top: 3em;
   z-index: 20;
-
 }
+
+
 .tarif_wrap_r:after{
   position: absolute;
   content: '';
@@ -239,8 +258,8 @@
   border-width: 150px 300px 0px 0px;
   border-color: $color_gray transparent transparent;
   z-index: 20;
-
 }
+
 
 .tarif_wrap_2_r{
     position: relative;
@@ -340,6 +359,7 @@
   height: 150px;
   margin: 2em 0 3em 0;
   text-align: center;
+  animation-duration: 1.5s;
   @include breakpoint(laptop){
     margin: 0;
     width: 33%;
@@ -410,3 +430,16 @@
   }
 
 }
+
+//
+// @keyframes zoom {
+//   0% {animation-duration: 0s;}
+//   100%{animation-duration: 2s;}
+//   100% {animation-duration: 0s;}
+//   0%{animation-duration: 2s;}
+// }
+
+
+  // transform: scale(1.05);
+  // transition-duration: 0.3s;
+  // animation-duration: 2s;
