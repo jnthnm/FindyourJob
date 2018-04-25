@@ -31,6 +31,8 @@ $(function(){
     });
 });
 
+
+
 /*********************
 Fond écran animé pour les pop up !
 *********************/
@@ -53,8 +55,6 @@ $(document).mousemove(function(event) {
 
   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
 });
-
-
 
 
 // scrool sur les pages
