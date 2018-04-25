@@ -5,133 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Find Your Job</title>
     <link rel="stylesheet" href="css/vendor.css">
+
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="wrapper">
-        <!--==========header==========-->
-    <header class="header-container">
-        <div class="header_blue">
-            <div class="row">
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>Paiement 100% sécurisé</p>
-                </div> <!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>1 mois satisfait ou remboursé</p>
-                </div><!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>A votre Service depuis 10 ans !</p>
-                </div> <!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                        <p class="dark">créer/ se connecter</p>
-                </div> <!--col-->
-            </div> <!--row-->
-        </div> <!--header_blue-->
 
-
-        <div class="logo">
-           <h1 class="title_site" >Find your job</h1>
-           <p class="title_site_after">L'emploi près de chez vous<img src="images/loupefind.svg" alt="loupe" height="60px" class="title_site_loupe"> </p>
-         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button> <!--navbar-toggle-->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navbar_link">
-                        <a class="nav-item nav-link" href="homepage.html">Homepage</a>
-                        <a class="nav-item nav-link" href="page-actu.html">Actus</a>
-                        <a class="nav-item nav-link" href="a-propos.html">A propos</a>
-                        <a class="nav-item nav-link" href="#">Contact</a>
-                        <a class="nav-item nav-link" href="boutique.html">Boutique</a>
-
-                    </div><!-- navbar-nav-->
-                </div> <!--collapse-->
-        </nav>
-<div class="wrap">
-
-<div class="barre"> </div>
-    <div class="color"></div>
-</div> <!--wrap-->
-    </header> <!--header container-->
 <!--==========main==========-->
-<main>
+<main class="main_profil">
+  <div class="wrap_content">
 
-        <h2 class="profil_identifiants">Identifiants</h2>
-            <div class="identifiants">
-              <div class="profil_mail">
-                <i class="fa fa-envelope mail"><span class="loggins">Adresse mail</span><span class="asterix">*</span></i>
-                <div class="input_profil">
-                  <input class="input_custom" type="text">
+
+<div class="gauche">
+
+  <div class="background_brown">
+    <h2 class="profil_title_div">Identifiants</h2>
+  </div>
+
+      <div class="wrap_iden">
+
+            <div class="wrap_label">
+              <label for="">Adresse mail</label>
+                <div class="wrap_input">
+                  <input type="text" name="" value="">
                 </div>
-              </div>
-              <div class="profil_pw">
-                <i class="fa fa-unlock-alt pw"><span class="loggins">Password</span><span class="asterix">*</span></i>
-                <div class="input_profil">
-                  <input class="input_custom" type="text">
-                </div>
-              </div>
             </div>
 
-        <h2 class="profil_information_personnelles">Information personneles</h2>
-            <div class="information_personnelles">
-              <div class="button_info_personnele"><i class="fa fa-user user"></i><span class="loggins">Civilité</span><span class="asterix">*</span>
-                <input type="radio" name="civi2" value="Mme" /> M.
-                  <input type="radio" name="civi2" value="Mlle" /> Mme
-              </div>
+            <div class="wrap_label">
+              <label for="">Password</label>
+                <div class="wrap_input">
+                  <input type="text" name="" value="">
+                </div>
+            </div>
+          </div>
 
-              <div class="button_info_personnele_bis">
-                <span class="loggins">Nom</span><span class="asterix">*</span>
-                    <input class="input_custom" type="text">
-                <span class="loggins">Prénom</span><span class="asterix">*</span>
-                    <input class="input_custom" type="text">
+  <div class="background_brown brown">
+    <h2 class="profil_title_div">Information personneles</h2>
+  </div>
 
-              </div>
-                <div class="button_info_personnele_bis">
-                    <span class="loggins">Date de naissance</span><span class="asterix">*</span>
-                      <input class="input_custom" type="date">
-                    <span class="loggins">Téléphone</span><span class="asterix">*</span>
-                      <input class="input_custom" type="text">
-              </div>
-              </div>
+      <div class="wrap_info_perso">
+
+            <div class="wrap_logo"><i class="fa fa-user user"></i>
+            </div>
+
+            <div class="wrap_info_milieu">
+                    <div class="test">
+
+                    <label class="loggins" for="">Civilité</label>
+                  <div class="radio">
+                    <input type="radio" name="civi1" value="Mme" /> M.
+                    <input type="radio" name="civi2" value="Mlle" /> Mme
+                  </div>
+                </div>
+
+                  <label for="" class="loggins">Nom</label>
+                <div class="">
+                  <input type="text">
+                </div>
+
+                <label for="" class="loggins">Prénom</label>
+                <div class="">
+                  <input type="text">
+                </div>
+              </div> <!-- wrap_info_milieu -->
+
+              <div class="wrap_info_droite">
+
+                  <label for="" class="loggins">Date de naissance</label>
+                      <div class="">
+                        <input class="input_custom" type="date">
+                      </div>
+
+                      <label for="" class="loggins">Téléphone</label>
+                      <div class="">
+                        <input class="input_custom" type="text">
+                      </div>
+
+              </div><!-- wrap_info_droite -->
+      </div>
 
 
-          <h2 class="profil_information_societe">Information sur la société</h2>
-            <div class="information_societe">
+      <div class="background_brown brown">
+        <h2 class="profil_title_div">Information sur la société</h2>
+      </div>
+            <div class="wrap_info_societe">
 
-                <span class="loggins">Raison social</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
+                  <label for="" class="wrap_societe">Raison social</label>
+                      <div class="">
+                        <input class="input_custom" type="text">
+                      </div>
 
-                <span class="loggins">N°TVA</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
+                  <label for="" class="wrap_societe">N°TVA</label>
+                      <div class="">
+                        <input class="input_custom" type="text">
+                      </div>
 
+                  <label for="" class="wrap_societe">Numéro Siret</label>
+                      <div class="">
+                        <input class="input_custom" type="text">
+                      </div>
 
-                <span class="loggins">Numéro Siret</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
 
           </div>
 
 
-          <h2 class="profil_coordonees">Coordonées</h2>
-            <div class="coordonees">
+        <div class="background_brown brown">
+          <h2 class="profil_title_div">Coordonées</h2>
+        </div>
+            <div class="wrap_info_coordonees">
               <div class="button_coordonees">
-                <span class="loggins">Adresse(n° et rue)</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
+
+                <label for="" class="wrap_coordonees">Adresse(n° et rue)</label>
+                    <div class="">
+                      <input class="input_custom_coordonnees" type="text">
+                    </div>
+
+                <label for="" class="wrap_coordonees">Complément d'adresse</label>
+                    <div class="">
+                      <input class="input_custom_coordonnees" type="text">
+                    </div>
+
+                <label for="" class="wrap_coordonees">Code postal</label>
+                    <div class="">
+                      <input class="input_custom" type="text">
+                    </div>
+
+                <label for="" class="wrap_coordonees">Ville</label>
+                    <div class="">
+                      <input class="input_custom" type="text">
+                    </div>
 
 
-                <span class="loggins">Complément d'adresse</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
-
-
-                <span class="loggins">Code Postal</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
-
-                <span class="loggins">Ville</span><span class="asterix">*</span>
-                  <input class="input_custom" type="text">
 
               <div class="checkbox_profil">
                 <input class="checkbox_profil" type="checkbox">Je souhaite m'inscrire à la newsletter et recevoir par e-mail les promotions et les réductions exclusives !
@@ -141,67 +144,33 @@
                 <input class="button_envoyer_profil" type="submit" value="Envoyer">
               </div>
 
-              <div class="button_links_profil">
-                <input type="submit" value="Mon compte">
-                <input type="submit" value="Ma progression">
-                <input type="submit" value="Mon panier">
-              </div>
+
           </div>
         </div>
+
+      </div>
+    <div class="droite">
+
+        <div class="button_links_profil">
+          <div>
+          <input class="button_profil" type="submit" value="Mon compte">
+        </div>
+          <div>
+          <input class="button_profil" type="submit" value="Ma progression">
+        </div>
+        <div>
+          <input class="button_profil" type="submit" value="Mon panier">
+        </div>
+        </div>
+    </div>
+</div>
     </main>
 
-      <!--Footer-->
-      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
-               <!--Footer Links-->
-               <div class="container text-center text-md-left">
-                   <!-- Footer links -->
-                   <div class="row text-center text-md-left mt-4 pb-4">
-                       <!--First column-->
-                       <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                           <h6 class="text-uppercase mb-4 font-weight-bold">Texte  </h6>
-                           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                       </div>
-                       <!--/.First column-->
-                       <hr class="w-100 clearfix d-md-none">
-                       <!--Second column-->
-                       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                           <h6 class="text-uppercase mb-4 font-weight-bold">Coordonées</h6>
-                               <!--Info-->
-                     <p>
-                         <i class="fa fa-home mr-3"></i> 10 rue de la paie,<br> 75000 Paris </p>
-                     <p>
-                         <i class="fa fa-envelope mr-3"></i> findjob@sitename.com</p>
-                     <p>
-                         <i class="fa fa-phone mr-3"></i> +33 234 567 88 - Office</p>
-                     <p>
-                         <i class="fa fa-print mr-3"></i> + 33 234 567 89 - Fax</p>
-                       </div>
-                       <!--/.Second column-->
-                       <hr class="w-100 clearfix d-md-none">
-                       <!--Third column-->
-                       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                           <h6 class="text-uppercase mb-4 font-weight-bold">Réseau Sociaux</h6>
-                                   <!--Social buttons-->
-                                   <div class="social_text">
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
-                                       <ul class="list-unstyled list-inline">
-                                           <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
-                                           <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
-                                           <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
-                                           <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
-                                       </ul>
-                                   </div>
-                                   <!--/.Social buttons-->
-                               </div><!--.Third column-->
-                   </div> <!-- Footer links -->
-                         </div> <!-- container-footer-->
-                     </footer>
-                     <!--/.Footer-->
-             <div class="footer_black text-align-center">
-                       <!--Copyright-->
-                           <p class="footer_black_copy"> © Copyright 2018</p>
-                       </div><!--/.Copyright-->
-     </div> <!--wrapper-->
+
+
+
+<script src="js/vendor.js"></script>
+<script src="js/app.js"></script>
 
     </body>
 </html>

@@ -23,12 +23,32 @@ Components
 /*********************
 Layout
 *********************/
+<<<<<<< HEAD
+
+
+@import 'layout/footer',
+'layout/header',
+'layout/profil',
+'layout/home';
+
+
+/*********************
+Pages
+*********************/
+
+@import 'pages/boutique',
+        'pages/tarifs',
+        'pages/actu_only';
+
+
+@import 'layout/footer',
+=======
 @import 'layout/contact',
         'layout/footer',
         'layout/header',
         'layout/home',
         'layout/profil';
-        
+
 /*********************
 Pages
 *********************/
@@ -38,7 +58,10 @@ Pages
         'pages/page_actu',
         'pages/profil',
         'pages/tarifs',
-        'pages/test';
+        'pages/profil',
+        'pages/page_paiement';
+
+
 
 
 /*********************
