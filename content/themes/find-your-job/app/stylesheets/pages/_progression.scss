@@ -93,49 +93,41 @@ margin: -20px;
 	height: 70px;
 
 }
-// .wrap_trait{
-// 	display: flex;
-// 	justify-content: space-around;
-// }
-.ip_progress_number{
-
-	display: none;
-	@include breakpoint(tablet) {
-		width: 40px;
-		height: 40px;
-  display: inherit;
-	color: $color_title;
-	background-color: $color_gray;
-	border-radius: 50%;
-}
-}
-.ip_progress_number span{
-	display: none;
-	@include breakpoint(tablet) {
-	display: inherit;
-	transform: translateX(130%)!important;
-	transform: translateY(50%);
-
-
-}
-}
-.span_number{
-	display: none;
-	@include breakpoint(tablet) {
-	transform: translateX(50%)!important;
-
-	display: inherit;
-}
-}
-.form_numbers{
-	display: none;
-	@include breakpoint(tablet) {
-display: inherit;
+ .wrap_trait{
 	display: flex;
-	justify-content: space-around;
+justify-content: space-around;
+
+}
+
+.form_numbers{
+	display: flex;
+	justify-content:space-around;
+}
+
+.lol {
+
+	display: none;
+	@include breakpoint(tablet) {
+		display: inherit;
+		width: 50px;
+height: 50px;
+background-color: $color_gray;
+border-radius: 100%;
+color: $color_typo;
+justify-content: space-around;
+
 }
 }
 
+.lil{
+text-align: center;
+padding: 25%;
+
+}
+//.ip_progress_number span{
+	//display: none;
+	//@include breakpoint(tablet) {
+	//display: inherit;
 .return{
 	margin: 30px;
 	text-align: center;
