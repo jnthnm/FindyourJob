@@ -50,13 +50,16 @@ logo
   font-weight: 400;
 }
 .title_site_loupe{
-  margin-top: -1em;
-  margin-left: 2em;
     @include breakpoint(mobileonly){
       margin-top:1em;
+
       }
       @media screen and (min-width: 430px) {
           margin-left:0;
+      }
+      @include breakpoint (tablet){
+          margin-top: -1em;
+          margin-left: 2em;
       }
 }
 
