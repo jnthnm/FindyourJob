@@ -1,4 +1,9 @@
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 948587fc796ea3468e0fe84e195b14bc6f6c2fc4
 <?php
 /*
 Template Name: Home
