@@ -72,13 +72,16 @@ header
   }
 }
 
-.link_color{
+.link_color a{
   color: $color_blue!important;
+  padding-right: 20px;
+  text-decoration: none !important;
 }
 
 
 .barre_blue{
   position: relative;
+  height: 25px;
 }
 
 .barre{
