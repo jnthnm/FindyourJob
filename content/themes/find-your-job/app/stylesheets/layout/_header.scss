@@ -1,4 +1,6 @@
-
+/*********************
+header
+*********************/
 .header{
 
   @include breakpoint(laptop){
@@ -93,5 +95,9 @@
   -webkit-transform:perspective(100) rotateX(-40deg);
   top: -26px;
   margin: 0 auto;
+  @include breakpoint(tablet){
+    // width: 200px;
+
+  }
 
 }

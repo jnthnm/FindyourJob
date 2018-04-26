@@ -44,6 +44,14 @@ Contact
     border-radius: 10px;
     }
 }
+.form-control:focus {
+  box-shadow: none !important;
+  border:none;
+}
+.form-control:active {
+  box-shadow: none !important;
+  border:none;
+}
 
 .form_b{
   border: none;
