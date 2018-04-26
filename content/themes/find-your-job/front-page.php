@@ -28,7 +28,7 @@
 <section class="media align-items-center">
    <div class="card media_box align-items-center" style="width: 18rem;">
        <div class="card_bg align-items-center ">
-         <img class="card-img-top search" src="http://localhost/Find-your-jOb/content/themes/find-your-job/images/page-home-picto/search.svg" alt="Card image cap">
+         <img class="card-img-top search" src="<?php echo get_theme_file_uri() . '/images/page-home-picto/search.svg'?>" alt="Card image cap">
      </div><!--card_bg-->
      <div class="card-body">
        <h5 class="card-title media_title align-items-center">Recherche</h5>

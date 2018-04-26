@@ -9,51 +9,45 @@
 <body>
     <div class="wrapper">
         <!--==========header==========-->
-    <header class="header-container">
-        <div class="header_blue">
-            <div class="row">
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>Paiement 100% sécurisé</p>
-                </div> <!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>1 mois satisfait ou remboursé</p>
-                </div><!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                    <p>A votre Service depuis 10 ans !</p>
-                </div> <!--col-->
-                <hr class="w-100 clearfix d-md-none">
-                <div class="col">
-                        <a href="connection.html"><p class="dark">créer/ se connecter</p></a>
-                </div> <!--col-->
-            </div> <!--row-->
-        </div> <!--header_blue-->
+<header class="header">
+
+    <div class="wrap_wrap">
+        <div class="wrap_list_text">Paiement 100% sécurisé</div>
+        <div class="wrap_list_text">1 mois satisfait ou rembourser</div>
+        <div class="wrap_list_text">a votre service depuis 10 ans!</div>
+        <div class="wrap_list_text connect">créer / se connecter</div>
+    </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="header_title_wrap">
+                <div class="header_flex">
+                    <h1 class="header_title" >Find your job</h1>
+                    <p class="header_text">L'emploi près de chez vous</p>
+                </div>
+
+                <div class="header_wrap_img">
+                    <img class="header_img" src="/images/loupefind.svg" alt="">
+                </div>
+            </div>
 
 
-        <div class="logo">
-           <h1 class="title_site" >Find your job</h1>
-           <p class="title_site_after">L'emploi près de chez vous<img src="images/loupefind.svg" alt="loupe" height="60px" class="title_site_loupe"> </p>
-         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon justify-content-end"></span>
-            </button> <!--navbar-toggle-->
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navbar_link">
-                        <a class="nav-item nav-link" href="homepage.html">Homepage</a>
-                        <a class="nav-item nav-link" href="page-actu.html">Actus</a>
-                        <a class="nav-item nav-link" href="a_propos.html">A propos</a>
-                        <a class="nav-item nav-link" href="#">Contact</a>
-                        <a class="nav-item nav-link" href="boutique.html">Boutique</a>
-                    </div><!-- navbar-nav-->
-                </div> <!--collapse-->
-
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link link_color" href="#">Accueil</a>
+                    <a class="nav-item nav-link link_color" href="#">Actu</a>
+                    <a class="nav-item nav-link link_color" href="#">A propos</a>
+                    <a class="nav-item nav-link link_color" href="#">Contact</a>
+                    <a class="nav-item nav-link link_color" href="#">Boutique</a>
+                </div>
+            </div>
         </nav>
-<div class="color_bar">
+        <div class="barre_blue">
 
-<div class="barre"> </div>
-    <div class="color"></div>
-</div> <!--wrap-->
-    </header> <!--header container-->
+            <div class="barre"> </div>
+                <div class="color_brown_mid"></div>
+            </div>
+
+</header>
