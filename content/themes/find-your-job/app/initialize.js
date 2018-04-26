@@ -32,7 +32,7 @@ $(function(){
 /*********************
 Fond écran animé pour les pop up !
 *********************/
-//effet fond d'ecran sur la page connection/inscription , page de contact et concour
+//effet fond d'ecran sur la page connection/inscription , page de contact 
 $(document).mousemove(function(event) {
   windowWidth = $(window).width();
   windowHeight = $(window).height();

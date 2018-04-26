@@ -3,7 +3,6 @@ Home
 *********************/
 
 
-
 /*********************
 MEDIA
 *********************/
@@ -80,99 +79,102 @@ MEDIA
 /*********************
 LISTEN
 *********************/
+
  .listen_wrap{
   display: inline-block;
   flex-direction: column;
   width: 100%;
+  color: $color_typo;
+  position: relative;
+  background-color: $color_gray;
+    @include breakpoint(tablet) {
+    display: flex;
+    flex-wrap:wrap;
+    height: 200px;
+    }
 
+    @media screen and (min-width: 1324px) {
+      height: 256px;
+    }
   }
-  .listen {
-    color: white;
-  }
-  .listen_wrap{
+.blue{
+  background-color: $color_blue;
+  border-bottom: 1em solid $color_blue;
+  width: 85%;
+  text-align: center;
+  align-self: center;
+  margin: auto;
+}
+   @include breakpoint(tablet) {
+.blue {
+    margin-left: 0;
+    width: 400px;
+    height: 200px;
     position: relative;
-    background-color: $color_gray !important;
-    .blue{
-      height: 15em;
-      width: 25em;
-      margin :3em 0 3em 2em;
-      border-bottom: 17em solid $color_blue ;
-      font-weight: none !important;
-
-            @include breakpoint(tablet) {
-              margin :2em 0 2em 0;
-                width: 50em;
-                height: 7em;
-                border-bottom: 15em solid $color_blue ;
-              border-right:7em solid transparent;
-          }
-            @include breakpoint(laptop) {
-              margin :2em 0 2em 0;
-                width: 60em;
-                height: 7em;
-                border-bottom: 15em solid $color_blue ;
-              border-right:7em solid transparent;
-          }
-  }
-}
-  .listen_concour{
-    order:2;
-    align-content: center;
-    text-align: center;
-  }
-  .listen_concour_title {
-    margin-top: 1em;
-    text-transform: uppercase;
-        @include breakpoint(tablet) {
-        font-size: 20px;
-      }
-    }
-    .listen-equip{
-      position: absolute;
-      @media screen and (min-width: 906px) {
-        font-size: 13px;
-      }
-      @media screen and (min-width: 1170px) {
-        font-size: 13px;
-      }
-    }
-    .listen_equip_title {
-        text-transform: uppercase;
-        font-size:18px;
-            @include breakpoint(tablet) {
-            font-size: 17px !important;
-          }
-            @include breakpoint(laptop) {
-            font-size: 18px !important;
-          }
-    }
-  .listen_equip_content{
-
-      @include breakpoint(laptop) {
-      font-size: 18px !important;
-
-
-      width: 600px;
-      text-align: center;
-      @include breakpoint(tablet) {
-        display: block;
-        width: 300px;
+    background: $color_blue;
+    @include breakpoint(laptop) {
+        width: 600px;
+        height: 200px;
 
     }
-      @media screen and (min-width: 1170px) {
-        width: 400PX
-      }
 
   }
+  .blue:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    // border-left: 20px solid white;
+  //  border-top: 400px solid transparent;
+    border-bottom: 400px solid white;
+  }
+.blue:before {
+    content: "";
+    position: absolute;
+    right: -99px;
+    bottom: -16px;
+    width: 0;
+    height: 0;
+    border-left: 100px solid $color_blue;
+    border-top: 200px solid transparent;
+    // border-bottom: 30px solid transparent;
+        @include breakpoint(laptop) {
+            border-left: 100px solid $color_blue;
+            border-top: 200px solid transparent;
+        }
+  }
+
 }
-    .listen_equip{
-      margin-top:2.5em;
+// .listen_content{
+//   width: 50%;
+// }
+.listen_concour{
+
+  align-content: center;
+  text-align: center;
+}
+.listen_wrap h3{
+  margin-top:1.5em;
+  font-size: 15px;
+}
+.listen_equip{
+  margin:auto;
+  text-align: center;
+    @include breakpoint(tablet) {
+      width: 36%;
+      // align-self: flex-start;
+      margin-right: 2em;
+      // margin-top: -15em;
+      font-size: 12px;
     }
-
-
-.row{
-
+      @media screen and (min-width: 1324px) {
+        width: 45%;
+        font-size: 15px;
+      }
 }
+
 /*********************
 FORMULES
 *********************/

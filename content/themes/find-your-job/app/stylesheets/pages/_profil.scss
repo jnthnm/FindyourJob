@@ -1,3 +1,7 @@
+/*********************
+Profil
+*********************/
+
 // CSS fond de chaque titre
 .background_brown{
   max-width: 100%;
@@ -17,7 +21,7 @@
 
 .main_profil{
    margin: 0 auto;
-   background-color: rgba(73, 128, 191, 0.5); 
+   background-color: rgba(73, 128, 191, 0.5);
 
    color: $color_gray;
    @include breakpoint(laptop){

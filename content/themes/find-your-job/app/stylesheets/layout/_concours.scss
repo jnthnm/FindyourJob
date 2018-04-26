@@ -1,0 +1,143 @@
+/*********************
+progression
+*********************/
+
+.mega_wrap{
+  position: relative;
+  background-image: url("/images/choix.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+
+
+
+}
+.background_blur{
+  background-color: transparentize($color_blue, 0.3);
+  height: 100vh;
+  filter: blur(50px);
+}
+
+.wrap_size{
+  width: 80%;
+  margin: 0 auto;
+}
+.wrap_concour{
+  // visibility: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // height: auto;
+  z-index: 10;
+
+
+
+  // @include breakpoint(laptop){
+  //   // padding: 3em 20em 3em 20em;
+  //   // width: 1400px;
+  // }
+}
+
+.ico{
+  color: $color_typo;
+  float: right;
+  margin: 1em 1em 0 0;
+}
+
+.form_wrap{
+  color: $color_gray;
+  text-align: center;
+  padding-top: 1.5em;
+  @include breakpoint(laptop){
+    width: 50%;
+    margin: 0 auto;
+    z-index: 1000;
+  }
+}
+.form_form{
+  @include breakpoint(tablet){
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
+
+.input{
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  box-shadow: unset 3px 0px 0px 0px rgba(0,0,0,0.75);
+  border: 1px solid lightgrey;
+  padding-left: 1em;
+    @include breakpoint(tablet){
+      // width: 80%;
+
+
+      // display: inline-block;
+    }
+}
+
+.form_name{
+    @include breakpoint(tablet){
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+.form_name input{
+  @include breakpoint(tablet){
+
+    width: 48%;
+  }
+}
+.form_mid{
+  @include breakpoint(tablet){
+    width: 100%
+  }
+}
+
+
+.input:hover {
+  box-shadow: inset 0px 0px 0.5px 0.5px rgba(0,0,0,0.75);
+
+}
+.input:focus {
+  color: $color_blue;
+  border: 1px solid $color_blue;
+
+}
+
+
+.form_img{
+
+  margin: 4em 0 2em 0;
+}
+
+.form_abo{
+  width: 30px;
+}
+
+.form_abo_wrap {
+  text-align: left;
+  margin-bottom: 1em;
+}
+.form_abo_a{
+  text-decoration: none;
+  color: $color_gray;
+
+}
+
+
+.btn_game{
+  margin-top: 2em;
+  background-color: $color_blue;
+  color: $color_typo;
+  font-weight: 500;
+}

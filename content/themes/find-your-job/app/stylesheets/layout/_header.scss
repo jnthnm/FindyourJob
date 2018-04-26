@@ -1,171 +1,269 @@
-/*********************
-BAR de dessus
-*********************/
+// /*********************
+// BAR de dessus
+// *********************/
+//
+// .header_blue{
+//   background-color: $color_blue;
+//   max-width: 100%;
+//   color: white;
+//   text-transform: uppercase;
+//   // padding: 0.3em;
+//   // padding-left:1em;
+//   // padding-right: 3em;
+//   padding: auto;
+//   text-align: center;
+//   font-weight: 500;
+// }
+// .dark{
+//   color: black !important;
+// }
+//
+// /*********************
+// logo
+// *********************/
+// .logo{
+//     @include breakpoint(mobileonly){
+//       height: 60%;
+//       }
+//
+//   margin-left:2em;
+//   @media screen and (min-width: 321px) {
+//     margin-top:-1em;
+//   }
+//       @media screen and (min-width: 424px) {
+//       //  margin-top: 9em;
+//         margin-right:0;
+//       }
+// }
+// .title_site{
+//   margin-top: 2em;
+//   font-size: 30px;
+//   font-weight:600;
+//   text-transform: uppercase;
+//
+// }
+// .title_site_after{
+//   margin-top: -3em;
+// }
+// .title_site_after {
+//   margin-top: -3em;
+//   font-weight: 100;
+// }
+// .title_site_after{
+//   margin-top: -0.6em;
+//    word-spacing: 0.7em;
+//   font-weight: 400;
+// }
+// .title_site_loupe{
+//     @include breakpoint(mobileonly){
+//       display: none;
+//
+//       }
+//
+//         @media screen and (max-width: 472px) {
+//                 display: none;
+//             }
+//       @media screen and (min-width: 430px) {
+//           margin-left:0;
+//       }
+//       @include breakpoint (tablet){
+//           margin-top: -1em;
+//           margin-left: 2em;
+//       }
+// }
+//
+// /*********************
+// navbar checkbox
+// *******************/
+// .menu {
+//   display:none;
+//   list-style: none;
+//   color: $color_blue;
+// }
+// .menu li a{
+//   margin-left: 1em;
+//   @media screen and (min-width: 530px){
+//     margin-left: none;
+// }
+// }
+// .menu-checkbox:checked ~ .menu {
+//     display: block;
+// }
+// .menu-checkbox {
+// 	opacity: 0;
+//   margin-right: 2em;
+// 	position: absolute;
+// 	// top: -1000px;
+//   // right:0;
+//
+// }
+// .menu-toggle{
+//   margin-right: 1.5em;
+//   margin-top: 2em;
+//   padding: 0.5em;
+//   font-size: 20px;
+//   font-weight:600;
+//    // position: relative;
+//   justify-content: flex-end;
+// }
+// .menu-checkbox:focus .menu-toogle {
+//   outline: $color_gray auto 5px;
+// }
+// .nav_wrap{
+//   align-items:right;
+//   display:flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+// @media screen and (min-width: 964px) {
+//   .menu-toggle, .menu-chekbox{
+//     display: none;
+//   }
+//  .menu {
+//   // display: wrap;
+//   margin-bottom: 3em;
+//   // flex-basis: auto;
+//  }
+//  .menu li  {
+//    display: inline;
+//   margin-right: 1em;
+//    font-weight: 400;
+//    text-transform: uppercase;
+//  }
+//
+// }
+//
+//
+// /*********************
+// Bar bleu et noir
+// *******************/
+//   .color_bar {
+//   max-width: 100%;
+//   position: relative;
+//   height: 60px;
+//   }
+//   .barre{
+//     content: '';
+//     width: 100%;
+//     height: 40px;
+//     background-color: $color_blue;
+//     @include breakpoint(tablet){
+//             height: 60px;
+//     }
+//   }
+//   .color{
+//       position: relative;
+//       background-color: $color_gray;
+//       width:144px;
+//       height: 44px;
+//       -webkit-transform:perspective(100) rotateX(-30deg);
+//       top: -50px;
+//       margin:11px auto;
+//       @include breakpoint(tablet){
+//         width: 174px;
+//         height:65px;
+//         margin: -7px auto;
+//   }
+//       @include breakpoint(laptop){
+//         width: 400px;
+//         height:65px;
+//         margin: -7px auto;
+//   }
+// }
+.header{
 
-.header_blue{
+  @include breakpoint(laptop){
+    width: 1400px;
+
+  }
+}
+
+.wrap_wrap{
   background-color: $color_blue;
-  max-width: 100%;
-  color: white;
-  text-transform: uppercase;
-  // padding: 0.3em;
-  // padding-left:1em;
-  // padding-right: 3em;
-  padding: auto;
+  color: $color_typo;
   text-align: center;
+  text-transform: uppercase;
   font-weight: 500;
-}
-.dark{
-  color: black !important;
-}
-
-/*********************
-logo
-*********************/
-.logo{
-  margin-left:2em;
-  @media screen and (min-width: 321px) {
-    margin-top:-1em;
+  padding: 1em;
+  font-size: 0.7em;
+  @include breakpoint(tablet){
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6em;
   }
-      @media screen and (min-width: 424px) {
-      //  margin-top: 9em;
-        margin-right:0;
-      }
+  @include breakpoint(laptop){
+    font-size: 0.7em;
+  }
+
 }
-.title_site{
-  margin-top: 2em;
-  font-size: 35px;
-  font-weight:600;
+
+.connect{
+  color: $color_gray;
+}
+
+.header_title_wrap{
+  display: flex;
+  align-items: center;
+  @include breakpoint(laptop){
+
+  }
+}
+
+.header_flex{
+  // width: 50%;
+}
+.header_title{
+  margin: 0;
+  font-size: 1.64em;
+  font-weight: 600;
   text-transform: uppercase;
-}
-.title_site_after{
-  margin-top: -3em;
-}
-.title_site_after {
-  margin-top: -3em;
-  font-weight: 100;
-}
-.title_site_after{
-  margin-top: -0.6em;
-   word-spacing: 0.7em;
-  font-weight: 400;
-}
-.title_site_loupe{
-    @include breakpoint(mobileonly){
-      margin-top:1em;
+  text-decoration: underline;
 
-      }
-      @media screen and (min-width: 430px) {
-          margin-left:0;
-      }
-      @include breakpoint (tablet){
-          margin-top: -1em;
-          margin-left: 2em;
-      }
 }
 
-/*********************
-navbar toogle
-*******************/
-.navbar-nav{
+.nav-link {
+
   text-align: right;
-  margin-top:7em;
-  @include breakpoint(mobileonly){
-    font-size:10px;
-    }
-}
-.navbar{
-  @include breakpoint(mobileonly){
-    justify-content:flex-end;
-    margin-top:3em;
-    // // align-items: center;
-    // margin-bottom: 6em;
-    }
-     @media screen and (min-width: 321px) {
-       margin-top: 9em;
-     }
-      @media screen and (min-width: 430px) {
-        margin-top: 10em;
-        margin-right:0;
-
-      }
-    @include breakpoint(phablet){
-      margin-top:1em;
-      }
-  justify-content: flex-end;
-  margin-right: 1em;
-}
-.navbar-expand-lg .navbar-collapse {
-  margin-top: -16em;
-  justify-content: flex-end;
-}
-.navbar-toggler-icon {
-  color: $color_blue !important;
-}
-.navbar-light .navbar-toggler{
-  margin-top:-9em;
-}
-.collapse a {
-  color: $color_blue !important;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-right:2em;
 }
 
-header ul li {
- display: inline;
- text-transform: uppercase;
- margin-right: 2em;
-}
-header ul li a {
- justify-content:flex-end;
- align-items: center;
- text-decoration: none;
- color: $color_blue;
- margin-right: 1em;
-}
-.nav-item{
- @media screen and (min-width: 994px) {
-   font-size: 13px;
- }
- @include breakpoint(laptop){
-  font-size:16px;
- }
+.header_img{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+  @include breakpoint(tablet){
+    visibility: visible;
+    opacity: 1;
+    margin-top: 3px;
+    width: 60px;
 
+  }
 }
 
-/*********************
-Bar bleu et noir
-*******************/
-  .color_bar {
-  max-width: 100%;
+.link_color{
+  color: $color_blue!important;
+}
+
+
+.barre_blue{
   position: relative;
-  height: 60px;
-  }
-  .barre{
-    content: '';
-    width: 100%;
-    height: 40px;
-    background-color: $color_blue;
-    @include breakpoint(tablet){
-            height: 60px;
-    }
-  }
-  .color{
-      position: relative;
-      background-color: $color_gray;
-      width:144px;
-      height: 44px;
-      -webkit-transform:perspective(100) rotateX(-30deg);
-      top: -50px;
-      margin:11px auto;
-      @include breakpoint(tablet){
-        width: 174px;
-        height:65px;
-        margin: -7px auto;
-  }
-      @include breakpoint(laptop){
-        width: 400px;
-        height:65px;
-        margin: -7px auto;
+}
+
+.barre{
+  width: 100%;
+  height: 25px;
+  background-color: $color_blue;
+}
+
+.color_brown_mid{
+  position: relative;
+  background-color: $color_gray;
+  width:250px;
+  height: 29px;
+  -webkit-transform:perspective(100) rotateX(-40deg);
+  top: -26px;
+  margin: 0 auto;
+  @include breakpoint(tablet){
+    // width: 200px;
+
   }
 }
