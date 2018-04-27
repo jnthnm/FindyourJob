@@ -8,6 +8,7 @@ page actu
 }
 
 
+
 .post_wrap{
 
   @include breakpoint(laptop){
@@ -16,6 +17,9 @@ page actu
     height: 350px;
     width: 100%;
     margin-top: 2em;
+		tr:nth-child(2n) {
+		margin: 20em;
+		}
 
   }
 }
@@ -61,14 +65,7 @@ page actu
 
     }
 }
-.wrap_reverse{
-    @include breakpoint(laptop){
 
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-}
 
 .content_reverse{
     @include breakpoint(laptop){
