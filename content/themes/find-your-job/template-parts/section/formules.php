@@ -2,7 +2,7 @@
 <section class="formules">
 
     <div class="formules_title">
-    <h2>Nos Fomules</h2>
+    <h2>Nos Formules</h2>
     </div>
 <div class="formules_prop">
 

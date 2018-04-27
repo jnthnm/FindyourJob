@@ -24,7 +24,7 @@ define('DB_USER', 'findyourjob');
 /** Mot de passe de la base de données MySQL. */
 define('DB_PASSWORD', 'findyourjob');
 /** Adresse de l’hébergement MySQL. */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '92.243.2.92');
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8mb4');
 /** Type de collation de la base de données.
@@ -126,5 +126,3 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
-
- 

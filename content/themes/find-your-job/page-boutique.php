@@ -4,6 +4,7 @@
 Template Name: Boutique
 */
 ?>
+
 <?php get_header();?>
 
 <main class="main">

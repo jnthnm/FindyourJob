@@ -1,5 +1,4 @@
 
-
         <div class="barre_blue">
 
             <div class="barre"> </div>

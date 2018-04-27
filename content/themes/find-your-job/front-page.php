@@ -24,11 +24,11 @@ Template Name: Home
 
 //<!--==========formules==========-->
 
-        get_template_part('template-parts/section/formules'); // concour
+        get_template_part('template-parts/section/formules'); // formules
 
 //<!--==========Count==========-->
 
-        get_template_part('template-parts/section/count'); // concour?>
+        get_template_part('template-parts/section/count'); // count?>
 
 
 </main>
