@@ -144,20 +144,11 @@ Template Name: Profil
         </div>
 
       </div>
-    <div class="droite">
 
-        <div class="button_links_profil">
-          <div>
-          <input class="button_profil" type="submit" value="Mon compte">
-        </div>
-          <div>
-          <input class="button_profil" type="submit" value="Ma progression">
-        </div>
-        <div>
-          <input class="button_profil" type="submit" value="Mon panier">
-        </div>
-        </div>
-    </div>
+
+<?php get_template_part('template-parts/sidebar/sidebar_paie'); // sidebar?>
+
+
 </div>
     </main>
 
