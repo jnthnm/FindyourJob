@@ -6,6 +6,7 @@
 }
 
 
+
 .post_wrap{
 
   @include breakpoint(laptop){
@@ -14,6 +15,9 @@
     height: 350px;
     width: 100%;
     margin-top: 2em;
+		tr:nth-child(2n) {
+		margin: 20em;
+		}
 
   }
 }
@@ -59,14 +63,7 @@
 
     }
 }
-.wrap_reverse{
-    @include breakpoint(laptop){
 
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-}
 
 .content_reverse{
     @include breakpoint(laptop){
