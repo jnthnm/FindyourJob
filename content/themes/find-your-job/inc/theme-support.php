@@ -12,8 +12,9 @@ function fyj_setup(){
 
     register_nav_menus([
         'header'        => 'Menu de navigation du header',
-        'aside'    => 'Menu de navigation Pages aside',
-        'profil'        => 'Menu navigation du profil'
+        'aside'         => 'Menu de navigation Pages aside',
+        'profil'        => 'Menu navigation du profil',
+        'connexion'     => 'Menu de création connexion'
 
     ]);
     // Les images de mise en avant

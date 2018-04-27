@@ -28,6 +28,14 @@ header
 
 }
 
+.wrap_list_text a{
+  text-decoration: none;
+  color: $color_gray;
+}
+.wrap_list_text a:hover{
+  color: $color_typo;
+}
+
 .connect{
   color: $color_gray;
 }
