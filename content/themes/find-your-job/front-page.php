@@ -1,9 +1,4 @@
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 948587fc796ea3468e0fe84e195b14bc6f6c2fc4
 <?php
 /*
 Template Name: Home
@@ -29,11 +24,11 @@ Template Name: Home
 
 //<!--==========formules==========-->
 
-        get_template_part('template-parts/section/formules'); // concour
+        get_template_part('template-parts/section/formules'); // formules
 
 //<!--==========Count==========-->
 
-        get_template_part('template-parts/section/count'); // concour?>
+        get_template_part('template-parts/section/count'); // count?>
 
 
 </main>

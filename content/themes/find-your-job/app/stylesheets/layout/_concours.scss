@@ -1,51 +1,60 @@
 /*********************
 progression
 *********************/
+// body{
+//   position: relative;
+// }
+// .mega_wrap{
+//   position: relative;
+//   background-image: url("/images/choix.jpeg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size:cover;
+// }
 
-.mega_wrap{
-  position: relative;
-  background-image: url("/images/choix.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
 
-
-
-}
-.background_blur{
-  background-color: transparentize($color_blue, 0.3);
-  height: 100vh;
-  filter: blur(50px);
-}
-
-.wrap_size{
-  width: 80%;
-  margin: 0 auto;
-}
 .wrap_concour{
-  // visibility: hidden;
-  width: 100%;
+  visibility: hidden;
+  // width: 100%;
   margin: 0 auto;
   position: fixed;
-  top:0;
+  top:10vh;
   bottom: 0;
   left: 0;
   right: 0;
-  // height: auto;
   z-index: 10;
+  @include breakpoint(laptop){
 
+    width: 1400px;
+  }
 
-
-  // @include breakpoint(laptop){
-  //   // padding: 3em 20em 3em 20em;
-  //   // width: 1400px;
-  // }
+  .wrap_size{
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
+body.visible{
+
+  .wrap_concour{
+    visibility: visible !important;
+  }
+  .wrapper{
+    filter: blur(15px);
+  }
+}
+
+.wrapper{
+  transition: 0.3s;
+}
+
+
+
 .ico{
-  color: $color_typo;
+  color: $color_gray;
   float: right;
   margin: 1em 1em 0 0;
+  font-size: 2em;
 }
 
 .form_wrap{

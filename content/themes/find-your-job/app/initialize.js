@@ -51,3 +51,27 @@ $(document).mousemove(function(event) {
 
   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
 });
+
+
+//////////////////////////////////////////////////
+/// Pop up Jeu Concours  Cyril
+//////////////////////////////////////////////////
+
+
+var app = {
+
+  init: function(){
+    console.log('app.init');
+
+    $('body').on('click', '.ui-button', app.visibleMenu);
+
+  },
+
+  visibleMenu: function(evt){
+    console.log('visibleMenu');
+    evt.preventDefault();
+    $('body').toggleClass('visible');
+
+  }
+};
+$(app.init);
