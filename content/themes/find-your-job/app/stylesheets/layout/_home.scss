@@ -79,8 +79,7 @@ MEDIA
 /*********************
 LISTEN
 *********************/
-
- .listen_wrap{
+.listen_wrap{
   display: inline-block;
   flex-direction: column;
   width: 100%;
@@ -90,12 +89,12 @@ LISTEN
     @include breakpoint(tablet) {
     display: flex;
     flex-wrap:wrap;
-    height: 200px;
+    height: 250px;
     }
 
-    @media screen and (min-width: 1324px) {
-      height: 256px;
-    }
+    // @media screen and (min-width: 1324px) {
+    //   height: 256px;
+    // }
   }
 .blue{
   background-color: $color_blue;
@@ -173,6 +172,15 @@ LISTEN
         width: 45%;
         font-size: 15px;
       }
+}
+
+.buty_white{
+  color: $color_blue;
+  background-color: $color_typo;
+    border-radius: 20px;
+    padding: 0.5em 2em 0.5em 2em;
+    text-transform: uppercase;
+    border: none;
 }
 
 /*********************
