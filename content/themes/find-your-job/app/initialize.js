@@ -32,7 +32,7 @@ $(function(){
 /*********************
 Fond écran animé pour les pop up !
 *********************/
-//effet fond d'ecran sur la page connection/inscription , page de contact et concour
+//effet fond d'ecran sur la page connection/inscription , page de contact
 $(document).mousemove(function(event) {
   windowWidth = $(window).width();
   windowHeight = $(window).height();
@@ -51,33 +51,3 @@ $(document).mousemove(function(event) {
 
   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
 });
-
-
-
-// scrool sur les pages
-
-//Ajout des action js dans la fontion init!
-// $(app.init);
-
-
-
-
-// if (window.matchMedia("(min-width: 767px)").matches) {
-//
-// $('test').removeClass('section_img');
-//
-// } else if (window.matchMedia("(min-width: 768px)").matches) {
-//
-//   $('test').addClass('section_img');
-//   $('test').animate({
-//     opacity:0.5;
-//   })
-//   });
-//
-// }
-//
-//
-//
-//
-//
-// });

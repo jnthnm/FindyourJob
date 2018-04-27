@@ -11,7 +11,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'tu est égaré tel une brebis , je t invite a retourner en arrière ou a noté dans la barre de recherche mais pas sur que ca fonctionne comme c est une eval et que je manque de temps', 'findjob' ); ?></p>
+					<p><?php esc_html_e( 'tu est égaré tel une brebis , je t invite a retourner en arrières', 'findjob' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -39,4 +39,31 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php  if (is_user_logged_in()) { ?>
+
+    <?php $user=wp_get_current_user(); ?>
+
+    BIENVENUE <?php echo $user->user_login; ?>
+
+ <a href="<?php echo wp_logout_url();?>">Se deconnecter</a>
+
+<?php }else{  ?>
+    <?php wp_loginform(); ?>
+<?php } ?>
+
+
 <?php get_footer();?>
+
+
+
+<?php  if (is_user_logged_in()) { ?>
+
+    <?php $user=wp_get_current_user(); ?>
+
+    BIENVENUE <?php echo $user->user_login; ?>
+
+ <a href="<?php echo wp_logout_url();?>">Se deconnecter</a>
+
+<?php }else{  ?>
+    <?php wp_loginform(); ?>
+<?php } ?>

@@ -1,4 +1,6 @@
-
+/*********************
+header
+*********************/
 .header{
 
   @include breakpoint(laptop){
@@ -24,6 +26,14 @@
     font-size: 0.7em;
   }
 
+}
+
+.wrap_list_text a{
+  text-decoration: none;
+  color: $color_gray;
+}
+.wrap_list_text a:hover{
+  color: $color_typo;
 }
 
 .connect{
@@ -70,13 +80,16 @@
   }
 }
 
-.link_color{
+.link_color a{
   color: $color_blue!important;
+  padding-right: 20px;
+  text-decoration: none !important;
 }
 
 
 .barre_blue{
   position: relative;
+  height: 25px;
 }
 
 .barre{
@@ -93,5 +106,9 @@
   -webkit-transform:perspective(100) rotateX(-40deg);
   top: -26px;
   margin: 0 auto;
+  @include breakpoint(tablet){
+    // width: 200px;
+
+  }
 
 }
