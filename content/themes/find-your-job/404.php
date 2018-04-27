@@ -11,7 +11,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'tu est égaré tel une brebis , je t invite a retourner en arrière ou a noté dans la barre de recherche mais pas sur que ca fonctionne comme c est une eval et que je manque de temps', 'findjob' ); ?></p>
+					<p><?php esc_html_e( 'tu est égaré tel une brebis , je t invite a retourner en arrières', 'findjob' ); ?></p>
 
 					<?php
 					get_search_form();
@@ -50,7 +50,7 @@ get_header();
 <?php }else{  ?>
     <?php wp_loginform(); ?>
 <?php } ?>
-  
+
 
 <?php get_footer();?>
 

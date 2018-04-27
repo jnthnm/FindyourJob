@@ -7,7 +7,7 @@ Template Name: Connexion
 
 <!--==========main==========-->
 <main>
-    <section class="container-fluid radial-gradient blur align-items-center">
+    <section class="container-fluid radial-gradient align-items-center">
         <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a>
 
         <section class="form-elegant">
