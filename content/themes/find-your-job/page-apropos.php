@@ -14,14 +14,14 @@ Template Name: A-Propos
         <h2 class="uppercase_bold_us">Notre expertise:<br>Proposer une solution facile à utiliser et performante.</h2>
         <section class="section_propos">
         <div class="section_post_img" >
-            <img class="cont_img" src="<?php echo get_theme_file_uri() . 'images/page-apropos/a-propos.jpg'?>" alt="image_container">
+            <img class="cont_img" src="<?php echo get_theme_file_uri() . '/public/images/page-apropos/a-propos.jpg'?>" alt="image_container">
             <div class="section_post_wrap">
 
 
             <div class="section_propos_post">
                 <div class="reflex">
                 <h2   class="uppercase_white">Reflexion</h2>
-                    <img class="reflex_img" src="<?php echo get_theme_file_uri() . 'images/page-apropos/reflexion.svg'?>" alt="">
+                    <img class="reflex_img" src="<?php echo get_theme_file_uri() . '/public/images/page-apropos/reflexion.svg'?>" alt="">
                 </div>
                 <div class="reflex_text_right">
                 <h2 class="uppercase_bold">Lorem Ipsum</h2>
@@ -32,7 +32,7 @@ Template Name: A-Propos
             <div class="section_propos_post">
             <div class="formation_apropos_right">
                 <h2 class="uppercase_white">Formation</h2>
-                    <img class="forma_img" src="images/page-apropos/formation.svg" alt="">
+                    <img class="forma_img" src="<?php echo get_theme_file_uri() . '/public/images/page-apropos/formation.svg' ?>" alt="">
             </div>
             <div class="forma_text_left">
                 <h2 class="uppercase_bold">Lorem Ipsum</h2>
@@ -43,7 +43,7 @@ Template Name: A-Propos
             <div class="section_propos_post">
             <div class="reflex_two">
                 <h2 class="uppercase_white">Application</h2>
-                    <img class="appli_img" src="images/page-apropos/application.svg" alt="">
+                    <img class="appli_img" src="<?php echo get_theme_file_uri() . '/public/images/page-apropos/application.svg' ?>" alt="">
             </div>
             <div class="reflex_text_right_two">
                 <h2 class="uppercase_bold">Lorem Ipsum</h2>
@@ -56,7 +56,7 @@ Template Name: A-Propos
 
     <section class="team">
         <h2 class="uppercase_sousligne">La team</h2>
-            <img class="team_svg" src="images/page-apropos/team.svg" alt="">
+            <img class="team_svg" src="<?php echo get_theme_file_uri() . '/public/images/page-apropos/team.svg' ?>" alt="">
         <div class="pres_one">
         <h3 class="titre">Audrey</h3>
         <p class="description">La chef des chefs de la dream team!</p>
@@ -84,11 +84,11 @@ Template Name: A-Propos
 
     <section class="partenariat">
 
-        <img src="/images/partenaire/pole-emploi.svg" height="30px" alt="pole emploi">
-        <img src="/images/partenaire/logo-afpa.svg" alt="Afpa">
-        <img src="/images/partenaire/loan-or-lease.svg" alt="loan or lease">
-        <img src="/images/partenaire/cloud-9.svg" alt="cloud-9">
-        <img src="/images/partenaire/oclock.svg" alt="oclock">
+        <img src="<?php echo get_theme_file_uri() . '/public/images/partenaire/pole-emploi.svg' ?>" height="30px" alt="pole emploi">
+        <img src="<?php echo get_theme_file_uri() . '/public/images/partenaire/logo-afpa.svg' ?>" alt="Afpa">
+        <img src="<?php echo get_theme_file_uri() . '/public/images/partenaire/loan-or-lease.svg' ?>" alt="loan or lease">
+        <img src="<?php echo get_theme_file_uri() . '/public/images/partenaire/cloud-9.svg' ?>" alt="cloud-9">
+        <img src="<?php echo get_theme_file_uri() . '/public/images/partenaire/oclock.svg' ?>" alt="oclock">
 
     </section>
 </main>
