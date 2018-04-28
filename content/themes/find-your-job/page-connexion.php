@@ -23,6 +23,36 @@ Template Name: Connexion
                             <h3 class="mb-5"><i class="fa fa-graduation-cap book-icon"></i></h3>
                         </div>
 
+
+<?php if ( is_user_logged_in() ) { ?>
+
+    <a href="<?php echo wp_logout_url(get_permalink()) ?>">Déconnexion</a>
+
+
+
+<?php } else { ?>
+
+    <form id="login" method="post" action="<?php echo wp_login_url( get_permalink() ) ?>">
+
+        <fieldset>
+
+            <label>Login :</label>
+
+            <input type="text" value="" name="log" />
+
+            <label>Mot de passe : </label>
+
+            <input type="password" value="" name="pwd"  />
+
+            <input type="submit" value="Connexion" />
+
+        </fieldset>
+
+    </form>
+
+
+    <?php } ?>
+
                         <!--Body-->
                         <div class="md-form text-center mt-4 place_prefix">
                             <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>

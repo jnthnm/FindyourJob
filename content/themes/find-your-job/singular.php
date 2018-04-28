@@ -1,3 +1,8 @@
+
+<?php get_header();?>
+
+<?php is_single(); ?>
+
 <main class="main_actu_only">
     <div class="main_actu_only_flex">
 
@@ -97,3 +102,4 @@
 
 </section>
 </main>
+<?php get_footer();?>
