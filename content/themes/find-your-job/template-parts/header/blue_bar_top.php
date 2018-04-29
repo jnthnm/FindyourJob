@@ -66,7 +66,7 @@
 
 
 
-<?php if ( is_user_logged_in() ) { ?>
+<!-- <?php if ( is_user_logged_in() ) { ?>
 
     <a href="<?php echo wp_logout_url(get_permalink()) ?>">Déconnexion</a>
 
@@ -115,4 +115,4 @@
 
     </fieldset>
 
-</form>
+</form> -->

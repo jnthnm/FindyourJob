@@ -14,7 +14,8 @@ function fyj_setup(){
         'header'        => 'Menu de navigation du header',
         'aside'         => 'Menu de navigation Pages aside',
         'profil'        => 'Menu navigation du profil',
-        'connexion'     => 'Menu de création connexion'
+        'connexion'     => 'Menu de connexion',
+        'deconnexion'     => 'Menu de deconnexion'
 
     ]);
     // Les images de mise en avant
