@@ -66,7 +66,7 @@
 
 
 
-<!-- <?php if ( is_user_logged_in() ) { ?>
+<?php if ( is_user_logged_in() ) { ?>
 
     <a href="<?php echo wp_logout_url(get_permalink()) ?>">Déconnexion</a>
 
@@ -93,4 +93,26 @@
     </form>
 
 
-    <?php } ?> -->
+    <?php } ?>
+
+
+
+<form name="registerform" action="<?php bloginfo('url'); ?>/wp-login.php?action=register" method="post">
+
+    <fieldset>
+
+        <label>Identifiant</label>
+
+        <input type="text" name="user_login" value="" />
+
+        <label>E-mail</label>
+
+        <input type="text" name="user_email" value="" />
+
+        <input type="hidden" name="redirect_to" value="<?php echo get_permalink('208'); ?>" />
+
+        <input type="submit" name="wp-submit" />
+
+    </fieldset>
+
+</form>
