@@ -24,3 +24,19 @@ function fyj_setup(){
 }
 endif;
 add_action('after_setup_theme', 'fyj_setup');
+
+
+function widgets() {
+
+ register_sidebar( array(
+
+ 'name' => 'Zone de widget',
+ 'id' => 'new-widget-area',
+ 'before_widget' => '<div class="nwa-widget">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h2 class="nwa-title">',
+ 'after_title' => '</h2>',
+ ) );
+}
+
+add_action( 'widgets_init', 'widgets' );
