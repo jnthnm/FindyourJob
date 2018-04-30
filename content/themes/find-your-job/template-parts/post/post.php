@@ -20,6 +20,7 @@
   // Requete perso avec WP_Query et nos arguments spécifiques
   $args_query_posts = [
 
+    'category_name' => 'entreprenariat',
     // On souhaite afficher 6 résultats
     'posts_per_page' => 6
   ];

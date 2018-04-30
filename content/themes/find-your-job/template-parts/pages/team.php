@@ -6,8 +6,8 @@
         <p class="description">La chef des chefs de la dream team!</p>
     </div>
         <div class="pres_two">
-        <h3 class="titre2">Audrey</h3>
-        <p class="description">La chef des chefs de la dream team!</p>
+        <h3 class="titre2">Cyril</h3>
+        <p class="description">Le pro du CSS!</p>
         </div>
         <div class="pres_three">
         <h3 class="titre3">Audrey</h3>

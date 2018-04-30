@@ -50,6 +50,7 @@ Template Name: Boutique
 
                 <div class="section_ebook_wrap">
 
+
                     <div class="section_ebook_article">
                         <img class="section_ebook_img" src="images/ebook/ebook1.png" alt="Livres">
                         <h3 class="section_ebook_article_title">Lorem ipsum</h3>
