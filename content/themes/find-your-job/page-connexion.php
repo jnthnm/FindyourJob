@@ -24,6 +24,7 @@ Template Name: Connexion
                         </div>
 
                         <!--Body-->
+
                         <div class="md-form text-center mt-4 place_prefix">
                             <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
                             <input type="text" id="Form-email1" class="form-control form_b" placeholder="Email">
