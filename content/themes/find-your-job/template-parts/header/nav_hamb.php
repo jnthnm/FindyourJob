@@ -44,15 +44,13 @@
             </div>
         </nav>
 
+<?php
+
+// wp_nav_menu( [
+// //
+//     'theme_location' => is_user_logged_in() ? 'logged-in-menu' : 'logged-out-menu'
+// ] );
 
 
 
-
-
-
-
-        <!-- <a class="nav-item nav-link link_color" href="#">Accueil</a>
-        <a class="nav-item nav-link link_color" href="#">Actu</a>
-        <a class="nav-item nav-link link_color" href="#">A propos</a>
-        <a class="nav-item nav-link link_color" href="#">Contact</a>
-        <a class="nav-item nav-link link_color" href="#">Boutique</a> -->
+// var_dump(is_user_logged_in());

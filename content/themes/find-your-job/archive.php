@@ -1,10 +1,5 @@
 
 
-<?php
-/*
-Template Name: Actualité-blog
-*/
-?>
 <?php get_header();?>
 
 
@@ -16,7 +11,7 @@ Template Name: Actualité-blog
         <div class="main_actu_only_flex">
 
             <section class="section_post_only">
-
+                
             <?php get_template_part('template-parts/post/post'); // Post?>
 
 
