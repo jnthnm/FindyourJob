@@ -14,8 +14,12 @@ function fyj_setup(){
         'header'        => 'Menu de navigation du header',
         'aside'         => 'Menu de navigation Pages aside',
         'profil'        => 'Menu navigation du profil',
+
+        'logged-in'     => 'logged-in',
+        'logged-out'     => 'logged-out',
         'connexion'     => 'Menu de connexion',
-        'deconnexion'     => 'Menu de deconnexion'
+        'deconnexion'     => 'Menu de deconnexion',
+
 
     ]);
     // Les images de mise en avant
@@ -26,6 +30,23 @@ endif;
 add_action('after_setup_theme', 'fyj_setup');
 
 
+<<<<<<< HEAD
+
+
+////////TEST////////////////////////////////
+
+//
+// function my_wp_nav_menu_args( $args = '' ) {
+//
+// if( is_user_logged_in() ) {
+//     $args['menu'] = 'logged-in';
+// } else {
+//     $args['menu'] = 'logged-out';
+// }
+//     return $args;
+// }
+// add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+=======
 function widgets() {
 
  register_sidebar( array(
@@ -40,3 +61,4 @@ function widgets() {
 }
 
 add_action( 'widgets_init', 'widgets' );
+>>>>>>> cb9dbb78cc5f975203b76fb54f11716535680023

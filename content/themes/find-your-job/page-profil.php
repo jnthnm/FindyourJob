@@ -5,7 +5,9 @@ Template Name: Profil
 */
 ?>
 <main class="main_profil">
+
     <div class="wrap_content">
+
 
         <div class="gauche">
 

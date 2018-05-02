@@ -9,7 +9,6 @@ Template Name: Connexion
 <main>
 
 
-
     <section class="container-fluid radial-gradient align-items-center">
         <!-- <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a> -->
         <section class="form-elegant">
@@ -36,9 +35,13 @@ Template Name: Connexion
 
 
 
-
                         <!--Body-->
+
                         <!-- <div class="md-form text-center mt-4 place_prefix">
+
+
+                        <div class="md-form text-center mt-4 place_prefix">
+
                             <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
                             <input type="text" id="Form-email1" class="form-control form_b" placeholder="Email">
                         </div> -->
@@ -58,9 +61,14 @@ Template Name: Connexion
                                     <!--Twitter-->
                                     <!-- <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button> -->
                                     <!--Google +-->
+
                                     <!-- <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
                                 </div> -->
                                 <h5 class="font-small">Nouveau Membres ?</h5>
+
+                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
+                                </div>
+
                                 <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
 
 
