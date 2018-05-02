@@ -7,6 +7,7 @@ Template Name: Connexion
 
 <!--==========main==========-->
 <main>
+
     <section class="container-fluid radial-gradient align-items-center">
         <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a>
 
@@ -22,7 +23,6 @@ Template Name: Connexion
                         <div class="text-center mt-4">
                             <h3 class="mb-5"><i class="fa fa-graduation-cap book-icon"></i></h3>
                         </div>
-
 
 
 

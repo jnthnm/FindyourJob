@@ -7,6 +7,9 @@ Template Name: Profil
 <?php get_header();?>
 
 <main class="main_profil">
+
+  
+           <?php echo do_shortcode('[ultimatemember form_id=201"]'); ?>
   <div class="wrap_content">
 
 
