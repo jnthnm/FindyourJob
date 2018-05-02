@@ -14,8 +14,12 @@ function fyj_setup(){
         'header'        => 'Menu de navigation du header',
         'aside'         => 'Menu de navigation Pages aside',
         'profil'        => 'Menu navigation du profil',
+
         'logged-in'     => 'logged-in',
-        'logged-out'     => 'logged-out'
+        'logged-out'     => 'logged-out',
+        'connexion'     => 'Menu de connexion',
+        'deconnexion'     => 'Menu de deconnexion',
+
 
     ]);
     // Les images de mise en avant
@@ -26,6 +30,7 @@ endif;
 add_action('after_setup_theme', 'fyj_setup');
 
 
+<<<<<<< HEAD
 
 
 ////////TEST////////////////////////////////
@@ -41,3 +46,19 @@ add_action('after_setup_theme', 'fyj_setup');
 //     return $args;
 // }
 // add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+=======
+function widgets() {
+
+ register_sidebar( array(
+
+ 'name' => 'Zone de widget',
+ 'id' => 'new-widget-area',
+ 'before_widget' => '<div class="nwa-widget">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h2 class="nwa-title">',
+ 'after_title' => '</h2>',
+ ) );
+}
+
+add_action( 'widgets_init', 'widgets' );
+>>>>>>> cb9dbb78cc5f975203b76fb54f11716535680023
