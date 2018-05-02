@@ -4,17 +4,24 @@
 Template Name: Profil
 */
 ?>
-<?php get_header();?>
-
 <main class="main_profil">
-  <div class="wrap_content">
+    <div class="wrap_content">
+
+        <div class="gauche">
 
 
-<div class="gauche">
 
-  <div class="background_brown">
-    <h2 class="profil_title_div">Identifiants</h2>
-  </div>
+<?php get_header();?>
+    <?php
+    while(have_posts()): the_post();
+        echo the_content();
+    endwhile;
+    ?>
+
+    <div class="background_brown">
+        <h2 class="profil_title_div">Identifiants</h2>
+    </div>
+
 
       <div class="wrap_iden">
 

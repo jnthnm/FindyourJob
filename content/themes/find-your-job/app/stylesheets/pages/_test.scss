@@ -1,4 +1,26 @@
-// 
+
+.um-form-field{
+  border-radius: 10px !important;
+}
+
+.um-button{
+  font-size: 1.2em !important;
+  border-radius: 10px !important;
+}
+
+.um-icon-android-checkbox-outline{
+    color: white !important;
+}
+a.um-link-alt{
+  color: $color_typo !important;
+}
+.um-field-checkbox-option, .um-field-radio-option{
+    color: $color_typo !important;
+}
+.um-field-checkbox active{
+color: $color_typo !important; 
+}
+//
 // .header{
 //   @include breakpoint(laptop){
 //     width: 1400px;

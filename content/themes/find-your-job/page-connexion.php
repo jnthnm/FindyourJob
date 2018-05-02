@@ -7,9 +7,11 @@ Template Name: Connexion
 
 <!--==========main==========-->
 <main>
-    <section class="container-fluid radial-gradient align-items-center">
-        <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a>
 
+
+
+    <section class="container-fluid radial-gradient align-items-center">
+        <!-- <a class="btn-toggle croix" id="close_croix" href="#"> &#10060;</a> -->
         <section class="form-elegant">
 
             <!--Form without header-->
@@ -23,37 +25,47 @@ Template Name: Connexion
                             <h3 class="mb-5"><i class="fa fa-graduation-cap book-icon"></i></h3>
                         </div>
 
+    <?php
+    while(have_posts()): the_post();
+        echo the_content();
+    endwhile;
+    ?>
+
+
+
+
 
 
 
                         <!--Body-->
-                        <div class="md-form text-center mt-4 place_prefix">
+                        <!-- <div class="md-form text-center mt-4 place_prefix">
                             <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
                             <input type="text" id="Form-email1" class="form-control form_b" placeholder="Email">
-                        </div>
+                        </div> -->
 
-                        <div class="md-form text-center mt-4 place_prefix">
+                        <!-- <div class="md-form text-center mt-4 place_prefix">
                                 <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
                             <input type="password" id="Form-pass1" class="form-control form_b" placeholder="*********">
-                        </div>
-                        <p class="font-small text-center"><a href="#" class="font-small ml-1"> Mot de passe oublié? </a></p>
+                        </div> -->
+                        <!-- <p class="font-small text-center"><a href="#" class="font-small ml-1"> Mot de passe oublié? </a></p> -->
                         <div class="text-center mt-4 ">
-                            <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
-                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> ou avec :</p>
+                            <!-- <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button> -->
+                            <!-- <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> ou avec :</p> -->
 
-                                <div class="row my-3 d-flex justify-content-center">
+                                <!-- <div class="row my-3 d-flex justify-content-center"> -->
                                     <!--Facebook-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-facebook blue-text text-center"></i></button>
+                                    <!-- <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-facebook blue-text text-center"></i></button> -->
                                     <!--Twitter-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button>
+                                    <!-- <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button> -->
                                     <!--Google +-->
-                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
-                                </div>
+                                    <!-- <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
+                                </div> -->
                                 <h5 class="font-small">Nouveau Membres ?</h5>
                                 <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
 
 
-                                <div class="md-form text-center mt-4 place_prefix">
+                                        <?php echo do_shortcode('[ultimatemember form_id=168]'); ?>
+                                <!-- <div class="md-form text-center mt-4 place_prefix">
                                     <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
                                     <input type="text"  class="form-control form_b" placeholder="Email">
                                 </div>
@@ -66,7 +78,7 @@ Template Name: Connexion
                                     <input type="password" class="form-control form_b" placeholder="*********" >
                                 </div>  <br>
                                 <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
-                                <br> <br>
+                                <br> <br> -->
 
                         </div> <!--text-center-->
                 </div> <!--cadre-->
