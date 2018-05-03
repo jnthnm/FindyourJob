@@ -30,7 +30,7 @@ endif;
 add_action('after_setup_theme', 'fyj_setup');
 
 
-<<<<<<< HEAD
+
 
 
 ////////TEST////////////////////////////////
@@ -46,7 +46,7 @@ add_action('after_setup_theme', 'fyj_setup');
 //     return $args;
 // }
 // add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
-=======
+
 function widgets() {
 
  register_sidebar( array(
@@ -61,4 +61,3 @@ function widgets() {
 }
 
 add_action( 'widgets_init', 'widgets' );
->>>>>>> cb9dbb78cc5f975203b76fb54f11716535680023

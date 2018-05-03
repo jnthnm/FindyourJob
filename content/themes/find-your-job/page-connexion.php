@@ -66,8 +66,8 @@ Template Name: Connexion
                                 </div> -->
                                 <h5 class="font-small">Nouveau Membres ?</h5>
 
-                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
-                                </div>
+                                    <!-- <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
+                                </div> -->
 
                                 <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
 
