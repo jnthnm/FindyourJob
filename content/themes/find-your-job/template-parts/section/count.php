@@ -10,7 +10,7 @@
             <div class="col-6 col-sm-3">
                     <div class="popular">
                       <p class="number">45</p>
-                      <span class="name_popular">ebook</span>
+                      <span class="name_popular">ebooks</span>
                     </div>
             </div>
 

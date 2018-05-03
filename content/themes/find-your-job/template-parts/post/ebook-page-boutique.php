@@ -4,7 +4,7 @@
         <section class="section_ebook "
 
             <div class="section_ebook_left">
-                
+
                 <div class="section_ebook_wrap">
                     <div class="wrap">
                         <div id="primary" class="content-area">
@@ -37,7 +37,7 @@
     	              		if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
     	              		else echo '<img class="section_ebook_img" src="'.wc_placeholder_img_src().'" alt="Placeholder" width="150px" height="150px" />';
     	              		the_title( '<h4>', '</h4>' );
-    	                	echo '<span class="price">';
+    	                	echo '<span class="price"> <n/>' ; 
                              $product->get_price_html() .'</span>';
     	              	?>
     	            </a>
