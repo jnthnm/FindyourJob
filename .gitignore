@@ -8,6 +8,9 @@ wp/
 content/themes/twentyseventeen
 content/plugins/contact-form-7/
 content/plugins/ultimate-member/
+content/plugins/woocommerce/
+content/plugins/avance-custom-fields/
+content/plugins/fyj-ebook/
 content/uploads
 content/upgrade
 content/debug.log

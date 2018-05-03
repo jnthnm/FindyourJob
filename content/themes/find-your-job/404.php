@@ -39,7 +39,7 @@ get_header();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php  if (is_user_logged_in()) { ?>
+ <?php  if (is_user_logged_in()) { ?>
 
     <?php $user=wp_get_current_user(); ?>
 
@@ -52,18 +52,4 @@ get_header();
 <?php } ?>
 
 
-<?php get_footer();?>
-
-
-
-<?php  if (is_user_logged_in()) { ?>
-
-    <?php $user=wp_get_current_user(); ?>
-
-    BIENVENUE <?php echo $user->user_login; ?>
-
- <a href="<?php echo wp_logout_url();?>">Se deconnecter</a>
-
-<?php }else{  ?>
-    <?php wp_loginform(); ?>
-<?php } ?>
+<?php get_footer();?> -->
