@@ -1,7 +1,6 @@
-///////////////////////////////////////////////////////////////////////////////////////////////
-//****************************************Nos Ebook***************************************
-///////////////////////////////////////////////////////////////////////////////////////////////
-
+// ///////////////////////////////////////////////////////////////////////////////////////////////
+// //****************************************Nos Ebook***************************************
+// ///////////////////////////////////////////////////////////////////////////////////////////////
 .main_wrap{
   // position: relative;
   max-width:100%;
@@ -31,7 +30,7 @@
     display: none;
       @include breakpoint(tablet){
         display: inherit;
-        background-image: url("/images/page_boutique/Livre_2.svg");
+        background-image: url("./images/page_boutique/Livre_2.svg");
         background-repeat: no-repeat;
         background-size: 50%;
         background-position: bottom 0 left 10%;
@@ -125,6 +124,16 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //****************************************Partie Ebooks***************************************
 ///////////////////////////////////////////////////////////////////////////////////////////////
+//
+.section_ebook_article {
+  width: auto;
+  .product {
+    text-align: center;
+    color: $color_profil_title !important;
+  }
+}
+
+
 
 
 .section_ebook{
@@ -141,97 +150,104 @@
 
 .section_ebook_left{
   max-width: 80%;
-  margin: 0 auto;
+  //margin: 0 auto;
 
-  @include breakpoint(tablet){
-    grid-column: 1;
-    grid-template-columns: 70%;
-  }
-    @include breakpoint(laptop){
-      grid-template-columns: 80%;
-    }
-  .section_ebook_intro{
+  // @include breakpoint(tablet){
+  //   grid-column: 1;
+  //   grid-template-columns: 70%;
+  // }
+  //   @include breakpoint(laptop){
+  //     grid-template-columns: 80%;
+  //   }
+//   .section_ebook_intro{
+//
+//     .section_ebook_title{
+//       color: $color_profil_title;
+//
+//       margin: 2em auto 1em auto;
+//
+//       text-align: left;
+//       font-size: 2em;
+//       @include breakpoint(tablet){
+//       font-size: 1.5em;
+//       }
+//     }
+//     .section_ebook_desc{
+//       color: $color_profil_title;
+//
+//       font-size: 1.4em;
+//       margin-bottom: 2em;
+//       @include breakpoint(tablet){
+//       font-size: 1em;
+//       }
+//     }
+//   }
+// }
 
-    .section_ebook_title{
+// .section_ebook_article{
+//
+//   @include breakpoint(tablet){
+//     width: 30%;
+//     margin-right: 5px;
+//   }
+//   @include breakpoint(laptop){
+//     width: 30%;
+//   }
+//   .section_ebook_img{
+//     display: block;
+//     width: 60%;
+//     margin: 0 auto;
+//     @include breakpoint(laptop){
+//       margin-bottom: 2em;
+//     }
+//   }
+//   .section_ebook_article_title{
+//     text-align: center;
+//     @include breakpoint(tablet){
+//       font-size: 1em;
+//     }
+//   }
+//   .section_ebook_article_desc{
+//     text-align: center;
+//       @include breakpoint(tablet){
+//         font-size: 0.8em;
+//       }
+//   }
+//   .section_ebook_price{
+//
+//     text-align: center;
+//     margin-bottom: 1em;
+//   }
+//   .button_price{
+//     display: block;
+//     margin-bottom: 3em;
+//     @include breakpoint(tablet){
+//       width: 100%;
+//       margin: 0 auto;
+//       font-weight: 500;
+//       margin-bottom: 2em;
+//       font-size: 0.8em;
+//
+//     }
+//   }
+// }
 
-      margin: 2em auto 1em auto;
+// .section_ebook_wrap{
+//   @include breakpoint(tablet){
+//     display:flex;
+//     flex-wrap: wrap;
+//     align-items: flex-end;
+//     justify-content: space-between;
+//     grid-template-columns: 85%;
+//
+//
+//   }
+//   @include breakpoint(laptop){
+//   }
+// }
+li.product{
+  list-style: none !important;
 
-      text-align: left;
-      font-size: 2em;
-      @include breakpoint(tablet){
-      font-size: 1.5em;
-      }
-    }
-    .section_ebook_desc{
-
-      font-size: 1.4em;
-      margin-bottom: 2em;
-      @include breakpoint(tablet){
-      font-size: 1em;
-      }
-    }
-  }
-}
-
-.section_ebook_article{
-  @include breakpoint(tablet){
-    width: 45%;
-    margin-right: 5px;
-  }
-  @include breakpoint(laptop){
-    width: 30%;
-  }
-  .section_ebook_img{
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-    @include breakpoint(laptop){
-      margin-bottom: 2em;
-    }
-  }
-  .section_ebook_article_title{
-    text-align: center;
-    @include breakpoint(tablet){
-      font-size: 1em;
-    }
-  }
-  .section_ebook_article_desc{
-    text-align: center;
-      @include breakpoint(tablet){
-        font-size: 0.8em;
-      }
-  }
-  .section_ebook_price{
-
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .button_price{
-    display: block;
-    margin-bottom: 3em;
-    @include breakpoint(tablet){
-      width: 100%;
-      margin: 0 auto;
-      font-weight: 500;
-      margin-bottom: 2em;
-      font-size: 0.8em;
-
-    }
-  }
-}
-
-.section_ebook_wrap{
-  @include breakpoint(tablet){
-    display:flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-around;
-    grid-template-columns: 85%;
-
-
-  }
-  @include breakpoint(laptop){
-  }
 }
 
 
@@ -245,24 +261,24 @@
   width: 80%;
   margin: 0 auto;
   color: $color_gray;
-  @include breakpoint(tablet){
-    margin-top: 3em;
-    grid-column: 2;
-    grid-template-columns: 15%;
+  // @include breakpoint(tablet){
+  //   margin-top: 3em;
+  //   grid-column: 2;
+  //   grid-template-columns: 15%;
+  // }
+  // @include breakpoint(laptop){
+  //   grid-template-columns: 20%;
   }
-  @include breakpoint(laptop){
-    grid-template-columns: 20%;
-  }
-  .section_ebook_money{
-    margin-bottom: 1em;
-    border: 1px solid $color_gray;
-    border-radius: 10px;
-    padding: 1em;
-  }
-  .shopping{
-  font-weight: 600;
-  font-size: 1.5em;
-  }
+  // .section_ebook_money{
+  //   margin-bottom: 1em;
+  //   border: 1px solid $color_gray;
+  //   border-radius: 10px;
+  //   padding: 1em;
+  // }
+  // .shopping{
+  // font-weight: 600;
+  // font-size: 1.5em;
+  // }
   .section_ebook_wrap_input{
     background-color: $color_blue;
     border-radius: 10px;
@@ -305,7 +321,7 @@
   @include breakpoint(tablet){
   height: 400px;
   display: inherit;
-  background-image: url("/images/ebook/book.svg");
+  background-image: url("./public/images/ebook/book.svg");
   background-repeat: no-repeat;
   background-size: 50%;
   text-align: center;

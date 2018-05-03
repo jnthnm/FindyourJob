@@ -1,4 +1,3 @@
-
 <?php
 /*
 Template Name: Boutique
@@ -7,133 +6,35 @@ Template Name: Boutique
 
 <?php get_header();?>
 
-<main class="main">
+<main class="main" id="boutique">
 
 
     <div class="main_wrap">
 
-    <section class="section">
+        <section class="section">
 
-        <div id="test" class="section_img"></div>
+            <div id="test" class="section_img"></div>
 
-        <div class="section_title">
-            <p class="section_title_nos"><span>N</span>os </p>
-            <p class="section_title_book"> <span>E</span>books </p>
-        </div>
-
-        <div class="line_wrap_text">
-            <p class="line_text">lorem ipsum</p> <br>
-            <p class="line_text">lorem ipsum</p> <br>
-            <p class="line_text">lorem ipsum</p>
-            <div class="line_up"></div>
-            <div class="line_down"></div>
-        </div>
-<!-- animated slideInRight -->
-    </section>
-</div> <!-- main_wrap -->
-
-
-
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////
-//****************************************Partie Ebooks***************************************
-/////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <section class="section_ebook">
-
-        <div class="section_ebook_left">
-            <div class="section_ebook_intro">
-                <h2 class="section_ebook_title">Ebooks PDF achat en ligne uniquement</h2>
-                <p class="section_ebook_desc">Nos Ebooks sont téléchargeables 24h/24. Le format PDF est universel, il peut-être lu sur les ordinateurs,
-                    tablettes et mobiles. <br>
-                    Profitez-en dès maintenant …</p>
-                </div>
-
-                <div class="section_ebook_wrap">
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook1.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook2.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook3.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook4.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook5.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-
-
-
-                    <div class="section_ebook_article">
-                        <img class="section_ebook_img" src="images/ebook/ebook1.png" alt="Livres">
-                        <h3 class="section_ebook_article_title">Lorem ipsum</h3>
-                        <p class="section_ebook_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-                        <div class="section_ebook_price">5.99€</div>
-                        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-                    </div>
-                    </div>
-
-            </div> <!-- Section_ebook_left -->
-
-
-        <aside class="section_ebook_right">
-
-            <div class="section_ebook_money">
-                <div class="shopping"><i class="fa fa-shopping-cart"></i>Mon panier</div>
-                <div class="section_ebook_info_pay">Votre panier est vide.</div>
+            <div class="section_title">
+                <p class="section_title_nos"><span>N</span>os </p>
+                <p class="section_title_book"> <span>E</span>books </p>
             </div>
-            <div class="section_ebook_wrap_input">
 
-            <label class="section_ebook_label" for="">Abonnez-vous</label>
-                <div id="ebook_input" class="section_ebook_input">
-                    <input type="text" name="" value="" placeholder="Votre email">
-                </div>
-                <a class="btn btn-primary button_newsletter" href="#" role="button">Recevoir la newsletter</a>
-            </div><!-- section_ebook_wrap_input -->
+            <div class="line_wrap_text">
+                <p class="line_text">lorem ipsum</p> <br>
+                <p class="line_text">lorem ipsum</p> <br>
+                <p class="line_text">lorem ipsum</p>
+                <div class="line_up"></div>
+                <div class="line_down"></div>
+            </div> <!--line-wrap-text-->
 
-            <div class="section_ebook_img_aside"></div>
+        </section>
+    </div> <!-- main_wrap -->
+<!---      EBOOK ---->
 
-        </aside>
+<?php   get_template_part('template-parts/post/ebook-page-boutique'); ?>
 
 
-    </section>
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////
 //****************************************Partie Video***************************************
 /////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -160,26 +61,39 @@ Template Name: Boutique
     </div> <!-- main_wrap -->
 
 <section class="section_video">
-    <div class="section_video_article">
-        <iframe src="https://www.youtube.com/embed/US9JCsnAVTU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <div class="section_video_article row">
+    <?php
+        $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => '2',
+     // 'columns' => '2',
+        'product_cat' => 'video',
+        'orderby' => 'date',
+        'order' => 'desc');
+        $loop = new WP_Query( $args );
+        if ( $loop->have_posts()) : while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+            <div class="product col-6">
+                <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+                    <?php
+                        woocommerce_show_product_sale_flash( $post, $product );
+                        if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
+                        else echo '<img class="section_ebook_img" src="'.wc_placeholder_img_src().'" alt="Placeholder" width="150px" height="150px" />';
 
-        <h3 class="section_video_article_title">Lorem ipsum</h3>
-        <p class="section_video_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-        <div class="section_video_price">5.99€</div>
-        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
+                        the_title( '<h4>', '</h4>' );
+                        echo '<span class="price"> <br/> ';
+                         $product->get_price_html() .'</span>';
+                    ?>
+                </a>
+                <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+            </div>
+        <?php endwhile; endif;
+        wp_reset_query();
+    ?>
     </div>
 
-    <div class="section_video_article">
-        <iframe src="https://www.youtube.com/embed/6E9Owf8GrBc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <h3 class="section_video_article_title">Lorem ipsum</h3>
-        <p class="section_video_article_desc">Lorem ipsum dolor sit amet, consectetur</p>
-        <div class="section_video_price">5.99€</div>
-        <a class="btn btn-primary button_price" href="#" role="button">Ajouter au panier</a>
-    </div>
 
-</section>
-
-    </main>
+    </section>
+</main>
 
 
 

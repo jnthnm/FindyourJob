@@ -117,6 +117,11 @@ if (WP_DEBUG) {
 
 // Bloque l'éditeur embarqué
 define('DISALLOW_FILE_EDIT', true);
+//sécurité HTTPS
+
+if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && 'https' == $_SERVER['HTTP_X_FORWARDED_PROTO'] ) {
+    $_SERVER['HTTPS'] = 'on';
+}
 
 
 
