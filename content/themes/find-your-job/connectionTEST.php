@@ -1,13 +1,14 @@
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// Page de connextion
+/*
+Template Name: test
+*/
+
 
 <?php
-
-var_dump(admin_url());
+// Formulaire de connexion
 if ( ! is_user_logged_in() ) {
 	wp_login_form( array(
-        'redirect'       => site_url( '/boutique' ), // par défaut renvoie vers la page courante
+        'redirect'       => site_url( '/' ), // par défaut renvoie vers la page courante
         'label_username' => 'Login',
         'label_password' => 'Mot de passe',
         'label_remember' => 'Se souvenir de moi',
@@ -23,31 +24,71 @@ if ( ! is_user_logged_in() ) {
 } else {
 	echo '<a href="' . admin_url( 'user-edit.php?user_id='. get_current_user_id() ) .'">Accès au profil</a>';
 	echo '<a href="' . wp_logout_url( site_url( '/' ) ) .'">Se déconnecter</a>';
-
 }
 
-// Ajouter le lien pour récupérer le mot de passe, si l'utilisateur ne s'en souvient plus
-add_filter( 'login_form_bottom', 'lien_mot_de_passe_perdu' );
-function lien_mot_de_passe_perdu( $formbottom ) {
-	$formbottom .= '<a href="' . wp_lostpassword_url() . '">Mot de passe perdu ?</a>';
-	return $formbottom;
+
+
+
+// Formulaire d'inscription
+function register_user_form() {
+	echo '<form action="' . admin_url( 'admin-post.php?action=nouvel_utilisateur' ) . '" method="post" id="register-user">';
+
+	// Les champs requis
+	echo '<p><label for="nom-user">Nom</label><input type="text" name="username" id="nom-user" required></p>';
+	echo '<p><label for="email-user">Email</label><input type="email" name="email" id="email-user" required></p>';
+	echo '<p><label for="pass-user">Mot de passe</label><input type="password" name="pass" id="pass-user" required><br>';
+	echo '<input type="checkbox" id="show-password"><label for="show-password">Voir le mot de passe</label></p>';
+
+	// Nonce (pour vérifier plus tard que l'action a bien été initié par l'utilisateur)
+	wp_nonce_field( 'create-' . $_SERVER['REMOTE_ADDR'], 'user-front', false );
+
+	//Validation
+	echo '<input type="submit" value="Créer mon compte">';
+	echo '</form>';
+
+	// Enqueue de scripts qui vont nous permettre de vérifier les champs
+	wp_enqueue_script( 'inscription-front' );
 }
-?>
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Enregistrement de l'utilisateur
+add_action( 'admin_post_nopriv_nouvel_utilisateur', 'ajouter_utilisateur' );
+function ajouter_utilisateur() {
+	// Vérifier le nonce (et n'exécuter l'action que s'il est valide)
+	if( isset( $_POST['user-front'] ) && wp_verify_nonce( $_POST['user-front'], 'create-' . $_SERVER['REMOTE_ADDR'] ) ) {
 
-// Fonction qui permet de dire bienvenue à l'utilisateur et qui lui permet de se déconnecter si il le souhaite
+		// Vérifier les champs requis
+		if ( ! isset( $_POST['username'] ) || ! isset( $_POST['email'] ) || ! isset( $_POST['pass'] ) ) {
+			wp_redirect( site_url( '/inscription/?message=not-user' ) );
+			exit();
+		}
 
-<?php  if (is_user_logged_in()) { ?>
+		$nom = $_POST['username'];
+		$email = $_POST['email'];
+		$pass = $_POST['pass'];
 
-    <?php $user=wp_get_current_user(); ?>
+		// Vérifier que l'user (email ou nom) n'existe pas
+		if ( is_email( $email ) && ! username_exists( $nom )  && ! email_exists( $email ) ) {
+			// Création de l'utilisateur
+	        $user_id = wp_create_user( $nom, $pass, $email );
+	        $user = new WP_User( $user_id );
+	        // On lui attribue un rôle
+	        $user->set_role( 'subscriber' );
+	        // Envoie un mail de notification au nouvel utilisateur
+	        wp_new_user_notification( $user_id, $pass );
+	    } else {
+	    	wp_redirect( site_url( '/inscription/?message=already-registered' ) );
+			exit();
+	    }
 
-    BIENVENUE <?php echo $user->user_login; ?>
+		// Connecter automatiquement le nouvel utilisateur
+	    $creds = array();
+		$creds['user_login'] = $nom;
+		$creds['user_password'] = $pass;
+		$creds['remember'] = false;
+		$user = wp_signon( $creds, false );
 
- <a href="<?php echo wp_logout_url();?>">Se deconnecter</a>
-
-<?php }else{  ?>
-    <?php wp_loginform(); ?>
-<?php } ?>
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		// Redirection
+		wp_redirect( site_url( '/?message=welcome' ) );
+		exit();
+	}
+}

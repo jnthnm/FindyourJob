@@ -14,7 +14,12 @@ function fyj_setup(){
         'header'        => 'Menu de navigation du header',
         'aside'         => 'Menu de navigation Pages aside',
         'profil'        => 'Menu navigation du profil',
-        'connexion'     => 'Menu de création connexion'
+
+        'logged-in'     => 'logged-in',
+        'logged-out'     => 'logged-out',
+        'connexion'     => 'Menu de connexion',
+        'deconnexion'     => 'Menu de deconnexion',
+
 
     ]);
     // Les images de mise en avant
@@ -25,6 +30,7 @@ endif;
 add_action('after_setup_theme', 'fyj_setup');
 
 
+<<<<<<< HEAD
 
 function fyj_register_sidebars() {
     /*primary*/
@@ -36,3 +42,37 @@ function fyj_register_sidebars() {
 }
 
 add_action('widgets_init', 'fyj_register_sidebars');
+=======
+<<<<<<< HEAD
+
+
+////////TEST////////////////////////////////
+
+//
+// function my_wp_nav_menu_args( $args = '' ) {
+//
+// if( is_user_logged_in() ) {
+//     $args['menu'] = 'logged-in';
+// } else {
+//     $args['menu'] = 'logged-out';
+// }
+//     return $args;
+// }
+// add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+=======
+function widgets() {
+
+ register_sidebar( array(
+
+ 'name' => 'Zone de widget',
+ 'id' => 'new-widget-area',
+ 'before_widget' => '<div class="nwa-widget">',
+ 'after_widget' => '</div>',
+ 'before_title' => '<h2 class="nwa-title">',
+ 'after_title' => '</h2>',
+ ) );
+}
+
+add_action( 'widgets_init', 'widgets' );
+>>>>>>> cb9dbb78cc5f975203b76fb54f11716535680023
+>>>>>>> 43a02c83255344261eb041c32c3c768ca2be50b9

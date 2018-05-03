@@ -56,6 +56,7 @@ Contact
 .form_b{
   border: none;
   border-radius: 10px;
+
 }
 .prefix{
  margin: auto;
@@ -82,18 +83,18 @@ Contact
 
 }
 .btn_me{
-  background-color: $color_blue !important;
+  background-color: #1e73be !important;
   color: $color_title !important;
   text-transform: uppercase;
   font-weight: 500;
-  width: 60% !important;
+  border: none;
 
 }
 .font-small p{
   font-weight: 500 !important;
 }
 .form-elegant .font-small {
-  color: $color_form;
+  color: $color_typo;
 }
 
   .form-elegant .z-depth-1a {

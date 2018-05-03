@@ -4,11 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+
+    "content-hash": "80aa679812f301f358c9ae96b38f8d41",
+
     "hash": "c188dd1ca1985d86b4319de71ef5e4d5",
     "content-hash": "106fe7caf190f0741d27e6097a430e05",
 
     "hash": "71a5d40e33def6a31cd16a72c01a16ec",
     "content-hash": "7ad10dad6582e8a6f6ab3976bb081eda",
+
 
     "packages": [
         {
@@ -129,7 +133,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-12-29 09:13:20"
+            "time": "2017-12-29T09:13:20+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -168,7 +172,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-04-03 22:47:48"
+            "time": "2018-04-03T22:47:48+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -208,7 +212,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-04-03 22:47:40"
+            "time": "2018-04-03T22:47:40+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -257,7 +261,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2018-01-29 14:49:29"
+            "time": "2018-01-29T14:49:29+00:00"
         },
         {
 
