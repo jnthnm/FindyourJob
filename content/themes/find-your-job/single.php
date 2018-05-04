@@ -1,99 +1,39 @@
-
 <?php get_header();?>
 
 
+<section class="section_video">
+    <div class="section_video_article row">
+    <?php
+        $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => '2',
+     // 'columns' => '2',
+        'product_cat' => 'video',
+        'orderby' => 'date',
+        'order' => 'desc');
+        $loop = new WP_Query( $args );
+        if ( $loop->have_posts()) : while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+            <div class="product col-6">
+                <a href="<?php echo the_content( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+                    <?php woocommerce_show_product_sale_flash( $post, $product );
+                        if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
+                        else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />';
 
+                        the_title( '<h4>', '</h4>' );
+                        echo '<span class="price">',
 
-
-<main class="main_actu_only">
-    <div class="main_actu_only_flex">
-
-
-    <section class="section_post_only">
-        <article class="section_post_only_wrap">
-
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="section_post_only_title">
-                <h2><?php the_title(); ?></h2>
+                         $product->get_price_html() .'</span>';
+                         echo '<br>';
+                    ?>
+                </a>
+                <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
             </div>
-
-            <div class="section_post_only_infos">
-
-                    <div class="post_author"><i class="fa fa-pencil" aria-hidden="true"></i><?php echo get_the_author(); ?> </div>
-                    <div class="post_date"><i class="fa fa-calendar" aria-hidden="true"></i><?php echo get_the_date() ?></div>
-                    <!-- <div class="post_date"><i class="fa fa-calendar" aria-hidden="true"></i>17 avril 2018</div> -->
-
-            </div>
-            <div class="section_post_only_article">
-                <img class="section_post_only_img" src="<?php the_post_thumbnail_url(); ?>" alt="image_post">
-                <div class="section_post_only_content">
-                    <?php the_content(); ?>
-                </div>
-
-
-            </div>
-
-
-        <?php endwhile; endif; ?>
-            <!-- <div class="section_post_only_article">
-                <div class="section_post_only_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <img class="section_post_only_img" src="images/ebook/pc1.jpg" alt="image_post">
-                <div class="section_post_only_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <h3 class="section_post_only_title_content">Lorem ipsum : lorem ipsum</h3>
-
-                    <div class="section_post_only_content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                    <ol class="section_post_only_list">
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                    </ol>
-                    <h4 class="section_post_only_title_content">Lorem ipsum : lorem ipsum</h4>
-                    <div class="section_post_only_content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-
-            </div> -->
-        </article>
-
-            <div class="pagination">
-              <a href="#">&laquo;</a>
-              <a href="#">1</a>
-              <a href="#" class="active">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">&raquo;</a>
-            </div>
-
-        </section>
-
-<?php   get_template_part('template-parts/sidebar/sidebar_post');?>
-</div>
-
-<section class="section_footer_price">
-
-<img class="section_footer_img" src="images/book.svg" alt="">
-<!-- <div class="section_footer_img"></div> -->
-
-<div class="section_footer_wrap">
-    <h4 class="section_footer_title">Vous souhaitez recevoir nos offres promo!</h4>
-    <div class="section_footer_letter">
-
-            <div class="section_footer_input">
-                <input type="text" name="" value="" placeholder="Votre adresse email">
-            </div>
-            <a class="btn button_offre" href="#" role="button">Recevoir nos offres</a>
-
+        <?php endwhile; endif;
+        wp_reset_query();
+    ?>
     </div>
-</div>
 
-</section>
-</main>
+
+    </section>
+
 <?php get_footer();?>
