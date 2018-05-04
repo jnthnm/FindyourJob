@@ -165,13 +165,14 @@
    }
  }
  .section_ebook_article{
+   margin-bottom: 2em;
 
    @include breakpoint(tablet){
-     width: 80%;
+     //width: 80%;
      margin-right: 5px;
    }
    @include breakpoint(laptop){
-     width: 80%;
+    // width: 80%;
    }
    .section_ebook_img{
     display: block;
@@ -227,24 +228,14 @@
 li.product{
   list-style: none !important;
 }
+
 /////////////////////////////////////////////////////
 //                   Aside
 /////////////////////////////////////////////////////
 .section_ebook_right{
+  margin-top: 4em;
   color: $color_gray;
-      margin-top: 2em;
-      width:100%;
-    @include breakpoint(phablet) {
 
-    }
-   @include breakpoint(tablet){
-    margin-top: 2em;
-   }
-   @include breakpoint(laptop){
-      float: right;
-      width: 20%;
-      margin-top: -33em;
-      margin-right: 2em;
   }
    //.section_ebook_money{
   //   margin-bottom: 1em;
@@ -255,7 +246,7 @@ li.product{
   // .shopping{
   // font-weight: 600;
   // font-size: 1.5em;
-   }
+  // }
   .section_ebook_wrap_input{
     background-color: $color_blue;
     border-radius: 10px;
@@ -293,16 +284,14 @@ li.product{
   @include breakpoint(tablet){
   height: 400px;
   display: inherit;
-  background-image: url("./public/images/ebook/book.svg");
+  background-image: url("./images/ebook/book.svg");
   background-repeat: no-repeat;
   background-size: 50%;
   text-align: center;
   background-position: top 100% left 50%;
   }
 }
-.shopping i{
-  padding-right: 1em;
-}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
 //****************************************Partie Video***************************************
 ///////////////////////////////////////////////////////////////////////////////////////////////
