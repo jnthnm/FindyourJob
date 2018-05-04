@@ -18,7 +18,7 @@ Template Name: Contact
     <div class="card-body form_all_content ">
 
         <!-- Material form register -->
-        <form class="cadre">
+        <form class="cadre"  action="#" method="POST" >
             <p class="h4 text-center py-4"><i class="fa fa-book book-icon"></i></p>
 
 

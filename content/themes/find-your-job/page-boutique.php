@@ -8,7 +8,6 @@ Template Name: Boutique
 
 <main class="main" id="boutique">
 
-
     <div class="main_wrap">
 
         <section class="section">
@@ -74,14 +73,15 @@ Template Name: Boutique
         if ( $loop->have_posts()) : while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
             <div class="product col-6">
                 <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-                    <?php
-                        woocommerce_show_product_sale_flash( $post, $product );
+                    <?php woocommerce_show_product_sale_flash( $post, $product );
                         if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog');
-                        else echo '<img class="section_ebook_img" src="'.wc_placeholder_img_src().'" alt="Placeholder" width="150px" height="150px" />';
+                        else echo '<img src="'.wc_placeholder_img_src().'" alt="Placeholder" width="300px" height="300px" />';
 
                         the_title( '<h4>', '</h4>' );
-                        echo '<span class="price"> <br/> ';
+                        echo '<span class="price">',
+
                          $product->get_price_html() .'</span>';
+                         echo '<br>';
                     ?>
                 </a>
                 <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
