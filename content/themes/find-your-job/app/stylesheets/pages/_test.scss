@@ -18,8 +18,18 @@ a.um-link-alt{
     color: $color_typo !important;
 }
 .um-field-checkbox active{
-color: $color_typo !important; 
+color: $color_typo !important;
 }
+
+
+.404{
+  width: 100%;
+  @include breakpoint(laptop){
+    width: 1400px;
+
+  }
+}
+
 //
 // .header{
 //   @include breakpoint(laptop){
