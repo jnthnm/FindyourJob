@@ -17,7 +17,9 @@
       "wpackagist-theme/twentyseventeen": "*",
       "wpackagist-plugin/contact-form-7": "*",
       "wpackagist-plugin/advanced-custom-fields" :"*",
-      "symfony/var-dumper": "^3.4"
+      "symfony/var-dumper": "^3.4",
+      "wpackagist-plugin/woocommerce": "3.3.5",
+      "wpackagist-plugin/custom-registration-form-builder-with-submission-manager": "3.8.2.6"
 
 
 

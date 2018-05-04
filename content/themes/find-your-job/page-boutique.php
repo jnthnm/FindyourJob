@@ -36,7 +36,7 @@ if( is_user_logged_in() ) { ?>
     </div> <!-- main_wrap -->
 <!---      EBOOK ---->
 
-<?php   get_template_part('template-parts/post/ebook-page-boutique'); ?>
+<?php get_template_part('template-parts/post/ebook-page-boutique'); ?>
 
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////////
