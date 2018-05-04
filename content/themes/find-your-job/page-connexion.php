@@ -72,7 +72,7 @@ Template Name: Connexion
                                 <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
 
 
-                                        <?php echo do_shortcode('[ultimatemember form_id=168]'); ?>
+
                                 <!-- <div class="md-form text-center mt-4 place_prefix">
                                     <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
                                     <input type="text"  class="form-control form_b" placeholder="Email">

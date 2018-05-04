@@ -5,7 +5,11 @@ Template Name: Contact
 */
 ?>
 <?php get_header();?>
-
+    <?php
+    while(have_posts()): the_post();
+        echo the_content();
+    endwhile;
+    ?>
 <!--==========main==========-->
 <main>
     <section class="container-fluid radial-gradient align-items-center">

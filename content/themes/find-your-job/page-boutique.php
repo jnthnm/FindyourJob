@@ -6,6 +6,11 @@ Template Name: Boutique
 
 <?php get_header();?>
 
+
+<?php
+if( is_user_logged_in() ) { ?>
+
+
 <main class="main" id="boutique">
 
 
@@ -95,6 +100,11 @@ Template Name: Boutique
     </section>
 </main>
 
+<?php  } else {
+    $page = get_page_by_title('connexion');
+    wp_redirect( get_permalink($page));exit;
+
+}?>
 
 
 <?php get_footer();?>
