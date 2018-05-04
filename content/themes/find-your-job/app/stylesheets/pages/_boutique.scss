@@ -213,6 +213,7 @@
    }
  }
 .section_ebook_wrap{
+  margin-top:2em;
   @include breakpoint(tablet){
       display:flex;
       flex-wrap: wrap;
@@ -228,7 +229,26 @@
 li.product{
   list-style: none !important;
 }
+a.button.product_type_external{
+  margin-top: 1em;
+  background-color: $color_blue;
+  color: $color_typo;
+  border-radius: 10px;
+}
+.product a h4 {
+  color: $color_profil_title;
+  font-size: 22px;
+  margin-top: 1em;
+}
+.product {
+  margin-top:1em;
+}
 
+.woocommerce-Price-amount{
+  color: $color_profil_title ;
+  font-size: 18px;
+  font-weight: 400;
+}
 /////////////////////////////////////////////////////
 //                   Aside
 /////////////////////////////////////////////////////
