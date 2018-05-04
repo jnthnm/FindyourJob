@@ -31,67 +31,9 @@ Template Name: Inscription
     ?>
 
 
-
-
-
-
-                        <!--Body-->
-
-                        <!-- <div class="md-form text-center mt-4 place_prefix">
-
-
-                        <div class="md-form text-center mt-4 place_prefix">
-
-                            <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
-                            <input type="text" id="Form-email1" class="form-control form_b" placeholder="Email">
-                        </div> -->
-
-                        <!-- <div class="md-form text-center mt-4 place_prefix">
-                                <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                            <input type="password" id="Form-pass1" class="form-control form_b" placeholder="*********">
-                        </div> -->
-                        <!-- <p class="font-small text-center"><a href="#" class="font-small ml-1"> Mot de passe oublié? </a></p> -->
-                        <div class="text-center mt-4 ">
-                            <!-- <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button> -->
-                            <!-- <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> ou avec :</p> -->
-
-                                <!-- <div class="row my-3 d-flex justify-content-center"> -->
-                                    <!--Facebook-->
-                                    <!-- <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-facebook blue-text text-center"></i></button> -->
-                                    <!--Twitter-->
-                                    <!-- <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a"><i class="fa fa-twitter blue-text"></i></button> -->
-                                    <!--Google +-->
-
-                                    <!-- <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
-                                </div> -->
-                                <h5 class="font-small">Nouveau Membres ?</h5>
-
-                                    <!-- <button type="button" class="btn btn-white btn-rounded z-depth-1a"><i class="fa fa-google-plus blue-text"></i></button>
-                                </div> -->
-
-                                <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-arrow-circle-down"></i></button>
-
-
-
-                                <!-- <div class="md-form text-center mt-4 place_prefix">
-                                    <label for="Form-email1"><i class="fa fa-envelope prefix "></i></label>
-                                    <input type="text"  class="form-control form_b" placeholder="Email">
-                                </div>
-                                <div class="md-form mt-4 place_prefix">
-                                        <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                                    <input type="password" class="form-control form_b" placeholder="*********" >
-                                </div>
-                                <div class="md-form mt-4 place_prefix">
-                                        <label for="Form-pass1"><i class="fa fa-lock prefix"></i></label>
-                                    <input type="password" class="form-control form_b" placeholder="*********" >
-                                </div>  <br>
-                                <button class="btn btn-outline-secondary btn_me" type="submit"><i class="fa fa-paper-plane-o ml-2"></i>  Envoyer</button>
-                                <br> <br> -->
-
-                        </div> <!--text-center-->
-                </div> <!--cadre-->
-            </div>
-        </div><!--/Form without header-->
+                </div>
+            </div><!--/Form without header-->
+        </div>
     </section> <!--form-elegant-->
 </section> <!--contact-form-->
 </main>

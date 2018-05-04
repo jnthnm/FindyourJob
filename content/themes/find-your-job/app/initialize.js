@@ -32,24 +32,24 @@ $(function(){
 Fond écran animé pour les pop up !
 *********************/
 //effet fond d'ecran sur la page connection/inscription , page de contact
-$(document).mousemove(function(event) {
-  windowWidth = $(window).width();
-  windowHeight = $(window).height();
-
-  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-
-  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
-});$(document).mousemove(function(event) {
-  windowWidth = $(window).width();
-  windowHeight = $(window).height();
-
-
-  mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-  mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-
-  $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
-});
+// $(document).mousemove(function(event) {
+//   windowWidth = $(window).width();
+//   windowHeight = $(window).height();
+//
+//   mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+//   mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+//
+//   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
+// });$(document).mousemove(function(event) {
+//   windowWidth = $(window).width();
+//   windowHeight = $(window).height();
+//
+//
+//   mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
+//   mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+//
+//   $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, $color_blue, #9b59b6)');
+// });
 
 
 //////////////////////////////////////////////////

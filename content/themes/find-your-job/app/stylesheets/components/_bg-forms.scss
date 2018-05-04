@@ -14,13 +14,42 @@ margin-top:0;
   background: $color_blue;
   background-attachment: scroll;
   /*Linear gradient... */
-  background:
-    radial-gradient(
-     at center, $color_blue, $color_dark_blue
-    );
+  // background:
+  //   radial-gradient(
+  //    at center, $color_blue, $color_dark_blue
+  //   );
 }
-section .radial-gradient {
-  -webkit-filter : grayscale(100%);
-  filter : grayscale(100%);
+// section .radial-gradient {
+//   -webkit-filter : grayscale(100%);
+//   filter : grayscale(100%);
+//
+// }
 
+.rminput input{
+  border-radius: 5px !important;
+  padding-left: 10px;
+  // border: 1px solid $color_gray;
+}
+
+.rmfield{
+  color: $color_typo;
+}
+
+.buttonarea input{
+  font-weight: 500;
+  background-color: $color_gray !important;
+  border: none;
+
+
+}
+
+.rm_login_form-element-3-0{
+
+}
+.buttonarea{
+  text-align: center;
+}
+
+.rm_forgot_pass a{
+  color: $color_typo;
 }

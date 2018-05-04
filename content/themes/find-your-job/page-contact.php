@@ -13,7 +13,7 @@ Template Name: Contact
 <!--==========main==========-->
 <main>
     <section class="container-fluid radial-gradient align-items-center">
-<a class="btn-toggle croix" href="#"> &#10060;</a>
+
 
 
 <div class="card form_all">

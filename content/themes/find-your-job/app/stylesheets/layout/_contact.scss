@@ -13,7 +13,7 @@ Contact
 }
 
 .form_all{
-  margin-top:2em;
+  // margin-top:2em;
   background-color: rgba(117, 190, 218, 0.0); /* 0.0 - transparent */
   align-content: center !important;
 }
@@ -75,7 +75,7 @@ Contact
 .cadre{
     @include breakpoint(tablet) {
     justify-content: center;
-    border: 1px solid $color_title;
+    // border: 1px solid $color_title;
     border-radius: 10px;
     width: 700px;
     margin:0 auto;
