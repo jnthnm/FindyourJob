@@ -61,38 +61,3 @@
 </div>
             </div>
         </nav>
-
-<?php
-
-
-                // <div class="navbar-nav ml-auto link_color">
-
-///////////////////////// Mise en place du menu header/////////////////////-->
-                    // <?php
-                    //
-                    // $menuParameters = [
-                    //     'container'       => false,
-                    //     'echo'            => false,
-                    //     'depth'           => 0,
-                    //     'items_wrap'      => '%3$s',
-                    //     'theme_location'  => 'header',
-                    //
-                    // ];
-                    //
-                    // $menu = wp_nav_menu($menuParameters);
-                    //
-                    // echo strip_tags($menu, '<a>');
-                    //
-                    // ?>
-
-
-                <!-- </div> -->
-
-<!-- // wp_nav_menu( [
-// //
-//     'theme_location' => is_user_logged_in() ? 'logged-in-menu' : 'logged-out-menu'
-// ] );
-
-
-
-// var_dump(is_user_logged_in()); -->

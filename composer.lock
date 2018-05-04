@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "67fbd033ea7a94d7c63b18258e4394bd",
-    "content-hash": "2ab3e87834da7936fb32a3dc546392e3",
+    "hash": "a139ad8817783f3b8a410a81266cee61",
+    "content-hash": "c2f63d9e841ae9f1098e14d45e0aa924",
     "packages": [
         {
             "name": "composer/installers",
@@ -422,6 +422,46 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-registration-form-builder-with-submission-manager",
+            "version": "3.8.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-registration-form-builder-with-submission-manager/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-registration-form-builder-with-submission-manager.zip?timestamp=1525348534",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-registration-form-builder-with-submission-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "3.3.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/3.3.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.3.3.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
         },
         {
             "name": "wpackagist-theme/twentyseventeen",
