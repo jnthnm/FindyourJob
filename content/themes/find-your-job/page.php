@@ -1,13 +1,11 @@
 
 <?php
 /*
-Template Name: login
+Template Name: Page
 */
 ?>
 
 <?php get_header();?>
-
-
 
 
 
