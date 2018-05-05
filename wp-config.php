@@ -81,6 +81,11 @@ define('WP_CONTENT_URL', 'http://localhost/Find-your-jOb/content');
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 
+
+// Enleve les balise </br> que contact form 7 ajoute automatiquement
+define ('WPCF7_AUTOP', false );
+
+
 define('WP_DEBUG', true);
 
 
