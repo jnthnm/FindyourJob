@@ -94,9 +94,11 @@ if( is_user_logged_in() ) { ?>
 </div> <!--section ebook wrap-->
 
 
-<aside class="section_ebook_right ">
+<aside class="section_ebook_right widget-area" id="secondary" role="complementary">
 <div class="section_ebook_wrap_input">
+<section id="woocommerce_widget_cart-2" class="widget woocomerce widget_shoping_cart">
 
+</section>
 <label class="section_ebook_label" for="">Abonnez-vous</label>
     <div id="ebook_input" class="section_ebook_input">
         <input type="text" name="" value="" placeholder="Votre email">

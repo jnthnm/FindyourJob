@@ -20,7 +20,7 @@
   // Requete perso avec WP_Query et nos arguments spécifiques
   $args_query_posts = [
 
-    'category_name' => 'entreprenariat',
+    // 'category_name' => 'entreprenariat',
     // On souhaite afficher 6 résultats
     'posts_per_page' => 6
   ];
@@ -32,7 +32,7 @@
                 <div class="section_post_only_article post_wrap">
 
                     <div class="section_post_img">
-                        <img class="section_post_only_img" src="<?php the_post_thumbnail_url(); ?>" alt="image_post">
+                        <img class="section_post_only_img" src="<?php the_post_thumbnail_url('large'); ?>" alt="image_post">
                     </div>
 
                     <div class="section_post_content post_wrap_content">
