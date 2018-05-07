@@ -3,8 +3,9 @@
 Template Name: Paiement
 */
 ?>
-<?php get_header();?>
-<!-- <? echo do_shortcode( ' [woocommerce_checkout] ' );?> -->
+<?php get_header();
+echo do_shortcode( '[woocommerce_checkout]' ); ?>
+
       <!-- <main class="wrap_paiement">
 
       <div class="paiement_gauche_wrap">

@@ -26,7 +26,13 @@ $(function(){
     });
 });
 
-
+//Jarallax
+//initiation du jarallax avec la classe jarallax
+var app = {init: function() {
+    console.log('App : init');
+    $('.jarallax').jarallax({speed: 0.2});
+  }
+};
 
 /*********************
 Fond écran animé pour les pop up !

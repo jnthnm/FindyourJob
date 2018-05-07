@@ -468,14 +468,14 @@ p.no-comments {
 	content: "";
 	display: table;
 	table-layout: fixed;
-	background-color: #0f834d;
+	background-color: #B0C4DE;
 	clear: both;
 }
 
 .woocommerce-info,
 .woocommerce-noreviews,
 p.no-comments {
-	background-color: $color_blue;
+	background-color: #C0C0C0;
 }
 
 .woocommerce-error {
@@ -590,7 +590,7 @@ li.page-numbers {
 .site-main {
   color: $color_profil_title;
 }
-//background titre
+/*background titre*/
 .page-title {
     max-width:100%;
     background:radial-gradient(circle at center, rgba(209,234,255,1) -50%, rgba(72,156,234,1) 100%);
@@ -598,10 +598,62 @@ li.page-numbers {
     border-bottom: 6px solid $color_gray;
       @include breakpoint(tablet){
         height: 300px;
-}
+  }
 }
 a.button.product_type_simple.add_to_cart-button.ajax_add_to_cart{
   background-color: $color_blue !important;
   color: $color_profil_title !important;
   border-radius: 10px;
+}
+.input-text {
+  width: 600px;
+  height: 30px;
+}
+.woocommerce-billing-fields_fields-wrapper {
+	width: 600px;
+}
+.woocommerce-billing-fields {
+  width: 500px;
+}
+#order_comments{
+  height:200px;
+}
+#billing_last_name.input-text {
+
+}
+#billing_compagny_fields{
+  display:none;
+}
+#order_review_heading{
+     color: $color_profil_title;
+    max-width:100%;
+    height: 70px;
+    background:radial-gradient(circle at center, rgba(209,234,255,1) -50%, rgba(72,156,234,1) 100%);
+    background-repeat: no-repeat;
+    border-bottom: 6px solid $color_gray;
+}
+ #woocommerce-billing-fields {
+   color: $color_profil_title;
+       max-width:100%;
+       height: 70px;
+       background:radial-gradient(circle at center, rgba(209,234,255,1) -50%, rgba(72,156,234,1) 100%);
+       background-repeat: no-repeat;
+       border-bottom: 6px solid $color_gray;
+ }
+.woocommerce {
+  text-align: center;
+}
+#woocommerce-info {
+  text-align: center;
+}
+.checkout {
+  width: 100%;
+  height: 100%;
+}
+.shop_table.woocommerce-checkout-rewiew-order-table{
+  text-align: center;
+}
+.woocommerce-checkout-review-oder{
+  text-align: center;
+  align-self: center;
 }

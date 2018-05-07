@@ -7,7 +7,7 @@
               <div class="row text-center text-md-left mt-4 pb-4">
                   <!--First column-->
                   <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Texte  </h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Liens Utiles </h6>
                       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                   </div>
                   <!--/.First column-->
@@ -17,7 +17,7 @@
                       <h6 class="text-uppercase mb-4 font-weight-bold">Coordonées</h6>
                           <!--Info-->
                 <p>
-                    <i class="fa fa-home mr-3"></i> 10 rue de la paie,<br> 75000 Paris </p>
+                    <i class="fa fa-home mr-3" ></i> 10 rue de la paie,<br> 75000 Paris </p>
                 <p>
                     <i class="fa fa-envelope mr-3"></i> findjob@sitename.com</p>
                 <p>
