@@ -25,7 +25,7 @@
 
             </div>
             <div class="section_post_only_article">
-                <img class="section_post_only_img" src="<?php the_post_thumbnail_url(); ?>" alt="image_post">
+                <img class="section_post_only_img_only" src="<?php the_post_thumbnail_url(); ?>" alt="image_post">
                 <div class="section_post_only_content">
                     <?php the_content(); ?>
                 </div>
