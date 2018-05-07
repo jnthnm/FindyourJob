@@ -4,8 +4,8 @@ Template Name: Paiement
 */
 ?>
 <?php get_header();?>
-
-      <main class="wrap_paiement">
+<!-- <? echo do_shortcode( ' [woocommerce_checkout] ' );?> -->
+      <!-- <main class="wrap_paiement">
 
       <div class="paiement_gauche_wrap">
         <div class="logo_panier_gauche">
@@ -99,7 +99,7 @@ Template Name: Paiement
         </div>
         </div>
 
-      </main>
+      </main> -->
 
 
 <?php get_footer();?>

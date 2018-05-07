@@ -11,7 +11,7 @@ get_header();
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'tu est égaré tel une brebis , je t invite a retourner en arrières', 'findjob' ); ?></p>
+					<p><?php esc_html_e( '', 'findjob' ); ?></p>
 
 					<?php
 					get_search_form();
