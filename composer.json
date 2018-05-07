@@ -19,7 +19,8 @@
       "wpackagist-plugin/advanced-custom-fields" :"*",
       "symfony/var-dumper": "^3.4",
       "wpackagist-plugin/woocommerce": "3.3.5",
-      "wpackagist-plugin/custom-registration-form-builder-with-submission-manager": "3.8.2.6"
+      "wpackagist-plugin/custom-registration-form-builder-with-submission-manager": "3.8.2.6",
+        "adoy/oauth2": "^1.3"
 
     },
     "extra": {
