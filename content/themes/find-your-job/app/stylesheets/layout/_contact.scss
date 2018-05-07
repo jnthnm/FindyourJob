@@ -105,3 +105,86 @@ Contact
   .form-elegant .btn:hover {
     -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
     box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15); }
+
+
+.form_contact{
+  width: 90%;
+margin: 0 auto;
+}
+.wrap_contact{
+  display: flex;
+justify-content: center;
+
+
+}
+.label_contact{
+  position: relative;
+  width: 100%;
+
+}
+
+.input_contact{
+  padding-left: 3em;
+}
+
+.i_contact{
+  position: absolute;
+  top:6px;
+  left: 1em;
+}
+.textarea_contact{
+  width: 100%;
+  height: 100px;
+}
+
+#inputoption{
+  background-color: $color_typo;
+  width: 100%;
+}
+
+.size_textarea{
+    width: 100%;
+    height: 100px;
+}
+.submit_contact{
+  background-color: $color_blue;
+  border-radius: 5px;
+  color: $color_typo;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 20px 10px 20px;
+  margin-top: 1em;
+
+}
+.content_envol{
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_blue;
+  border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.envol{
+  color: $color_typo;
+  transform: translateX(-25%);
+  font-size: 1.5em;
+}
+
+.main_contact{
+  @include breakpoint(tablet){
+    padding: 3em 0 3em 0;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.title_contact{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+}

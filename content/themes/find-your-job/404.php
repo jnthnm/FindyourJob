@@ -2,8 +2,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<img class="404" src="<?php echo get_theme_file_uri() . '/images/404_new.jpg'?>" alt="">
 
 			<section class="error-404 not-found">
 				<header class="page-header">
