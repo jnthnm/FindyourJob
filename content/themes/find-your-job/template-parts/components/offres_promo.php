@@ -3,7 +3,7 @@
     <img class="section_footer_img" src="<?php echo get_theme_file_uri() . '/images/page-formules/cochon.svg'?>" alt="Cochon Dollars">
     <!-- <div class="section_footer_img"></div> -->
 <!-- animated infinite pulse -->
-    <div class="section_footer_wrap">
+    <!-- <div class="section_footer_wrap">
         <h4 class="section_footer_title">Vous souhaitez recevoir nos offres promo!</h4>
         <div class="section_footer_letter">
 
@@ -13,6 +13,6 @@
                 <a class="btn button_offre" href="#" role="button">Recevoir nos offres</a>
 
         </div>
-    </div>
-
+    </div> -->
+        <?php echo do_shortcode('[mc4wp_form id="469"]');?>
 </section>

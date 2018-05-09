@@ -40,3 +40,31 @@ function fyj_register_sidebars() {
 }
 
 add_action('widgets_init', 'fyj_register_sidebars');
+
+
+
+ if (function_exists('register_sidebar')) {
+            // Sidebar Area
+            register_sidebar(array(
+            	'name' => __('SidebarPost'),
+            	'id' => 'sidebarPost',
+            	'description' => __('Sidebar pour les posts'),
+            ));
+
+            // Sidebar Area
+            register_sidebar(array(
+            	'name' => __('SidebarPaie'),
+            	'id' => 'sidebarPaie',
+            	'description' => __('Sidebar pour vos pages'),
+            ));
+
+
+            // register_sidebar(array(
+            // 	'name' => __('Sessad', 'turf'),
+            // 	'id' => 'sessad-page',
+            // 	'description' => __('Sidebar pour les pages Sessad', 'turf'),
+            // ));
+        }
+
+
+//PAGINATION

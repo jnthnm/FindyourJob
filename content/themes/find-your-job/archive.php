@@ -11,7 +11,7 @@
         <div class="main_actu_only_flex">
 
             <section class="section_post_only">
-                
+
             <?php get_template_part('template-parts/post/post'); // Post?>
 
 
@@ -28,7 +28,8 @@
 
 
 
-<?php get_template_part('template-parts/sidebar/sidebar_post'); // Sidebar?>
+
+<?php get_sidebar('SidebarPost'); ?>
 
 
 </div>
@@ -37,8 +38,8 @@
 
     <img class="section_footer_img" src="images/book.svg" alt="">
     <!-- <div class="section_footer_img"></div> -->
-
-    <div class="section_footer_wrap">
+    <?php echo do_shortcode('[mc4wp_form id="469"]');?>
+    <!-- <div class="section_footer_wrap">
         <h4 class="section_footer_title">Vous souhaitez recevoir nos offres promo!</h4>
         <div class="section_footer_letter">
 
@@ -48,7 +49,7 @@
                 <a class="btn button_offre" href="#" role="button">Recevoir nos offres</a>
 
         </div>
-    </div>
+    </div> -->
 
 </section>
 </main>

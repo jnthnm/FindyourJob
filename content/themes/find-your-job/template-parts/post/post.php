@@ -12,22 +12,32 @@
 
 
 
+
+
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
                                                     <!-- POSTS -->
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php
+
+function cat(){
+    foreach((get_the_category()) as $category) {
+        $test = $category->cat_name . ' ';
+}
+return $test;
+}
   // Requete perso avec WP_Query et nos arguments spécifiques
-  $args_query_posts = [
+  // $args_query_posts = [
+  //
+  //
+  //   // On souhaite afficher 6 résultats
+  //   'category_name' => cat(),
+  //   'posts_per_page' => 6
+  // ];
 
-    // 'category_name' => 'entreprenariat',
-    // On souhaite afficher 6 résultats
-    'posts_per_page' => 6
-  ];
+  // $query_posts = new WP_Query($args_query_posts);
 
-  $query_posts = new WP_Query($args_query_posts);
-
-  if ($query_posts->have_posts()): while($query_posts->have_posts()): $query_posts->the_post();?>
+  if (have_posts()): while(have_posts()): the_post();?>
 
                 <div class="section_post_only_article post_wrap">
 
@@ -45,13 +55,17 @@
 
                     </div>
                 </div>
+
   <?php endwhile; endif;
 
   wp_reset_postdata();
-
 ?>
                 <div class="back_blue"></div>
 
 
 
             </article>
+
+
+<!-- <?php  var_dump(get_category_by_slug()); ?>
+<?php  var_dump(get_category()); ?> -->
