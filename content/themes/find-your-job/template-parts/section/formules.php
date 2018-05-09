@@ -18,7 +18,7 @@
         <div class="container_text">Lorem ipsum Lorem </div>
     </div>
 
-        <a class="btn btn-primary button" href=" <?php echo get_permalink( get_page_by_title( 'Tarifs' ) )?>" role="button">infos</a>
+        <a class="btn btn-primary button" href=" <?php echo get_permalink( get_page_by_title( 'Tarifs FYJ' ) )?>" role="button">infos</a>
     </div>
 
 
@@ -32,7 +32,7 @@
         <div class="container_text">Lorem ipsum Lorem </div>
         <div class="container_text">Lorem ipsum Lorem </div>
     </div>
-        <a class="btn but_white" href="<?php echo get_permalink( get_page_by_title( 'Tarifs' ) )?>" role="button">infos</a>
+        <a class="btn but_white" href="<?php echo get_permalink( get_page_by_title( 'Tarifs FYJ' ) )?>" role="button">infos</a>
     </div>
 
 
@@ -46,7 +46,7 @@
         <div class="container_text">Lorem ipsum Lorem </div>
         <div class="container_text">Lorem ipsum Lorem </div>
     </div>
-        <a class="btn btn-primary button" href="<?php echo get_permalink( get_page_by_title( 'Tarifs' ) )?>" role="button">infos</a>
+        <a class="btn btn-primary button" href="<?php echo get_permalink( get_page_by_title( 'Tarifs FYJ' ) )?>" role="button">infos</a>
     </div>
 
 </div>

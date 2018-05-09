@@ -11,7 +11,7 @@
         <div class="main_actu_only_flex">
 
             <section class="section_post_only">
-                
+
             <?php get_template_part('template-parts/post/post'); // Post?>
 
 
@@ -28,7 +28,8 @@
 
 
 
-<?php get_template_part('template-parts/sidebar/sidebar_post'); // Sidebar?>
+
+<?php get_sidebar('SidebarPost'); ?>
 
 
 </div>

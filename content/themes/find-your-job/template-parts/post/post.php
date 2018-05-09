@@ -10,6 +10,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
 
+<?php
+
+
+?>
 
 
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -17,11 +21,19 @@
 <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <?php
+
+function cat(){
+    foreach((get_the_category()) as $category) {
+        $test = $category->cat_name . ' ';
+}
+return $test;
+}
   // Requete perso avec WP_Query et nos arguments spécifiques
   $args_query_posts = [
 
-    // 'category_name' => 'entreprenariat',
+
     // On souhaite afficher 6 résultats
+    'category_name' => cat(),
     'posts_per_page' => 6
   ];
 
@@ -48,10 +60,13 @@
   <?php endwhile; endif;
 
   wp_reset_postdata();
-
 ?>
                 <div class="back_blue"></div>
 
 
 
             </article>
+
+
+<!-- <?php  var_dump(get_category_by_slug()); ?>
+<?php  var_dump(get_category()); ?> -->
