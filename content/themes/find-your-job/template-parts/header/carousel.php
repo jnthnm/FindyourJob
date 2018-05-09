@@ -1,4 +1,6 @@
 
+<?php if (get_theme_mod('fyj_slider_active')): ?>
+
 
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -21,3 +23,5 @@
         <span class="sr-only">Next</span>
     </a>
 </div> <!--caroussel-slide-->
+
+<?php endif ?>
