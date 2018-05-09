@@ -29,17 +29,17 @@ function cat(){
 return $test;
 }
   // Requete perso avec WP_Query et nos arguments spécifiques
-  $args_query_posts = [
+  // $args_query_posts = [
+  //
+  //
+  //   // On souhaite afficher 6 résultats
+  //   'category_name' => cat(),
+  //   'posts_per_page' => 6
+  // ];
 
+  // $query_posts = new WP_Query($args_query_posts);
 
-    // On souhaite afficher 6 résultats
-    'category_name' => cat(),
-    'posts_per_page' => 6
-  ];
-
-  $query_posts = new WP_Query($args_query_posts);
-
-  if ($query_posts->have_posts()): while($query_posts->have_posts()): $query_posts->the_post();?>
+  if (have_posts()): while(have_posts()): the_post();?>
 
                 <div class="section_post_only_article post_wrap">
 
