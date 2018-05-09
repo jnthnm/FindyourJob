@@ -1,4 +1,14 @@
+
+
+<?php
+/*
+Template Name: Curl
+*/
+?>
+
+
 <!-- rest api == -->
+
 
 <?php
 
@@ -14,8 +24,8 @@ curl_setopt($curl, CURLOPT_URL,BASEURL.JSONURL.'posts');
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'POST');
 curl_setopt($curl, CURLOPT_POSTFIELDS, [
-  'title' => 'test titre avec curl',
-  'content' => 'osef du contenu'
+  'title' => 'test titre avec curl 2',
+  'content' => 'osef du contenu allo stop bug'
 ]);
 curl_setopt($curl, CURLOPT_HTTPHEADER, [
   'authorization: Basic ZmluZHlvdXJqb2I6ZmluZHlvdXJqb2I=',
