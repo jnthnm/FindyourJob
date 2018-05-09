@@ -65,3 +65,6 @@ add_action('widgets_init', 'fyj_register_sidebars');
             // 	'description' => __('Sidebar pour les pages Sessad', 'turf'),
             // ));
         }
+
+
+//PAGINATION

@@ -38,17 +38,30 @@
                 <?php endwhile;
                 ?>
 
+<!-- <?php the_posts_pagination( array(
+    'mid_size' => 4,
+    'prev_text' => __( '<<', 'textdomain' ),
+    'next_text' => __( '>>', 'textdomain' ),
+) ); ?> -->
 
                 <div class="pagination pag_actu">
+                    <?php the_posts_pagination( array(
+                        'mid_size' => 4,
+                        'prev_text' => __( '<<', 'textdomain' ),
+                        'next_text' => __( '>>', 'textdomain' ),
+                    ) ); ?>
+                </div>
+                <!-- <div class="pagination pag_actu">
                   <a href="#">&laquo;</a>
                   <a href="#">1</a>
                   <a href="#" class="active">2</a>
                   <a href="#">3</a>
                   <a href="#">4</a>
                   <a href="#">&raquo;</a>
-                </div>
+                </div> -->
 
             </section>
+<!-- <?php var_dump(the_posts_pagination())?> -->
 
 
 
