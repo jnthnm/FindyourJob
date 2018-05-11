@@ -1,4 +1,7 @@
 
+
+///////////////////////////// Formulaires ////////////////////
+
 .um-form-field{
   border-radius: 10px !important;
 }
@@ -47,6 +50,136 @@ color: $color_typo !important;
 .mc4wp-form mc4wp-form-469{
   width: 100%;
 }
+
+
+///////////////////////////////////WooCommerce///////////////////////////////////
+
+
+.ajax_add_to_cart{
+  background-color: $color_blue;
+  border-radius: 5px;
+  color:$color_typo;
+  text-align: center;
+  width: 200px;;
+  margin: 0 auto;
+  padding: 0.5em 1em 0.5em 1em;
+  font-weight: 500;
+  margin-top: 1em;
+  display: block;
+}
+
+.ajax_add_to_cart:hover{
+  text-decoration: none;
+  color: $color_gray;
+}
+.woocommerce-Price-amount{
+  text-decoration: none;
+  // width: 10%;
+  // margin: 0 auto;
+  color: $color_gray;
+  font-weight: 500;
+}
+
+.price > span{
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  // margin-left: 110px;
+  display: block;
+  padding-bottom: 0.5em;
+}
+.price:hover{
+  text-decoration: none;
+}
+
+
+.woocommerce-loop-product__title{
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+
+.orderby{
+  border: 1px solid $color_blue;
+  background-color: $color_blue;
+  color: $color_typo;
+  font-weight: 500;
+  padding: 0.5em 1em 0.5em 1em;
+
+}
+
+.woocommerce-products-header__title{
+  text-transform: uppercase;
+  color: $color_typo;
+  font-weight: 500;
+
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint(tablet){
+    width: 1400px;
+    // margin-left: 800px;
+    // margin: 0 auto;
+    // align-items: center;
+
+  }
+
+}
+.products li{
+  padding: 1em;
+  width: 32%;
+
+}
+.wp-post-image{
+  display: block;
+  margin: 0 auto;
+}
+
+.flex_ebook{
+  width: 1400px;
+  margin: 0 auto;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 // .header{
 //   @include breakpoint(laptop){

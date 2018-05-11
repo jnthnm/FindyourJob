@@ -5,3 +5,9 @@ Author: Cyril, Jonathan, Ludovic et Audrey
 Version: 1.0.0
 Description: Thème FYJ avec Cyril, Jonathan, Ludovic et Audrey
  */
+.woocommerce-LoopProduct-link .woocommerce-loop-product__link{
+  color: red;
+}
+.button .product_type_simple .add_to_cart_button .ajax_add_to_cart{
+  color: red;
+}

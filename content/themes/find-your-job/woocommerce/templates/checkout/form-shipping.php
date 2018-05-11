@@ -60,7 +60,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
+<<<<<<< HEAD
 			<h3><?php _e( 'Additional information', 'woocommerce' ); ?></h3>
+=======
+			<h3><?php _e( 'Informations complèmentaires', 'woocommerce' ); ?></h3>
+>>>>>>> eab8c81aaadace3832dbb482930109788c8d2d53
 
 		<?php endif; ?>
 

@@ -30,7 +30,11 @@ do_action( 'woocommerce_cart_is_empty' );
 if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
 	<p class="return-to-shop">
 		<a class="button wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+<<<<<<< HEAD
 			<?php _e( 'Return to shop', 'woocommerce' ) ?>
+=======
+			<?php _e( 'Retournez dans la boutique', 'woocommerce' ) ?>
+>>>>>>> eab8c81aaadace3832dbb482930109788c8d2d53
 		</a>
 	</p>
 <?php endif; ?>

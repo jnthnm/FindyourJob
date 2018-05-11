@@ -25,7 +25,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
+<<<<<<< HEAD
 	<h2><?php _e( 'Cart totals', 'woocommerce' ); ?></h2>
+=======
+	<h2><?php _e( 'Total de la commande', 'woocommerce' ); ?></h2>
+>>>>>>> eab8c81aaadace3832dbb482930109788c8d2d53
 
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
