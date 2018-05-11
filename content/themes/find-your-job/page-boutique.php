@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Boutique
-*/
-?>
+
 
 <?php get_header();?>
 
