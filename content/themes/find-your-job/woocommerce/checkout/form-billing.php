@@ -30,7 +30,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php else : ?>
 
+<<<<<<< HEAD
+		<h3><?php _e( 'Billing details', 'woocommerce' ); ?></h3>
+=======
 		<h3><?php _e( 'Détails', 'woocommerce' ); ?></h3>
+>>>>>>> eab8c81aaadace3832dbb482930109788c8d2d53
 
 	<?php endif; ?>
 
