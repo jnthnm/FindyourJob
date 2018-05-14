@@ -85,6 +85,11 @@ define('WP_CONTENT_URL', 'http://localhost/Find-your-jOb/content');
 // Enleve les balise </br> que contact form 7 ajoute automatiquement
 define ('WPCF7_AUTOP', false );
 
+//Augemnte la quantité de mémoire alloué pour WordPress
+define( 'WP_MEMORY_LIMIT', '128M' );
+define( 'WP_MAX_MEMORY_LIMIT', '128M' );
+
+
 
 define('WP_DEBUG', true);
 

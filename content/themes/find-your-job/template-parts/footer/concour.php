@@ -8,35 +8,41 @@
             <p form_p>Pour participez, merci de remplir les informations</p>
             <form class="form_form" method="post">
                 <div class="form_name">
-                    <input class="input" type="text" name="" placeholder="Nom" required="required" />
-                    <input class="input" type="text" name="" placeholder="Prénom" required="required" />
+                    <label for="name_c"></label>
+                    <input id="name_c" class="input" type="text" name="lastname_c" placeholder="Nom" required="required" />
+                    <label for="firstname_c"></label>
+                    <input id="firstname_c" class="input" type="text" name="firstname_c" placeholder="Prénom" required="required" />
+
                 </div>
 
                 <div class="form_mid">
-
-                    <input class="input" type="text" name="" placeholder="Adresse" required="required" />
+                    <label for="adress_c"></label>
+                    <input id="adress_c" class="input" type="text" name="adress_c" placeholder="Adresse" required="required" />
                 </div>
 
                 <div class="form_name">
-                    <input class="input" type="text" name="" placeholder="Ville" required="required" />
-                    <input class="input" type="text" name="" placeholder="Code Postal" required="required" />
+                    <label for="ville"></label>
+                    <input id="ville" class="input" type="text" name="ville" placeholder="Ville" required="required" />
+                    <label for="postal"></label>
+                    <input id="postal" class="input" type="text" name="postal" placeholder="Code Postal" required="required" />
                 </div>
 
                 <div class="form_mid">
-
-                    <input class="input" type="email" name="" placeholder="email" required="required" />
+                    <label for="email_c"></label>
+                    <input id="email_c" class="input" type="email" name="email_c" placeholder="email" required="required" />
                 </div>
             </form>
 
             <div class="form_abo_wrap">
-
-                <input class="form_abo" type="checkbox" name="" value="">   Je veux m'abonner à la newsletter
+                <label for="newsletter_c"></label>
+                <input class="form_abo" type="checkbox" name="newsletter_c" value="">   Je veux m'abonner à la newsletter
             </div>
             <div class="form_abo_wrap">
-
-                <input class="form_abo" type="checkbox" name="" value=""><a class="form_abo_a" href="#">   J'ai lu et j'accepte le règlement du jeu</a>
+                <label for="checkbox_c"></label>
+                <input class="form_abo" type="checkbox" name="checkbox_c" value=""><a class="form_abo_a" href="#">   J'ai lu et j'accepte le règlement du jeu</a>
             </div>
-            <button type="submit" class="btn btn_game">Participez</button>
+            <label for="submit_c"></label>
+            <button type="submit" name="submit_c" class="btn btn_game">Participez</button>
 
         </div>
     </div>

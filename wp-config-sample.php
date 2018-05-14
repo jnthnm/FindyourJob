@@ -69,6 +69,10 @@ $table_prefix  = 'wp_';
 define('WP_CONTENT_DIR', dirname(ABSPATH) . '/content');
 // URL complete du répertoire WP-CONTENT (déplacé)
 define('WP_CONTENT_URL', 'http://localhost/Find-your-jOb/content');
+
+
+define( 'WP_MEMORY_LIMIT', '128M' );
+define( 'WP_MAX_MEMORY_LIMIT', '128M' );
 /**
  * Pour les développeurs : le mode déboguage de WordPress.
  *

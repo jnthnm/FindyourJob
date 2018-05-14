@@ -14,15 +14,15 @@
 
             <?php get_template_part('template-parts/post/post'); // Post?>
 
-
-                <div class="pagination pag_actu">
+            <?php get_template_part('template-parts/components/pagination'); // media ?>
+                <!-- <div class="pagination pag_actu">
                   <a href="#">&laquo;</a>
                   <a href="#">1</a>
                   <a href="#" class="active">2</a>
                   <a href="#">3</a>
                   <a href="#">4</a>
                   <a href="#">&raquo;</a>
-                </div>
+                </div> -->
 
             </section>
 
@@ -36,7 +36,7 @@
 
 <section class="section_footer_price">
 
-    <img class="section_footer_img" src="images/book.svg" alt="">
+    <img class="section_footer_img" src="<?php echo get_theme_file_uri() . '/images/book.svg'?>" alt="">
     <!-- <div class="section_footer_img"></div> -->
     <?php echo do_shortcode('[mc4wp_form id="469"]');?>
     <!-- <div class="section_footer_wrap">

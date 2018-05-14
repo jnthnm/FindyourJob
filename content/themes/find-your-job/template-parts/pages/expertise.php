@@ -3,7 +3,9 @@
         <h2 class="uppercase_bold_us">Notre expertise:<br>Proposer une solution facile à utiliser et performante.</h2>
         <section class="section_propos">
         <div class="section_post_img" >
-            <img class="cont_img jarallax" src="<?php echo get_theme_file_uri() . '/images/page-apropos/a-propos.jpg'?>" alt="image_container">
+            <div class="jarallax">
+            <img class="jarallax-img cont_img" src="<?php echo get_theme_file_uri() . '/images/page-apropos/a-propos.jpg'?>" alt="image_container">
+            </div>
             <div class="section_post_wrap">
 
 

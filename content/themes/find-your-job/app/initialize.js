@@ -70,6 +70,11 @@ var app = {
 
     $('body').on('click', '.ui-button', app.visibleMenu);
 
+
+    $ ( ' .jarallax ' ) . jarallax ( {
+    Vitesse : 0.2
+} ) ;
+
   },
 
   visibleMenu: function(evt){

@@ -44,13 +44,7 @@
     'next_text' => __( '>>', 'textdomain' ),
 ) ); ?> -->
 
-                <div class="pagination pag_actu">
-                    <?php the_posts_pagination( array(
-                        'mid_size' => 4,
-                        'prev_text' => __( '<<', 'textdomain' ),
-                        'next_text' => __( '>>', 'textdomain' ),
-                    ) ); ?>
-                </div>
+<?php get_template_part('template-parts/components/pagination'); // media ?>
                 <!-- <div class="pagination pag_actu">
                   <a href="#">&laquo;</a>
                   <a href="#">1</a>
@@ -73,7 +67,7 @@
 
 <section class="section_footer_price">
 
-    <img class="section_footer_img" src="images/book.svg" alt="">
+    <img class="section_footer_img" src="<?php echo get_theme_file_uri() . '/images/book.svg'?>" alt="">
     <!-- <div class="section_footer_img"></div> -->
 
     <!-- <div class="section_footer_wrap">
