@@ -42,6 +42,7 @@ MEDIA
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 1.5em 0 1em 0;
     justify-content:space-around;
     align-self: center;
     width: 100% !important;
@@ -159,6 +160,7 @@ LISTEN
   font-size: 15px;
 }
 .listen_equip{
+  width: 90%;
   margin:auto;
   text-align: center;
     @include breakpoint(tablet) {
@@ -188,18 +190,26 @@ FORMULES
 *********************/
 .formules{
   align-content: center;
+  @include breakpoint(laptop){
+    height: 350px;
+
+  }
 }
 
 .formules_title{
-  margin-top: 1em;
+  margin-top: 0em;
+  padding: 1.5em;
   font-size:9px;
   color: white;
   background-color: $color_blue;
   text-decoration: underline;
   text-transform:uppercase;
   text-align: center;
-  height: 4em;
+  height: 7em;
 }
+// .formules_title h2{
+//   padding: 1em;
+// }
 
 .formules_prop{
 width: 100%;
@@ -259,6 +269,7 @@ position: relative;
   border: none;
 }
 
+
 .color_back{
   background-color: $color_blue;
   color: $color_typo;
@@ -302,4 +313,19 @@ POPULAR
 .name_popular{
   font-size: 15px;
   text-transform: uppercase;
+}
+.number{
+  color: $color_blue;
+  font-weight: 500;
+  font-size: 2em;
+}
+.name_popular{
+  color: $color_gray;
+  font-weight: 500;
+}
+.listen-content{
+  padding: 2em;
+  @include breakpoint(tablet){
+    padding: 0;
+  }
 }

@@ -36,7 +36,7 @@ endif;
  ?>
 
 </div>
-<img class="section_aside_logo" src="<?php echo get_theme_file_uri() . '/images/loupefind.svg'?>" alt="Logo">
+<img class="section_aside_logo animated pulse" src="<?php echo get_theme_file_uri() . '/images/loupefind.svg'?>" alt="Logo">
 </div>
 <!-- animated jackInTheBox infinite -->
 <div class="section_aside_button">

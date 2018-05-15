@@ -9,7 +9,7 @@
                 </div>
             <div class="col-6 col-sm-3">
                     <div class="popular">
-                      <p class="number">45</p>
+                      <p class="number counter">45</p>
                       <span class="name_popular">ebooks</span>
                     </div>
             </div>
@@ -18,8 +18,8 @@
 
             <div class="col-6 col-sm-3">
                 <div class="popular">
-                 <p class="number">806</p>
-                 <span class="name_popular">clients satisfait</span>
+                 <p class="number counter">806</p>
+                 <span class="name_popular">clients satisfaits</span>
                </div>
            </div>
             <div class="col-6 col-sm-3">
@@ -30,5 +30,3 @@
             </div>
         </div> <!--row-->
     </div>
-
-</section>

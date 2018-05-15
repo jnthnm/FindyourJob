@@ -25,7 +25,7 @@ color: $color_typo !important;
 }
 
 
-.404{
+.notfound{
   width: 100%;
   @include breakpoint(laptop){
     width: 1400px;
@@ -286,6 +286,9 @@ margin-right: 3em;
   display: none;
 }
 
+.cart-collaterals{
+  padding-left: 2em;
+}
 
 
 

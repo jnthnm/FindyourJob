@@ -10,7 +10,7 @@
 
     <main class="main_actu_only">
 
-        <img class="img_header" src="images/office.jpeg" alt="">
+        <img class="img_header" src="<?php echo get_theme_file_uri() . '/images/office.jpeg'?>" alt="">
 
         <div class="main_actu_only_flex">
 
@@ -35,6 +35,7 @@
 
                                 </div>
                             </div>
+                                <div class="back_blue"></div>
                 <?php endwhile;
                 ?>
 

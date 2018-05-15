@@ -24,6 +24,7 @@ Actu only
   width: 100%;
   margin: 0 auto;
   padding: 2em;
+  padding-top: 4.1em;
   color: #272424;
   @include breakpoint(laptop){
   width: 70%;
@@ -124,6 +125,10 @@ Actu only
 
 .section_aside_img{
     width: 100%;
+    @include breakpoint(laptop){
+      width: 400px;
+      height: 270px;
+    }
 }
 .section_aside_title_top{
   padding-top: 1em;

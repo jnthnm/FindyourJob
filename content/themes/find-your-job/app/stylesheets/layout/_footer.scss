@@ -16,11 +16,64 @@ COPY
 *********************/
 .footer_black{
   background-color: $color_gray;
-  height: 3em;
+  height: 5em;
   width: 100%;
 }
 .footer_black_copy{
+  padding: 1.3em;
   text-align: center;
   text-decoration: none;
   color: white;
+  font-weight: 500;
+}
+footer {
+  background-color: $color_blue;
+  color: white;
+}
+.btn-floating{
+  height: 40px;
+  width: 50px;
+  border-radius: 30%;
+  background-color: $color_gray;
+}
+
+.link1 {
+
+    color: $color_title;
+
+
+}
+.link1:hover {
+    color: $color_gray;
+    text-decoration: none;
+}
+
+.link_utile {
+    margin-left: 0;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding: 0;
+}
+
+.list-inline-item{
+margin-top: 1em;
+}
+.btn-sm i{
+font-size: 1.5em;
+}
+.btn-sm i:hover{
+  color: $color_gray;
+}
+
+
+.page_php{
+  margin-top: 2em;
+  // display: flex;
+}
+.mentions{
+  display: flex;
+  justify-content: space-around;
 }

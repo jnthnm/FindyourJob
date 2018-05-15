@@ -19,6 +19,7 @@ page actu
   }
 }
 .section_post_only_img{
+  width: 100%;
   @include breakpoint(laptop){
     width: 400px;
     height: 270px;

@@ -25,13 +25,14 @@ Template Name: Home
 //<!--==========formules==========-->
 
         get_template_part('template-parts/section/formules'); // formules
-
-//<!--==========Count==========-->
-
+        //<!--==========Count==========-->
+        
         get_template_part('template-parts/section/count'); // count?>
 
 
+
 </main>
+
 
 
 <?php get_footer();?>

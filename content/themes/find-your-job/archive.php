@@ -36,7 +36,7 @@
 
 <section class="section_footer_price">
 
-    <img class="section_footer_img" src="<?php echo get_theme_file_uri() . '/images/book.svg'?>" alt="">
+    <img class="section_footer_img animated bounceIn infinite" src="<?php echo get_theme_file_uri() . '/images/book.svg'?>" alt="">
     <!-- <div class="section_footer_img"></div> -->
     <?php echo do_shortcode('[mc4wp_form id="469"]');?>
     <!-- <div class="section_footer_wrap">

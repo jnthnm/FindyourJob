@@ -13,3 +13,7 @@ if (!defined('WPINC')) {
 
 
 require plugin_dir_path(__FILE__) . 'inc/concour.php';
+
+function get_user_concour() {
+
+}

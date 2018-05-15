@@ -25,7 +25,9 @@ exports.modules = {
   // on require le module "initialize" du fichier "app.js" pour éviter de le require dans le html
   autoRequire: {
     'js/app.js': [
-      'initialize'
+      'initialize',
+      'jquery.counterup',
+      'waypoints'
     ]
   }
 };
@@ -35,7 +37,7 @@ exports.npm = {
   globals: {
     $: 'jquery',
     jQuery: 'jquery',
-    bootstrap: 'bootstrap'
+    bootstrap: 'bootstrap',
   },
   styles: {
     'bootstrap': ['dist/css/bootstrap.css'],
@@ -50,7 +52,8 @@ exports.plugins = {
   sass: {
     options: {
       includePaths: [
-        'node_modules/bootstrap/scss'
+        'node_modules/bootstrap/scss',
+
       ]
     }
   },

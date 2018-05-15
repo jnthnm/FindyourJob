@@ -51,8 +51,8 @@ Tarifs
 }
 }
 .tarif:hover{
-  // transform: scale(1.05);
-  // transition-duration: 0.3s;
+  transform: scale(1.05);
+  transition-duration: 0.3s;
 }
 
 .tarif_wrap{
@@ -183,9 +183,9 @@ Tarifs
   }
 
 .tarif_m:hover{
-  // transform: scale(1.05);
-  // transition-duration: 0.3s;
-  // animation-duration: 2s;
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  animation-duration: 2s;
 }
 
 .tarif_wrap_m{

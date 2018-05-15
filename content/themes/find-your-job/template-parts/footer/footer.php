@@ -7,14 +7,25 @@
               <div class="row text-center text-md-left mt-4 pb-4">
                   <!--First column-->
                   <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Liens Utiles </h6>
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                       <h6 class="text-uppercase mb-4 font-weight-bold">Liens Utiles </h6>
+
+                    <div class="link_utile">
+                        <ul>
+
+                    <li>
+                 <a class="link1" href="http://localhost/Find-your-jOb/cgu/">CGU</a>
+                 </li>
+                 <li>
+                     <a class="link1" href="http://localhost/Find-your-jOb/mentions-legales/">Mentions légales</a>
+                     <li>
+                     </ul>
+                  </div>
                   </div>
                   <!--/.First column-->
                   <hr class="w-100 clearfix d-md-none">
                   <!--Second column-->
                   <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Coordonées</h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Coordonnées</h6>
                           <!--Info-->
                 <p>
                     <i class="fa fa-home mr-3" ></i> 10 rue de la paie,<br> 75000 Paris </p>
@@ -29,15 +40,15 @@
                   <hr class="w-100 clearfix d-md-none">
                   <!--Third column-->
                   <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Réseau Sociaux</h6>
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Réseaux Sociaux</h6>
                               <!--Social buttons-->
                               <div class="social_text">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
                                   <ul class="list-unstyled list-inline">
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
-                                      <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                                      <li class="list-inline-item"><a class="btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                                      <li class="list-inline-item"><a class="btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                                      <li class="list-inline-item"><a class="btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                                      <li class="list-inline-item"><a class="btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
                                   </ul>
                               </div>
                               <!--/.Social buttons-->

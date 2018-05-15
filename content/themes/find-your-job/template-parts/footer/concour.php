@@ -6,10 +6,10 @@
         <div class="form_wrap">
             <img class="form_img" src="<?php echo get_theme_file_uri() . '/images/label.svg'?>" alt="">
             <p form_p>Pour participez, merci de remplir les informations</p>
-            <form class="form_form" method="post">
+            <form class="form_form" method="POST" action="form.php">
                 <div class="form_name">
                     <label for="name_c"></label>
-                    <input id="name_c" class="input" type="text" name="lastname_c" placeholder="Nom" required="required" />
+                    <input id="name_c" class="input" type="text" name="name_c" placeholder="Nom" required="required" />
                     <label for="firstname_c"></label>
                     <input id="firstname_c" class="input" type="text" name="firstname_c" placeholder="Prénom" required="required" />
 
@@ -43,6 +43,8 @@
             </div>
             <label for="submit_c"></label>
             <button type="submit" name="submit_c" class="btn btn_game">Participez</button>
+
+
 
         </div>
     </div>
